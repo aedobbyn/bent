@@ -12,11 +12,52 @@ SS_HEALTH_SCREENING <- "https://docs.google.com/spreadsheets/d/1Zs5NBQpKyVlaw_KZ
 
 SS_VACCINES <- "https://docs.google.com/spreadsheets/d/1-rTV3YHh_D9btU2lnp5uUxI5pgVs5FE3hvV895nnYu0/edit?resourcekey#gid=208667669"
 
+SS_FULL_DOC <- "https://docs.google.com/spreadsheets/d/1vCg_6Y8fFbAsutROBmh5Jvkpd20xMRSWJu7_lVGVV0k/edit#gid=0"
+
 hs_source <- 
   read_sheet(SS_HEALTH_SCREENING) 
 
 vax_source <- 
   read_sheet(SS_VACCINES)
+
+full_source <- 
+  read_sheet(SS_FULL_DOC)
+
+full <- 
+  full_source %>% 
+  janitor::clean_names() %>% 
+  filter(!str_detect(first_name, "Total")) %>% 
+  rename_at(
+    vars(matches("tryout")),
+    ~ str_extract(., "june.*")
+  ) %>% 
+  select(
+    contains("name"),
+    contains("june")
+  ) %>% 
+  tidyr::unnest() %>% 
+  tidyr::pivot_longer(
+    contains("june"),
+    names_to = "date",
+    values_to = "attending"
+  ) %>% 
+  mutate(
+    attending = 
+      case_when(
+        attending == "Yes" ~ TRUE,
+        attending == "No" ~ FALSE,
+        TRUE ~ FALSE
+      ),
+    date = 
+      date %>% 
+      snakecase::to_sentence_case() %>% 
+      str_c(" 2021") %>% 
+      lubridate::mdy()
+  ) %>% 
+  filter(
+    (date == DATE) & attending
+  ) %>% 
+  select(first_name, last_name)
 
 hs <- 
   hs_source %>% 
@@ -47,11 +88,9 @@ vax <-
   )
 
 joined <- 
-  full_join(
-    hs,
-    vax,
-    by = c("first_name", "last_name")
-  ) %>% 
+  full %>% 
+  left_join(hs) %>% 
+  left_join(vax) %>% 
   transmute(
     first_name, 
     last_name,
@@ -66,12 +105,12 @@ joined <-
     ends_with("name"),
     fully_good, 
     everything()
-  )
+  ) %>% 
+  arrange(first_name)
 
 write_sheet(
   joined,
   SS_DEST,
   sheet = as.character(DATE)
 )
-
 
