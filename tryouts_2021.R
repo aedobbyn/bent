@@ -2,10 +2,13 @@ library(tidyverse)
 library(googlesheets4)
 library(magrittr)
 
+# Date of the tryout is tomorrow (assuming we run this the day before)
 DATE <- lubridate::today() + lubridate::days(1)
 
+# We want people to have taken the health screening no more than 3 days before the tryout
 HS_MAX_DAYS_BEFORE_TRYOUT <- 3
 
+### Spreadsheets
 SS_DEST <- "https://docs.google.com/spreadsheets/d/1VT6emqnMNFeSR46E_buGbTERK3gu-Ja6PYgEVvB0keg/edit#gid=0"
 
 SS_HEALTH_SCREENING <- "https://docs.google.com/spreadsheets/d/1Zs5NBQpKyVlaw_KZyBM2DvRo2Y-qDT6bzbyzt1d_--o/edit?resourcekey#gid=438601480"
@@ -14,15 +17,19 @@ SS_VACCINES <- "https://docs.google.com/spreadsheets/d/1-rTV3YHh_D9btU2lnp5uUxI5
 
 SS_FULL_DOC <- "https://docs.google.com/spreadsheets/d/1vCg_6Y8fFbAsutROBmh5Jvkpd20xMRSWJu7_lVGVV0k/edit#gid=0"
 
-hs_source <- 
-  read_sheet(SS_HEALTH_SCREENING) 
-
-vax_source <- 
-  read_sheet(SS_VACCINES)
-
+# Full list of tryouts
 full_source <- 
   read_sheet(SS_FULL_DOC)
 
+# Health screening form
+hs_source <- 
+  read_sheet(SS_HEALTH_SCREENING) 
+
+# Vaccine response form
+vax_source <- 
+  read_sheet(SS_VACCINES)
+
+# Take tryout data to long and filter to people just going to this `DATE`'s tryout
 full <- 
   full_source %>% 
   janitor::clean_names() %>% 
@@ -59,6 +66,7 @@ full <-
   ) %>% 
   select(first_name, last_name)
 
+# Give people a `health_screening_good` of TRUE if they filled out the form within `HS_MAX_DAYS_BEFORE_TRYOUT` days of the tryout and answered all the questions correctly
 hs <- 
   hs_source %>% 
   janitor::clean_names() %>% 
@@ -74,6 +82,7 @@ hs <-
     health_screening_good = date_ok + symptoms_ok & test_ok & contact_ok & travel_ok
   )
 
+# Give people a `vax_good` of TRUE if they're at least 2 weeks out from their final shot and uploaded proof of vaccination
 vax <- 
   vax_source %>% 
   janitor::clean_names() %>% 
@@ -87,6 +96,7 @@ vax <-
     vax_good = vax_date_good & vax_has_img
   )
 
+# Take the full set of tryouts for this date and keep around the columns that would tell us why someone might not be `fully_good` to go
 joined <- 
   full %>% 
   left_join(hs) %>% 
@@ -108,9 +118,9 @@ joined <-
   ) %>% 
   arrange(first_name)
 
+# Write out to destination
 write_sheet(
   joined,
   SS_DEST,
   sheet = as.character(DATE)
 )
-
