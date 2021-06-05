@@ -13,7 +13,6 @@ SS_INSURANCE <- "insurance.csv"
 full_source <- 
   read_sheet(SS_FULL_DOC)
 
-# Take tryout data to long and filter to people just going to this `DATE`'s tryout
 full <- 
   full_source %>% 
   clean_full() %>% 

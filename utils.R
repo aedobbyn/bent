@@ -31,3 +31,12 @@ clean_full <- function(tbl) {
         lubridate::mdy()
     )
 }
+
+nice_bools <- function(x) {
+  
+  if (is.na(x) || !is.logical(x)) return(x)
+  
+  if (x == TRUE) return("yes")
+  
+  if (x == FALSE) return("no")
+}

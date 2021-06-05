@@ -2,6 +2,10 @@ library(tidyverse)
 library(googlesheets4)
 library(magrittr)
 
+gs4_auth()
+
+source("utils.R")
+
 # Date of the tryout is tomorrow (assuming we run this the day before)
 DATE <- lubridate::today() + lubridate::days(1)
 
@@ -17,6 +21,8 @@ SS_VACCINES <- "https://docs.google.com/spreadsheets/d/1-rTV3YHh_D9btU2lnp5uUxI5
 
 SS_FULL_DOC <- "https://docs.google.com/spreadsheets/d/1vCg_6Y8fFbAsutROBmh5Jvkpd20xMRSWJu7_lVGVV0k/edit#gid=0"
 
+SS_INSURANCE <- "insurance.csv"
+
 # Full list of tryouts
 full_source <- 
   read_sheet(SS_FULL_DOC)
@@ -29,10 +35,57 @@ hs_source <-
 vax_source <- 
   read_sheet(SS_VACCINES)
 
+insurance_source <- 
+  readr::read_csv(SS_INSURANCE) 
+
 # Take tryout data to long and filter to people just going to this `DATE`'s tryout
 full <- 
   full_source %>% 
-  clean_full() %>% 
+  clean_full() 
+
+full_distinct <- 
+  full %>% 
+  distinct(first_name, last_name) 
+
+insurance_selected <- 
+  insurance_source %>%
+  janitor::clean_names() %>% 
+  transmute(
+    first_name, 
+    last_name,
+    signed_usau_waiver = !is.na(usau_waiver_2021_waiver_signed),
+    signed_disease_waiver = !is.na(infectious_diseases_waiver_2021_waiver_signed),
+    has_usau_membership = !is.na(products)
+  ) %>% 
+  group_by(first_name, last_name) %>% 
+  # There are a few dupes, so if a person is duped, take the version of them that has signed things in 2021
+  arrange(
+    desc(signed_usau_waiver),
+    desc(signed_disease_waiver),
+    desc(has_usau_membership)
+  ) %>% 
+  distinct(first_name, last_name, .keep_all = TRUE) %>% 
+  ungroup()
+
+insurance <- 
+  full_distinct %>% 
+  left_join(insurance_selected) %>% 
+  arrange(first_name, last_name) %>% 
+  mutate_all(
+    tidyr::replace_na, 
+    FALSE
+  ) %>% 
+  mutate(
+    insurance_good = signed_usau_waiver & signed_disease_waiver & has_usau_membership
+  ) %>% 
+  select(
+    contains("name"),
+    insurance_good,
+    everything()
+  )
+
+full_today <- 
+  full %>% 
   filter(
     (date == DATE) & attending
   ) %>% 
@@ -70,32 +123,49 @@ vax <-
 
 # Take the full set of tryouts for this date and keep around the columns that would tell us why someone might not be `fully_good` to go
 joined <- 
-  full %>% 
+  full_today %>% 
   left_join(hs) %>% 
   left_join(vax) %>% 
+  left_join(insurance) %>% 
   transmute(
     first_name, 
     last_name,
     health_screening_good = health_screening_good %>% coalesce(FALSE),
     vax_good = vax_good %>% coalesce(FALSE),
-    fully_good = health_screening_good & vax_good,
+    insurance_good,
+    fully_good = 
+      case_when(
+        health_screening_good & vax_good & insurance_good ~ "yes",
+        TRUE ~ "no"
+      ),
     health_screening_date,
     vax_date_full,
-    vax_has_img
+    vax_has_img,
+    signed_usau_waiver,
+    signed_disease_waiver,
+    has_usau_membership
   ) %>% 
+  rowwise() %>% 
+  mutate_all(
+    nice_bools
+  ) %>% 
+  ungroup() %>% 
   select(
     ends_with("name"),
     fully_good, 
     everything()
   ) %>% 
-  arrange(first_name) %>% 
+  arrange(first_name)
+
+out <- 
+  joined %>% 
   rename_all(
     snakecase::to_sentence_case
   )
 
 # Write out to destination
 write_sheet(
-  joined,
+  out,
   SS_DEST,
   sheet = as.character(DATE)
 )
