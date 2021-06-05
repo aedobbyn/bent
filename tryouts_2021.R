@@ -2,6 +2,11 @@ library(tidyverse)
 library(googlesheets4)
 library(magrittr)
 
+key <- Sys.getenv("GSHEETS_API_KEY")
+gs4_auth_configure(api_key = key)
+
+gs4_auth_configure(path = here::here("config.json"))
+
 # Date of the tryout is tomorrow (assuming we run this the day before)
 DATE <- lubridate::today() + lubridate::days(1)
 
@@ -79,7 +84,7 @@ hs <-
     test_ok = in_the_past_10_days_have_you_tested_positive_for_covid_19 %>% str_detect("^NO"),
     contact_ok = in_the_past_14_days_have_you_been_in_close_contact_with_any_confirmed_or_suspected_covid_19_cases %>% str_detect("^NO"),
     travel_ok = in_the_past_10_days_i_have_followed_all_nys_travel_restrictions %>% str_detect("^YES"),
-    health_screening_good = date_ok + symptoms_ok & test_ok & contact_ok & travel_ok
+    health_screening_good = date_ok & symptoms_ok & test_ok & contact_ok & travel_ok
   )
 
 # Give people a `vax_good` of TRUE if they're at least 2 weeks out from their final shot and uploaded proof of vaccination
@@ -116,7 +121,10 @@ joined <-
     fully_good, 
     everything()
   ) %>% 
-  arrange(first_name)
+  arrange(first_name) %>% 
+  rename_all(
+    snakecase::to_sentence_case
+  )
 
 # Write out to destination
 write_sheet(
