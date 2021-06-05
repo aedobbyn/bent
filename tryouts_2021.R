@@ -2,11 +2,6 @@ library(tidyverse)
 library(googlesheets4)
 library(magrittr)
 
-key <- Sys.getenv("GSHEETS_API_KEY")
-gs4_auth_configure(api_key = key)
-
-gs4_auth_configure(path = here::here("config.json"))
-
 # Date of the tryout is tomorrow (assuming we run this the day before)
 DATE <- lubridate::today() + lubridate::days(1)
 
@@ -37,35 +32,7 @@ vax_source <-
 # Take tryout data to long and filter to people just going to this `DATE`'s tryout
 full <- 
   full_source %>% 
-  janitor::clean_names() %>% 
-  filter(!str_detect(first_name, "Total")) %>% 
-  rename_at(
-    vars(matches("tryout")),
-    ~ str_extract(., "june.*")
-  ) %>% 
-  select(
-    contains("name"),
-    contains("june")
-  ) %>% 
-  tidyr::unnest() %>% 
-  tidyr::pivot_longer(
-    contains("june"),
-    names_to = "date",
-    values_to = "attending"
-  ) %>% 
-  mutate(
-    attending = 
-      case_when(
-        attending == "Yes" ~ TRUE,
-        attending == "No" ~ FALSE,
-        TRUE ~ FALSE
-      ),
-    date = 
-      date %>% 
-      snakecase::to_sentence_case() %>% 
-      str_c(" 2021") %>% 
-      lubridate::mdy()
-  ) %>% 
+  clean_full() %>% 
   filter(
     (date == DATE) & attending
   ) %>% 
