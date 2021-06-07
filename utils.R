@@ -9,7 +9,8 @@ clean_full <- function(tbl) {
     ) %>% 
     select(
       contains("name"),
-      contains("june")
+      contains("june"),
+      email
     ) %>% 
     tidyr::unnest() %>% 
     tidyr::pivot_longer(

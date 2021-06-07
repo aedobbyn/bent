@@ -36,7 +36,8 @@ vax_source <-
   read_sheet(SS_VACCINES)
 
 insurance_source <- 
-  readr::read_csv(SS_INSURANCE) 
+  readr::read_csv(SS_INSURANCE) %>% 
+  janitor::clean_names()
 
 # Take tryout data to long and filter to people just going to this `DATE`'s tryout
 full <- 
@@ -45,14 +46,22 @@ full <-
 
 full_distinct <- 
   full %>% 
-  distinct(first_name, last_name) 
+  distinct(first_name, last_name, email) 
 
 insurance_selected <- 
   insurance_source %>%
-  janitor::clean_names() %>% 
   transmute(
-    first_name, 
-    last_name,
+    first_name = 
+      case_when(
+        first_name == "Abagael" & last_name == "Cheng" ~ "Abby", 
+        first_name == "Melanie" & last_name == "Sawyer" ~ "Mel", 
+        TRUE ~ first_name
+      ), 
+    last_name = 
+      case_when(
+        first_name == "Cory" & last_name == "Salé" ~ "Sale", 
+        TRUE ~ last_name
+      ),
     signed_usau_waiver = !is.na(usau_waiver_2021_waiver_signed),
     signed_disease_waiver = !is.na(infectious_diseases_waiver_2021_waiver_signed),
     has_usau_membership = !is.na(products)
@@ -83,7 +92,7 @@ full_today <-
   filter(
     (date == DATE) & attending
   ) %>% 
-  select(first_name, last_name)
+  select(first_name, last_name, email)
 
 # Give people a `health_screening_good` of TRUE if they filled out the form within `HS_MAX_DAYS_BEFORE_TRYOUT` days of the tryout and answered all the questions correctly
 hs <- 
@@ -131,6 +140,7 @@ joined <-
   transmute(
     first_name, 
     last_name,
+    email,
     health_screening_good = health_screening_good %>% coalesce(FALSE),
     vax_good = vax_good %>% coalesce(FALSE),
     insurance_good,
@@ -163,6 +173,7 @@ joined <-
   ungroup() %>% 
   select(
     ends_with("name"),
+    email,
     fully_good, 
     everything()
   ) %>% 
