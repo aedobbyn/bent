@@ -7,10 +7,10 @@ gs4_auth()
 source("utils.R")
 
 # Date of the tryout is tomorrow (assuming we run this the day before)
-DATE <- lubridate::today() + lubridate::days(1)
+DATE <- lubridate::today()
 
 # We want people to have taken the health screening no more than 3 days before the tryout
-HS_MAX_DAYS_BEFORE_TRYOUT <- 3
+HS_MAX_DAYS_BEFORE_TRYOUT <- 5
 
 ### Spreadsheets
 SS_DEST <- "https://docs.google.com/spreadsheets/d/1VT6emqnMNFeSR46E_buGbTERK3gu-Ja6PYgEVvB0keg/edit#gid=0"
@@ -56,16 +56,7 @@ insurance_selected <-
     signed_usau_waiver = !is.na(usau_waiver_2021_waiver_signed),
     signed_disease_waiver = !is.na(infectious_diseases_waiver_2021_waiver_signed),
     has_usau_membership = !is.na(products)
-  ) %>% 
-  group_by(first_name, last_name) %>% 
-  # There are a few dupes, so if a person is duped, take the version of them that has signed things in 2021
-  arrange(
-    desc(signed_usau_waiver),
-    desc(signed_disease_waiver),
-    desc(has_usau_membership)
-  ) %>% 
-  distinct(first_name, last_name, .keep_all = TRUE) %>% 
-  ungroup()
+  )
 
 insurance <- 
   full_distinct %>% 
@@ -76,7 +67,10 @@ insurance <-
     FALSE
   ) %>% 
   mutate(
-    insurance_good = signed_usau_waiver & signed_disease_waiver & has_usau_membership
+    insurance_good = 
+      # signed_usau_waiver & 
+      # signed_disease_waiver & 
+      has_usau_membership
   ) %>% 
   select(
     contains("name"),
@@ -105,6 +99,13 @@ hs <-
     contact_ok = in_the_past_14_days_have_you_been_in_close_contact_with_any_confirmed_or_suspected_covid_19_cases %>% str_detect("^NO"),
     travel_ok = in_the_past_10_days_i_have_followed_all_nys_travel_restrictions %>% str_detect("^YES"),
     health_screening_good = date_ok & symptoms_ok & test_ok & contact_ok & travel_ok
+  ) %>% 
+  mutate(
+    first_name = 
+      case_when(
+        last_name == "Whelan" ~ "Jess",
+        TRUE ~ first_name
+      )
   )
 
 # Give people a `vax_good` of TRUE if they're at least 2 weeks out from their final shot and uploaded proof of vaccination
@@ -149,6 +150,16 @@ joined <-
   mutate_all(
     nice_bools
   ) %>% 
+  ungroup() %>% 
+  group_by(first_name, last_name) %>% 
+  # There are a few dupes, so if a person is duped, take the version of them that has signed things in 2021
+  arrange(
+    desc(signed_usau_waiver),
+    desc(signed_disease_waiver),
+    desc(has_usau_membership),
+    desc(vax_has_img)
+  ) %>% 
+  distinct(first_name, last_name, .keep_all = TRUE) %>% 
   ungroup() %>% 
   select(
     ends_with("name"),
