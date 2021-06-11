@@ -41,3 +41,10 @@ nice_bools <- function(x) {
   
   if (x == FALSE) return("no")
 }
+
+pull_emails <- function(tbl){
+  tbl %>% 
+    pull(email) %>% 
+    extract(!is.na(.)) %>% 
+    str_c(collapse = ", ")
+}

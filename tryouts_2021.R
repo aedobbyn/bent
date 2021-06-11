@@ -5,6 +5,7 @@ library(magrittr)
 gs4_auth()
 
 source("utils.R")
+source("not_getting_vaxed.R")
 
 # Date of the tryout is tomorrow (assuming we run this the day before)
 DATE <- lubridate::today()
@@ -35,6 +36,7 @@ hs_source <-
 vax_source <- 
   read_sheet(SS_VACCINES)
 
+# DiscNY info
 insurance_source <- 
   readr::read_csv(SS_INSURANCE) %>% 
   janitor::clean_names()
@@ -128,7 +130,9 @@ vax <-
     vax_has_img = !is.na(if_you_have_been_vaccinated_please_upload_an_image_of_your_vaccine_card_your_ny_excelsior_pass_or_other_proof_of_vaccination),
     vax_date_full = last_shot_date + lubridate::weeks(2),
     vax_date_good = vax_date_full < DATE,
-    vax_good = vax_date_good & vax_has_img
+    vax_good = 
+      # (vax_date_good & 
+      vax_has_img
   )
 
 # Take the full set of tryouts for this date and keep around the columns that would tell us why someone might not be `fully_good` to go
@@ -136,19 +140,21 @@ joined <-
   full_today %>% 
   left_join(hs) %>% 
   left_join(vax) %>% 
-  left_join(insurance) %>% 
+  left_join(insurance %>% select(-email)) %>% 
+  mutate() %>% 
   transmute(
+    across(
+      matches("_ok|_good|has_|signed_"),
+      ~ .x %>% coalesce(FALSE)
+    ),
+    non_vax = email %in% non_vax,
     first_name, 
     last_name,
-    email,
-    health_screening_good = health_screening_good %>% coalesce(FALSE),
-    vax_good = vax_good %>% coalesce(FALSE),
+    email = tolower(email),
+    health_screening_good,
+    vax_good = vax_good | non_vax,
     insurance_good,
-    fully_good = 
-      case_when(
-        health_screening_good & vax_good & insurance_good ~ "yes",
-        TRUE ~ "no"
-      ),
+    fully_good = health_screening_good & vax_good & insurance_good,
     health_screening_date,
     vax_date_full,
     vax_has_img,
