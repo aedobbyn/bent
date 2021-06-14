@@ -3,12 +3,13 @@ library(googlesheets4)
 library(magrittr)
 
 gs4_auth()
+1
 
 source("utils.R")
 source("not_getting_vaxed.R")
 
 # Date of the tryout is tomorrow (assuming we run this the day before)
-DATE <- lubridate::today()
+DATE <- lubridate::today() + 1
 
 # We want people to have taken the health screening no more than 3 days before the tryout
 HS_MAX_DAYS_BEFORE_TRYOUT <- 5
@@ -117,7 +118,11 @@ hs <-
         last_name == "Whelan" ~ "Jess",
         TRUE ~ first_name
       )
-  )
+  ) %>% 
+  group_by(first_name, last_name) %>% 
+  arrange(desc(health_screening_date)) %>% 
+  slice(1) %>% 
+  ungroup()
 
 # Give people a `vax_good` of TRUE if they're at least 2 weeks out from their final shot and uploaded proof of vaccination
 vax <- 
@@ -153,7 +158,7 @@ joined <-
     email = tolower(email),
     health_screening_good,
     vax_good = vax_good | non_vax,
-    insurance_good,
+    insurance_good = insurance_good | (tolower(email) %in% did_insurance),
     fully_good = health_screening_good & vax_good & insurance_good,
     health_screening_date,
     vax_date_full,
@@ -181,7 +186,9 @@ joined <-
     ends_with("name"),
     email,
     fully_good, 
-    everything()
+    vax_good,
+    insurance_good,
+    health_screening_good
   ) %>% 
   arrange(first_name)
 
