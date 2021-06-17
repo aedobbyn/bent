@@ -4,5 +4,5 @@
 .Rhistory
 config.json
 .DS_Store
-insurance.csv
+*insurance*
 not_getting_vaxed.R

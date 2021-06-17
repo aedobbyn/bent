@@ -2,6 +2,9 @@ library(tidyverse)
 library(googlesheets4)
 library(magrittr)
 
+# Use Selenium to download latest insurance info
+source("insurance.R")
+
 gs4_auth()
 1
 
@@ -23,7 +26,9 @@ SS_VACCINES <- "https://docs.google.com/spreadsheets/d/1-rTV3YHh_D9btU2lnp5uUxI5
 
 SS_FULL_DOC <- "https://docs.google.com/spreadsheets/d/1vCg_6Y8fFbAsutROBmh5Jvkpd20xMRSWJu7_lVGVV0k/edit#gid=0"
 
-SS_INSURANCE <- "insurance.csv"
+URL_INSURANCE <- "https://discny.org/e/admin/2021-nyc-club-season-registration/registration"
+
+SS_INSURANCE <- "insurance/insurance.csv"
 
 # Full list of tryouts
 full_source <- 
