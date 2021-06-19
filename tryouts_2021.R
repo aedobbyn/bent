@@ -50,11 +50,18 @@ insurance_source <-
 # Take tryout data to long and filter to people just going to this `DATE`'s tryout
 full <- 
   full_source %>% 
-  clean_full() 
+  clean_full() %>% 
+  mutate(
+    first_name = 
+      case_when(
+        first_name == "Tiff" & last_name == "Tai" ~ "Tiffany",
+        TRUE ~ first_name
+      )
+  )
 
 full_distinct <- 
   full %>% 
-  distinct(first_name, last_name, email) 
+  distinct(first_name, last_name, email)
 
 insurance_selected <- 
   insurance_source %>%
@@ -62,7 +69,8 @@ insurance_selected <-
     first_name = 
       case_when(
         first_name == "Abagael" & last_name == "Cheng" ~ "Abby", 
-        first_name == "Melanie" & last_name == "Sawyer" ~ "Mel", 
+        first_name == "Melanie" & last_name == "Sawyer" ~ "Mel",
+        first_name == "Jessica" & last_name == "Whelan" ~ "Jess",
         TRUE ~ first_name
       ), 
     last_name = 
@@ -134,7 +142,7 @@ vax <-
   vax_source %>% 
   janitor::clean_names() %>% 
   transmute(
-    first_name, 
+    first_name,
     last_name, 
     last_shot_date = if_you_have_been_vaccinated_please_provide_the_date_you_received_or_will_receive_your_shot_if_johnson_johnson_or_your_second_shot_if_moderna_or_pfizer %>% lubridate::as_date(),
     vax_has_img = !is.na(if_you_have_been_vaccinated_please_upload_an_image_of_your_vaccine_card_your_ny_excelsior_pass_or_other_proof_of_vaccination),
@@ -164,7 +172,9 @@ joined <-
     health_screening_good,
     vax_good = vax_good | non_vax,
     insurance_good = insurance_good | (tolower(email) %in% did_insurance),
-    fully_good = health_screening_good & vax_good & insurance_good,
+    fully_good = 
+      # health_screening_good & 
+      vax_good & insurance_good,
     health_screening_date,
     vax_date_full,
     vax_has_img,
