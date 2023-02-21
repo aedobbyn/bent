@@ -6,3 +6,4 @@ config.json
 .DS_Store
 *insurance*
 not_getting_vaxed.R
+slack/
