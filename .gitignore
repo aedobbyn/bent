@@ -7,3 +7,4 @@ config.json
 *insurance*
 not_getting_vaxed.R
 slack/
+*.csv
