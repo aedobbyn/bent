@@ -30,9 +30,10 @@ dates <-
         TRUE ~ "tournament"
       ),
     weight = 
+      # Same weights for now
       case_when(
-        type == "tournament" ~ 1.5
-        TRUE ~ 0.9
+        type == "tournament" ~ 1,
+        TRUE ~ 1
       ),
     practice_number = row_number()
   ) %>% 
@@ -74,9 +75,7 @@ per_person <-
   group_by(name) %>% 
   summarise(
     n_attended = sum(value),
-    n_attended_weighted = sum(value_weighted),
     perc_attended = n_attended/max(.$practice_number),
-    perc_attended_weighted = n_attended_weighted/max(.$practice_number),
   )
 
 team_wide <- 
@@ -84,10 +83,7 @@ team_wide <-
   summarise(
     mean_attended = mean(perc_attended),
     median_attended = median(perc_attended),
-    sd_attended = sd(perc_attended),
-    mean_attended_weighted = mean(perc_attended),
-    median_attended_weighted = median(perc_attended),
-    sd_attended_weighted = sd(perc_attended)
+    sd_attended = sd(perc_attended)
   )
 
 quantiles <- 
@@ -96,7 +92,3 @@ quantiles <-
     quantile = scales::percent(c(0.25, 0.5, 0.75)),
     value = quantile(perc_attended, c(0.25, 0.5, 0.75))
   )
-
-
-
-
