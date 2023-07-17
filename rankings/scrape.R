@@ -1,18 +1,43 @@
 library(tidyverse)
 library(foreach)
+library(magrittr)
 
 # List of all women's division club sanctioned events
 event_list_url <- "https://play.usaultimate.org/events/league/?ViewAll=false&IsLeagueType=false&IsClinic=false&FilterByCategory=AE&CompetitionLevelId=22&GenderDivisionId=2&EventTypeId=16"
 
-event_urls <- 
+event_html <- 
   event_list_url %>% 
-  rvest::read_html() %>% 
+  rvest::read_html()
+
+# Grab the url hrefs
+event_urls <- 
+  event_html %>% 
   # Just past events
   rvest::html_nodes(".alt-style-2 td") %>% 
   rvest::html_elements("a") %>% 
   rvest::html_attr("href") %>% 
   str_c("/schedule/Women/Club-Women/")
 
+# Grab table text
+event_url_tbl <- 
+  event_html %>% 
+  rvest::html_table() %>% 
+  .[[2]] %>% 
+  janitor::clean_names() %>% 
+  select(event_name, dates) %>% 
+  mutate(
+    year = 
+      dates %>% 
+      str_extract(", [0-9]+$") %>% 
+      str_remove(", ") %>% 
+      as.integer(),
+    # Attach the urls
+    url = event_urls
+  ) %>% 
+  # We just want events that happened in the current year
+  filter(year == lubridate::year(lubridate::today()))
+
+# Get a dataframe of all the scores on the page
 scrape_scores <- function(url) {
   ### Pool Play ###
   
@@ -23,7 +48,7 @@ scrape_scores <- function(url) {
     purrr::map(janitor::clean_names)
   
   if (length(raw) == 0) {
-    message("Could not scrape this page.")
+    message("‼️ Could not scrape this page.")
     return(tibble())
   }
   
@@ -135,19 +160,25 @@ try_scrape_scores <- purrr::possibly(scrape_scores)
 
 out <- tibble()
 
-for (i in 1:length(event_urls) - 1) {
-  # We don't want the last event (Pro Champs 2022)
+# Loop through all the event urls
+for (i in 1:nrow(event_url_tbl)) {
+
+  url <- event_url_tbl$url[i]
+  event_name <- event_url_tbl$event_name[i]
   
-  url <- event_urls[i]
+  message(glue::glue("{i} of {nrow(event_url_tbl) - 1}: {event_name} ({url})"))
   
-  message(glue::glue("{i} of {length(event_urls)}: {url}"))
-  
-  this <- try_scrape_scores(url)
+  this <- try_scrape_scores(url) 
   
   # If something went wrong, move on
   if (length(this) == 0) next()
   
-  out <- out %>% bind_rows(this)
+  this %<>% 
+    mutate(
+      event = event_name
+    )
+  
+  out %<>% bind_rows(this)
   
   Sys.sleep(runif(1, 1, 2))
 }
