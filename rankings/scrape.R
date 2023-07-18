@@ -26,16 +26,17 @@ event_url_tbl <-
   janitor::clean_names() %>% 
   select(event_name, dates) %>% 
   mutate(
-    year = 
-      dates %>% 
-      str_extract(", [0-9]+$") %>% 
-      str_remove(", ") %>% 
-      as.integer(),
+    start_date = dates %>% str_remove(" - .*") %>% lubridate::mdy(),
+    month = start_date %>% lubridate::month(),
+    year = start_date %>% lubridate::year(),
     # Attach the urls
     url = event_urls
   ) %>% 
-  # We just want events that happened in the current year
-  filter(year == lubridate::year(lubridate::today()))
+  # We just want events that happened in June or after of this year
+  filter(
+    year == lubridate::year(lubridate::today()) &
+      month >= 6
+  )
 
 # Get a dataframe of all the scores on the page
 scrape_scores <- function(url) {
@@ -183,5 +184,6 @@ for (i in 1:nrow(event_url_tbl)) {
   Sys.sleep(runif(1, 1, 2))
 }
 
+# Write to csv
 readr::write_csv(out, glue::glue(here::here("rankings/scores.csv")))
 
