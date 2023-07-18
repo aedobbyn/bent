@@ -45,39 +45,53 @@ scores_weighted <-
         TRUE ~ r_function(score_2, score_1)
       ),
     rating_diff_absolute = diff_function(r)
-  )
-
-# Pivot to one row per team
-scores_long <- 
-  scores_weighted %>% 
+  ) %>% 
   ungroup() %>% 
   mutate(
     game_number = row_number()
-  ) %>% 
-  tidyr::pivot_longer(
-    team_1:team_2,
-    names_to = "team_number",
-    values_to = "team"
   ) 
 
-# Start at baseline rating 1000 for everything and apply the rating differential
-scores_initial <- 
-  scores_long %>% 
+scores_all <- 
+  bind_rows(
+    scores_weighted %>% 
+      rename(
+        team = team_1,
+        opponent = team_2,
+        score_team = score_1,
+        score_opponent = score_2
+      ) %>% 
+      select(-team_1_won),
+    scores_weighted %>% 
+      rename(
+        team = team_2,
+        opponent = team_1,
+        score_team = score_2,
+        score_opponent = score_1
+      ) %>% 
+      select(-team_1_won)
+  ) %>% 
+  arrange(game_number)
+
+scores_rated <- 
+  scores_all %>% 
+  # Start at baseline rating 1000 for everything and apply the rating differential
   mutate(
     rating_diff = 
       case_when(
-        team_1_won & team_number == "team_1" | 
-          !team_1_won & team_number == "team_2" ~ rating_diff_absolute,
+        score_team > score_opponent ~ rating_diff_absolute,
         TRUE == 1 ~  rating_diff_absolute * -1
       ),
-    rating_baseline = 1000,
-    rating_game = rating_baseline + rating_diff
+    rating_opponent = 1000,
+    rating_game = rating_opponent + rating_diff
   ) %>% 
-  select(game_number, team, score_weight, rating_baseline, rating_diff, rating_game)
+  select(
+    game_number, team, opponent, score_weight, 
+    rating_opponent, rating_diff, rating_game
+  )
 
 # Weighted average of ratings per team
 ratings_initial <- 
-  scores_initial %>% 
+  scores_rated %>% 
   group_by(team) %>% 
   # TODO add in weights
   summarise(
@@ -85,54 +99,63 @@ ratings_initial <-
   ) %>% 
   arrange(desc(rating_team))
 
-# TODO need to use opponent's rating_baseline instead of own team's when recompute
-
-scores <- 
-  scores_initial %>%
-  select(-rating_baseline) %>% 
+scores_inital <- 
+  scores_rated %>%
+  select(-rating_opponent) %>% 
   inner_join(
+    # Attach each opponent's new average rating
     ratings_initial %>% 
       rename(
-        rating_baseline = rating_team
+        rating_opponent = rating_team,
+        opponent = team
       ),
-    by = "team"
+    by = "opponent"
   )
 
 iterate <- function() {
   ratings_old <- ratings_initial
   ratings_new <- tibble()
   
-  scores <- scores_initial
+  scores <- scores_inital
+  i <- 1
   
   while (! identical(ratings_old, ratings_new)) {
+    
+    message(glue::glue("On iteration {i}"))
     
     if (!identical(tibble(), ratings_new)) {
       ratings_old <- ratings_new
     }
     
+    # Attach each opponent's latest rating
     scores %<>% 
-      # Attach each team's new rating_avg
-      select(-rating_baseline) %>% 
+      select(-rating_opponent) %>% 
       inner_join(
         ratings_old %>% 
           rename(
-            rating_baseline = rating_team
+            rating_opponent = rating_team,
+            opponent = team
           ),
-        by = "team"
+        by = "opponent"
       ) %>% 
       mutate(
-        rating_game = rating_baseline + rating_diff
+        rating_game = rating_opponent + rating_diff
       )
     
-    ratings_new <- 
+    # Keep `ratings_new` as a global variable
+    ratings_new <<- 
       scores %>% 
       group_by(team) %>% 
       summarise(
         rating_team = mean(rating_game)
       ) %>% 
       arrange(desc(rating_team)) 
+    
+    print(ratings_new %>% slice(nrow(.) - 10 : nrow(.)))
+    
+    i <- i + 1
   }
 }
 
-
+iterate()
                
