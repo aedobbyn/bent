@@ -25,6 +25,11 @@ r_function <- function(w, l) {
   l / (w - 1)
 }
 
+blowout_function <- function(w, l) {
+  
+}
+
+# For each game add score weights and get the abs value of the rating differential
 scores_weighted <- 
   scores_raw %>% 
   rowwise() %>% 
@@ -47,14 +52,20 @@ scores_weighted <-
         TRUE ~ r_function(score_2, score_1)
       ),
     # Get the rating differential for this game
-    rating_diff_absolute = diff_function(r)
+    rating_diff_absolute = diff_function(r),
+    blowout_score = 
+      case_when(
+        team_1_won & score_1 > score_2 * 2 + 1 ~ TRUE,
+        !team_1_won & score_2 > score_1 * 2 + 1 ~ TRUE,
+        TRUE ~ FALSE
+      )
   ) %>% 
   ungroup() %>% 
   mutate(
     game_number = row_number()
-  ) 
+  )
 
-# Make 2 rows per game -- one per team
+# Make 2 rows per game -- one per team -- so now we have team and opponent
 scores_long <- 
   bind_rows(
     scores_weighted %>% 
@@ -92,7 +103,8 @@ scores_initial <-
   ) %>% 
   select(
     game_number, team, opponent, score_weight, 
-    rating_opponent, rating_diff, rating_game
+    rating_opponent, rating_diff, rating_game,
+    blowout_score
   )
 
 # Initial weighted average of game ratings per team to get team ratings
@@ -101,7 +113,8 @@ ratings_initial <-
   group_by(team) %>% 
   summarise(
     # Round to nearest whole number
-    rating_team = rating_game %>% weighted.mean(score_weight) %>% round()
+    rating_team = rating_game %>% weighted.mean(score_weight) %>% round(),
+    n_games = n()
   ) %>% 
   arrange(desc(rating_team))
 
@@ -128,24 +141,40 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
     select(-rating_opponent) %>% 
     inner_join(
       ratings_old %>% 
+        select(-n_games) %>% 
         rename(
           rating_opponent = rating_team,
           opponent = team
         ),
       by = "opponent"
     ) %>% 
+    # Attach team's latest rating for blowout rule calc
+    inner_join(
+      ratings_old,
+      by = "team"
+    ) %>% 
     # Get the latest game rating given the new opponent team rating
     # (game `rating_diff` stays constant)
     mutate(
-      rating_game = rating_opponent + rating_diff
-    )
+      rating_game = rating_opponent + rating_diff,
+      # Add a boolean for whether each game was a blowout
+      blowout = 
+        case_when(
+          rating_team - rating_opponent > 600 & blowout_score ~ TRUE,
+          TRUE ~ FALSE
+        )
+    ) %>% 
+    # TODO only remove blowouts when team will still have >= 5 games after they're removed
+    # Remove blowouts
+    filter(!blowout)
   
   # Re-calc the team average ratings
   ratings_new <- 
     scores %>% 
     group_by(team) %>% 
     summarise(
-      rating_team = rating_game %>% weighted.mean(score_weight) %>% round()
+      rating_team = rating_game %>% weighted.mean(score_weight) %>% round(),
+      n_games = n()
     ) %>% 
     arrange(desc(rating_team)) 
   
