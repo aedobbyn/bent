@@ -76,10 +76,11 @@ scores_long <-
   ) %>% 
   arrange(game_number)
 
-scores_rated <- 
+# Apply the positive or negative rating differential to get an initial
+# game rating for each game
+scores_initial <- 
   scores_long %>% 
-  # Start at baseline rating 1000 for everything and apply the rating
-  # differential for each game (positive for winners, negative for losers)
+  # Start at baseline rating 1000 for every team
   mutate(
     rating_opponent = 1000,
     rating_diff = 
@@ -94,33 +95,20 @@ scores_rated <-
     rating_opponent, rating_diff, rating_game
   )
 
-# Weighted average of ratings per team
+# Initial weighted average of game ratings per team to get team ratings
 ratings_initial <- 
-  scores_rated %>% 
+  scores_initial %>% 
   group_by(team) %>% 
   summarise(
+    # Round to nearest whole number
     rating_team = rating_game %>% weighted.mean(score_weight) %>% round()
   ) %>% 
   arrange(desc(rating_team))
 
-scores_inital <- 
-  scores_rated %>%
-  select(-rating_opponent) %>% 
-  inner_join(
-    # Attach each opponent's new average rating
-    ratings_initial %>% 
-      rename(
-        rating_opponent = rating_team,
-        opponent = team
-      ),
-    by = "opponent"
-  )
-
-# Initialize
+# Initialize ratings and scores for the loop
 ratings_old <- ratings_initial
 ratings_new <- tibble()
-
-scores <- scores_inital
+scores <- scores_initial
 i <- 1
 
 # Keep looping through and re-rating until the ratings stabilize and 
@@ -129,11 +117,13 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
   
   message(glue::glue("On iteration {i}"))
   
+  # If this isn't the first iteration, set the team ratings we just calculated
+  # to `ratings_old` so we can re-calculate new ratings and see if they match
   if (!identical(tibble(), ratings_new)) {
     ratings_old <- ratings_new
   }
   
-  # Attach each opponent's latest rating
+  # Attach each opponent's latest rating to game scores
   scores %<>% 
     select(-rating_opponent) %>% 
     inner_join(
@@ -144,17 +134,18 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
         ),
       by = "opponent"
     ) %>% 
-    # Get the latest game rating given the new opponent rating
+    # Get the latest game rating given the new opponent team rating
+    # (game `rating_diff` stays constant)
     mutate(
       rating_game = rating_opponent + rating_diff
     )
   
+  # Re-calc the team average ratings
   ratings_new <- 
     scores %>% 
     group_by(team) %>% 
     summarise(
-      # Round to nearest whole number
-      rating_team = rating_game %>% mean() %>% round()
+      rating_team = rating_game %>% weighted.mean(score_weight) %>% round()
     ) %>% 
     arrange(desc(rating_team)) 
   

@@ -8,3 +8,4 @@ config.json
 not_getting_vaxed.R
 slack/
 *.csv
+!rankings/*
