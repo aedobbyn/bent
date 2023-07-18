@@ -98,9 +98,8 @@ scores_rated <-
 ratings_initial <- 
   scores_rated %>% 
   group_by(team) %>% 
-  # TODO add in weights
   summarise(
-    rating_team = rating_game %>% mean() %>% round()
+    rating_team = rating_game %>% weighted.mean(score_weight) %>% round()
   ) %>% 
   arrange(desc(rating_team))
 
@@ -145,11 +144,11 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
         ),
       by = "opponent"
     ) %>% 
+    # Get the latest game rating given the new opponent rating
     mutate(
       rating_game = rating_opponent + rating_diff
     )
   
-  # Keep `ratings_new` as a global variable
   ratings_new <- 
     scores %>% 
     group_by(team) %>% 
@@ -164,6 +163,7 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
   i <- i + 1
 }
 
+# Add ranking number
 rankings <- 
   ratings_new %>% 
   mutate(
