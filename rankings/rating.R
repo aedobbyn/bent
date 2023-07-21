@@ -1,6 +1,8 @@
 library(tidyverse)
 library(magrittr)
 
+max_iterations <- 10000
+
 # Assign each week a date weight. First week of the season gets 0.5 and last
 # week gets 1
 first_week <- lubridate::week("2023-06-01")
@@ -13,8 +15,6 @@ date_weight_tbl <-
     date_weight = seq(0.5, 1, date_weight_diff)
   )
 
-max_iterations <- 10000
-
 scores_raw <- 
   readr::read_csv(
     glue::glue(here::here("rankings/scores.csv")),
@@ -26,16 +26,18 @@ diff_function <- function(r) {
   125 + 475 * ((sin(min(1, (1 - r)/0.5) * 0.4 * pi)) / sin(0.4 * pi))
 }
 
+# Used in rating differential
+r_function <- function(w, l) {
+  l / (w - 1)
+}
+
 # Score weight function where w is winner score and l is loser score
 score_weight_function <- function(w, l) {
   min(1, sqrt((w + max(l, floor((w - 1)/2))) / 19))
 }
 
-r_function <- function(w, l) {
-  l / (w - 1)
-}
-
-# For each game add score weights and get the abs value of the rating differential
+# For each game, add score weights, date weights, and get the abs value of the 
+# rating differential
 scores_weighted <- 
   scores_raw %>% 
   rowwise() %>% 
@@ -74,6 +76,7 @@ scores_weighted <-
   # Attach date weights
   inner_join(date_weight_tbl) %>% 
   mutate(
+    # Game weight is product of score weight and date weight
     weight = score_weight * date_weight
   ) %>% 
   select(
@@ -218,28 +221,37 @@ while (i < max_iterations &
   # Get a dataframe of how many blowouts to remove per team, if not 0
   n_blowouts_to_remove <- 
     scores %>% 
+    rowwise() %>% 
     distinct(team, n_games) %>% 
     inner_join(n_blowouts, by = "team") %>% 
     mutate(
       n_blowouts_to_remove = 
         case_when(
           # Need to have at least 5 games that aren't blowouts
-          n_games - n_blowouts > 5 ~ n_blowouts,
+          # Remove fewer than all the blowouts if we won't be left with 5 games
+          n_games > 5 & n_blowouts > 0 ~ min(n_games - 5, n_blowouts),
           TRUE ~ 0
         )
     ) %>% 
-    filter(n_blowouts_to_remove > 0)
+    filter(n_blowouts_to_remove > 0) %>% 
+    ungroup()
   
   # Dataframe of blowout games to get rid of
   blowouts_to_remove <- 
-    scores %>% 
-    inner_join(n_blowouts_to_remove, by = c("team", "n_games")) %>% 
-    filter(blowout) %>% 
-    select(team, n_blowouts_to_remove, game_number) %>% 
-    arrange(team) 
+    if (nrow(n_blowouts_to_remove) > 0) {
+      scores %>% 
+        inner_join(n_blowouts_to_remove, by = c("team", "n_games")) %>% 
+        filter(blowout) %>% 
+        select(team, n_blowouts_to_remove, game_number, rating_game) %>% 
+        arrange(team, rating_game) %>% 
+        group_by(team) %>% 
+        slice(1:n_blowouts_to_remove) %>% 
+        ungroup()
+    } else {
+      tibble(team = character(), game_number = integer())
+    }
   
   # Use the `game_number` to remove blowouts
-  # Re-name this variable `scores` so it'll be used in the next iteration
   scores %<>%  
     anti_join(blowouts_to_remove, by = c("game_number", "team"))
   
