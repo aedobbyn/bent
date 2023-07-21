@@ -1,7 +1,17 @@
 library(tidyverse)
 library(magrittr)
 
-# TODO date weights
+# Assign each week a date weight. First week of the season gets 0.5 and last
+# week gets 1
+first_week <- lubridate::week("2023-06-01")
+last_week <- lubridate::week("2023-09-19")
+week_diff <- last_week - first_week
+date_weight_diff <- 0.5/week_diff
+date_weight_tbl <- 
+  tibble(
+    week = first_week:last_week,
+    date_weight = seq(0.5, 1, date_weight_diff)
+  )
 
 max_iterations <- 10000
 
@@ -31,6 +41,7 @@ scores_weighted <-
   rowwise() %>% 
   mutate(
     team_1_won = score_1 > score_2,
+    week = lubridate::week(date),
     score_weight = 
       case_when(
         # If either team scored >= 13 points or combined score was >= 19, 
@@ -59,6 +70,18 @@ scores_weighted <-
   ungroup() %>% 
   mutate(
     game_number = row_number()
+  ) %>% 
+  # Attach date weights
+  inner_join(date_weight_tbl) %>% 
+  mutate(
+    weight = score_weight * date_weight
+  ) %>% 
+  select(
+    game_number,
+    starts_with("team"),
+    starts_with("score"),
+    ends_with("weight"),
+    rating_diff_absolute, everything()
   )
 
 # Make 2 rows per game -- one per team -- so now we have team and opponent
@@ -98,7 +121,7 @@ scores_initial <-
     rating_game = rating_opponent + rating_diff
   ) %>% 
   select(
-    game_number, team, opponent, score_weight, 
+    game_number, team, opponent, weight, 
     rating_opponent, rating_diff, rating_game,
     blowout_score
   )
@@ -109,48 +132,47 @@ ratings_initial <-
   group_by(team) %>% 
   summarise(
     # Round to nearest whole number
-    rating_team = rating_game %>% weighted.mean(score_weight) %>% round(),
+    rating_team = rating_game %>% weighted.mean(weight) %>% round(),
     n_games = n()
   ) %>% 
   arrange(desc(rating_team))
 
 # Initialize ratings and scores for the loop
 ratings_old <- ratings_initial
-ratings_new <- tibble(team = character(), n_games = integer())
+ratings_new <- tibble(team = character(), rating_team = double(), n_games = integer())
 rankings_old <- 
   ratings_old %>% 
   select(-n_games) %>% 
   mutate(
     rank = row_number()
   )
-rankings_new <- tibble()
+rankings_new <- tibble(team = character(), rating_team = double(), rank = integer())
 scores <- 
   scores_initial %>% 
   # Attach initial team rating
   inner_join(ratings_initial)
 i <- 1
-message("Starting loop")
 
 # Keep looping through and re-rating until the ratings stabilize and 
 # `ratings_old` is the same as `ratings_new`
 while (i < max_iterations & 
-       !identical(rankings_old, rankings_new)) {
+       !identical(rankings_old %>% select(team, rank), rankings_new  %>% select(team, rank))) {
+  
+  n_diffs <- 
+    anti_join(
+      rankings_old, 
+      rankings_new,
+      by = c("team", "rank")
+    ) %>% 
+    nrow()
+  
+  message(glue::glue("On iteration {i}. % difference: {n_diffs}/{nrow(ratings_old)} = {round(n_diffs/nrow(ratings_old), 2) * 100}%"))
   
   # If this isn't the first iteration, set the team ratings we just calculated
   # to `ratings_old` so we can re-calculate new ratings and see if they match
   if (nrow(ratings_new) > 0) {
     ratings_old <- ratings_new
     rankings_old <- rankings_new
-    
-    n_diffs <- 
-      anti_join(
-        rankings_old, 
-        rankings_new,
-        by = c("team", "rank")
-      ) %>% 
-      nrow()
-    
-    message(glue::glue("On iteration {i}. % difference: {n_diffs}/{nrow(ratings_old)}"))
   }
   
   # Attach each opponent's latest rating to game scores
@@ -226,7 +248,7 @@ while (i < max_iterations &
     scores %>% 
     group_by(team) %>% 
     summarise(
-      rating_team = rating_game %>% weighted.mean(score_weight) %>% round(),
+      rating_team = rating_game %>% weighted.mean(weight) %>% round(),
       # Re-calc the number of games each team has now that we've removed some
       # for blowout rule
       n_games = n()
@@ -245,7 +267,6 @@ while (i < max_iterations &
   
   i <- i + 1
 }
-
 
 rankings <- rankings_new
 

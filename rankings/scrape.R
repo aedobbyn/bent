@@ -166,6 +166,7 @@ for (i in 1:nrow(event_url_tbl)) {
 
   url <- event_url_tbl$url[i]
   event_name <- event_url_tbl$event_name[i]
+  start_date <- event_url_tbl$start_date[i]
   
   message(glue::glue("{i} of {nrow(event_url_tbl) - 1}: {event_name} ({url})"))
   
@@ -176,7 +177,8 @@ for (i in 1:nrow(event_url_tbl)) {
   
   this %<>% 
     mutate(
-      event = event_name
+      event = event_name,
+      date = start_date
     )
   
   out %<>% bind_rows(this)
