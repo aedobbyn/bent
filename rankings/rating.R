@@ -2,7 +2,6 @@ library(tidyverse)
 library(magrittr)
 
 # TODO date weights
-# TODO blowout rule
 
 max_iterations <- 10000
 
@@ -117,22 +116,41 @@ ratings_initial <-
 
 # Initialize ratings and scores for the loop
 ratings_old <- ratings_initial
-ratings_new <- tibble()
+ratings_new <- tibble(team = character(), n_games = integer())
+rankings_old <- 
+  ratings_old %>% 
+  select(-n_games) %>% 
+  mutate(
+    rank = row_number()
+  )
+rankings_new <- tibble()
 scores <- 
   scores_initial %>% 
+  # Attach initial team rating
   inner_join(ratings_initial)
 i <- 1
+message("Starting loop")
 
 # Keep looping through and re-rating until the ratings stabilize and 
 # `ratings_old` is the same as `ratings_new`
-while (i < max_iterations & !identical(ratings_old, ratings_new)) {
-  
-  message(glue::glue("On iteration {i}"))
+while (i < max_iterations & 
+       !identical(rankings_old, rankings_new)) {
   
   # If this isn't the first iteration, set the team ratings we just calculated
   # to `ratings_old` so we can re-calculate new ratings and see if they match
-  if (!identical(tibble(), ratings_new)) {
+  if (nrow(ratings_new) > 0) {
     ratings_old <- ratings_new
+    rankings_old <- rankings_new
+    
+    n_diffs <- 
+      anti_join(
+        rankings_old, 
+        rankings_new,
+        by = c("team", "rank")
+      ) %>% 
+      nrow()
+    
+    message(glue::glue("On iteration {i}. % difference: {n_diffs}/{nrow(ratings_old)}"))
   }
   
   # Attach each opponent's latest rating to game scores
@@ -168,7 +186,8 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
         )
     ) 
   
-  # Count number of blowouts per team
+  # There are new games that are designated as blowouts because we've 
+  # re-calculated every team's rating. So count number of new blowouts per team
   n_blowouts <- 
     scores %>% 
     group_by(team) %>% 
@@ -189,6 +208,7 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
     ) %>% 
     filter(n_blowouts_to_remove > 0)
   
+  # Dataframe of blowout games to get rid of
   blowouts_to_remove <- 
     scores %>% 
     inner_join(n_blowouts_to_remove, by = c("team", "n_games")) %>% 
@@ -213,17 +233,21 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
     ) %>% 
     arrange(desc(rating_team)) 
   
+  # Add ranking number
+  rankings_new <- 
+    ratings_new %>% 
+    select(-n_games) %>% 
+    mutate(
+      rank = row_number()
+    )
+  
   print(ratings_new)
   
   i <- i + 1
 }
 
-# Add ranking number
-rankings <- 
-  ratings_new %>% 
-  mutate(
-    rank = row_number()
-  )
+
+rankings <- rankings_new
 
 readr::write_csv(rankings, glue::glue(here::here("rankings/rankings.csv")))
 
