@@ -1,4 +1,5 @@
 library(tidyverse)
+library(magrittr)
 
 # TODO date weights
 # TODO blowout rule
@@ -23,10 +24,6 @@ score_weight_function <- function(w, l) {
 
 r_function <- function(w, l) {
   l / (w - 1)
-}
-
-blowout_function <- function(w, l) {
-  
 }
 
 # For each game add score weights and get the abs value of the rating differential
@@ -121,7 +118,9 @@ ratings_initial <-
 # Initialize ratings and scores for the loop
 ratings_old <- ratings_initial
 ratings_new <- tibble()
-scores <- scores_initial
+scores <- 
+  scores_initial %>% 
+  inner_join(ratings_initial)
 i <- 1
 
 # Keep looping through and re-rating until the ratings stabilize and 
@@ -138,7 +137,7 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
   
   # Attach each opponent's latest rating to game scores
   scores %<>% 
-    select(-rating_opponent) %>% 
+    select(-rating_opponent, -rating_team, -n_games) %>% 
     inner_join(
       ratings_old %>% 
         select(-n_games) %>% 
@@ -157,16 +156,50 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
     # (game `rating_diff` stays constant)
     mutate(
       rating_game = rating_opponent + rating_diff,
-      # Add a boolean for whether each game was a blowout
+      # Add a boolean for whether each game was a blowout given 
+      # each team's new rating
       blowout = 
         case_when(
+          # TODO: figure out if this should also be 
+          # `rating_team - rating_opponent < -600` (aka when your team is way 
+          # worse than the other team do we still count the blowout)
           rating_team - rating_opponent > 600 & blowout_score ~ TRUE,
           TRUE ~ FALSE
         )
+    ) 
+  
+  # Count number of blowouts per team
+  n_blowouts <- 
+    scores %>% 
+    group_by(team) %>% 
+    summarise(n_blowouts = sum(blowout))
+  
+  # Get a dataframe of how many blowouts to remove per team, if not 0
+  n_blowouts_to_remove <- 
+    scores %>% 
+    distinct(team, n_games) %>% 
+    inner_join(n_blowouts, by = "team") %>% 
+    mutate(
+      n_blowouts_to_remove = 
+        case_when(
+          # Need to have at least 5 games that aren't blowouts
+          n_games - n_blowouts > 5 ~ n_blowouts,
+          TRUE ~ 0
+        )
     ) %>% 
-    # TODO only remove blowouts when team will still have >= 5 games after they're removed
-    # Remove blowouts
-    filter(!blowout)
+    filter(n_blowouts_to_remove > 0)
+  
+  blowouts_to_remove <- 
+    scores %>% 
+    inner_join(n_blowouts_to_remove, by = c("team", "n_games")) %>% 
+    filter(blowout) %>% 
+    select(team, n_blowouts_to_remove, game_number) %>% 
+    arrange(team) 
+  
+  # Use the `game_number` to remove blowouts
+  # Re-name this variable `scores` so it'll be used in the next iteration
+  scores %<>%  
+    anti_join(blowouts_to_remove, by = c("game_number", "team"))
   
   # Re-calc the team average ratings
   ratings_new <- 
@@ -174,6 +207,8 @@ while (i < max_iterations & !identical(ratings_old, ratings_new)) {
     group_by(team) %>% 
     summarise(
       rating_team = rating_game %>% weighted.mean(score_weight) %>% round(),
+      # Re-calc the number of games each team has now that we've removed some
+      # for blowout rule
       n_games = n()
     ) %>% 
     arrange(desc(rating_team)) 
