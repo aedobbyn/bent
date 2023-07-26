@@ -150,17 +150,14 @@ rankings_old <-
     rank = row_number()
   )
 rankings_new <- tibble(team = character(), rating_team = double(), rank = integer())
-scores <- 
-  scores_initial %>% 
-  # Attach initial team rating
-  inner_join(ratings_initial)
+scores <- scores_initial
 i <- 1
 
-# Keep looping through and re-rating until the ratings stabilize and 
-# `ratings_old` is the same as `ratings_new`
+# Keep looping through and re-rating until the ratings stabilize
 while (i < max_iterations & 
        !identical(rankings_old %>% select(team, rank), rankings_new  %>% select(team, rank))) {
   
+  # See how many differences in rankings this last iteration produced
   n_diffs <- 
     anti_join(
       rankings_old, 
@@ -179,8 +176,10 @@ while (i < max_iterations &
   }
   
   # Attach each opponent's latest rating to game scores
-  scores %<>% 
-    select(-rating_opponent, -rating_team, -n_games) %>% 
+  scores_joined <- 
+    scores %>% 
+    select(-rating_opponent, -rating_game) %>% 
+    # Attach each opponent's ratings from the last iteration
     inner_join(
       ratings_old %>% 
         select(-n_games) %>% 
@@ -214,13 +213,13 @@ while (i < max_iterations &
   # There are new games that are designated as blowouts because we've 
   # re-calculated every team's rating. So count number of new blowouts per team
   n_blowouts <- 
-    scores %>% 
+    scores_joined %>% 
     group_by(team) %>% 
     summarise(n_blowouts = sum(blowout))
   
   # Get a dataframe of how many blowouts to remove per team, if not 0
   n_blowouts_to_remove <- 
-    scores %>% 
+    scores_joined %>% 
     rowwise() %>% 
     distinct(team, n_games) %>% 
     inner_join(n_blowouts, by = "team") %>% 
@@ -239,10 +238,11 @@ while (i < max_iterations &
   # Dataframe of blowout games to get rid of
   blowouts_to_remove <- 
     if (nrow(n_blowouts_to_remove) > 0) {
-      scores %>% 
+      scores_joined %>% 
         inner_join(n_blowouts_to_remove, by = c("team", "n_games")) %>% 
         filter(blowout) %>% 
         select(team, n_blowouts_to_remove, game_number, rating_game) %>% 
+        # Worst games for our team to the top so that these get removed first
         arrange(team, rating_game) %>% 
         group_by(team) %>% 
         slice(1:n_blowouts_to_remove) %>% 
@@ -251,13 +251,16 @@ while (i < max_iterations &
       tibble(team = character(), game_number = integer())
     }
   
+  message(glue::glue("Removing {nrow(blowouts_to_remove)} blowout games."))
+  
   # Use the `game_number` to remove blowouts
-  scores %<>%  
+  scores_filtered <- 
+    scores_joined %>% 
     anti_join(blowouts_to_remove, by = c("game_number", "team"))
   
   # Re-calc the team average ratings
   ratings_new <- 
-    scores %>% 
+    scores_filtered %>% 
     group_by(team) %>% 
     summarise(
       rating_team = rating_game %>% weighted.mean(weight) %>% round(),
