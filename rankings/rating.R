@@ -141,16 +141,20 @@ ratings_initial <-
   arrange(desc(rating_team))
 
 # Initialize ratings and scores for the loop
-ratings_old <- ratings_initial
+ratings_old <- ratings_initial %>% select(-n_games)
 ratings_new <- tibble(team = character(), rating_team = double(), n_games = integer())
 rankings_old <- 
   ratings_old %>% 
-  select(-n_games) %>% 
   mutate(
     rank = row_number()
   )
 rankings_new <- tibble(team = character(), rating_team = double(), rank = integer())
-scores <- scores_initial
+scores <- 
+  scores_initial %>% 
+  inner_join(
+    ratings_initial %>% 
+      select(team, n_games)
+  )
 i <- 1
 
 # Keep looping through and re-rating until the ratings stabilize
@@ -182,14 +186,13 @@ while (i < max_iterations &
     # Attach each opponent's ratings from the last iteration
     inner_join(
       ratings_old %>% 
-        select(-n_games) %>% 
         rename(
           rating_opponent = rating_team,
           opponent = team
         ),
       by = "opponent"
     ) %>% 
-    # Attach team's latest rating for blowout rule calc
+    # Attach team's latest rating for blowout rule calc & n games
     inner_join(
       ratings_old,
       by = "team"
@@ -263,17 +266,13 @@ while (i < max_iterations &
     scores_filtered %>% 
     group_by(team) %>% 
     summarise(
-      rating_team = rating_game %>% weighted.mean(weight) %>% round(),
-      # Re-calc the number of games each team has now that we've removed some
-      # for blowout rule
-      n_games = n()
+      rating_team = rating_game %>% weighted.mean(weight) %>% round()
     ) %>% 
     arrange(desc(rating_team)) 
   
   # Add ranking number
   rankings_new <- 
     ratings_new %>% 
-    select(-n_games) %>% 
     mutate(
       rank = row_number()
     )
