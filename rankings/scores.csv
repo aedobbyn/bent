@@ -1,4 +1,69 @@
 team_1,team_2,score_1,score_2,event,date
+Wave,Vice,9,10,Philly Open 2023,2023-08-05
+Pine Baroness,Dissent,13,2,Philly Open 2023,2023-08-05
+Incline,Versa,10,7,Philly Open 2023,2023-08-05
+Agency,Pine Baroness,11,8,Philly Open 2023,2023-08-05
+Wave,Incline,12,7,Philly Open 2023,2023-08-05
+Vice,Versa,12,4,Philly Open 2023,2023-08-05
+Agency,Incline,13,3,Philly Open 2023,2023-08-05
+Wave,Pine Baroness,13,6,Philly Open 2023,2023-08-05
+Vice,Dissent,12,3,Philly Open 2023,2023-08-05
+Dissent,Incline,2,13,Philly Open 2023,2023-08-05
+Agency,Versa,13,3,Philly Open 2023,2023-08-05
+Vice,Pine Baroness,11,7,Philly Open 2023,2023-08-05
+Agency,Dissent,13,2,Philly Open 2023,2023-08-05
+Pine Baroness,Incline,8,10,Philly Open 2023,2023-08-05
+Wave,Versa,13,1,Philly Open 2023,2023-08-05
+Agency,Wave,8,9,Philly Open 2023,2023-08-05
+Dissent,Versa,7,9,Philly Open 2023,2023-08-05
+Vice,Incline,10,8,Philly Open 2023,2023-08-05
+Agency,Vice,10,7,Philly Open 2023,2023-08-05
+Wave,Dissent,13,2,Philly Open 2023,2023-08-05
+Pine Baroness,Versa,11,4,Philly Open 2023,2023-08-05
+Siege,Drift,15,2,TCT Select Flight East 2023,2023-07-29
+Heist,Notorious C.L.E.,15,1,TCT Select Flight East 2023,2023-07-29
+Siege,Heist,13,4,TCT Select Flight East 2023,2023-07-29
+Notorious C.L.E.,Drift,6,10,TCT Select Flight East 2023,2023-07-29
+Indy Rogue,Dish,15,4,TCT Select Flight East 2023,2023-07-29
+Indy Rogue,Crush City,9,11,TCT Select Flight East 2023,2023-07-29
+Crush City,Dish,11,5,TCT Select Flight East 2023,2023-07-29
+Starling Ultimate,Autonomous,15,0,TCT Select Flight East 2023,2023-07-29
+Stellar,Zephyr,7,5,TCT Select Flight East 2023,2023-07-29
+Starling Ultimate,Stellar,13,5,TCT Select Flight East 2023,2023-07-29
+Zephyr,Autonomous,14,2,TCT Select Flight East 2023,2023-07-29
+Rival,Shiver,10,5,TCT Select Flight East 2023,2023-07-29
+Banshee,Brooklyn Book Club,7,9,TCT Select Flight East 2023,2023-07-29
+Rival,Brooklyn Book Club,7,8,TCT Select Flight East 2023,2023-07-29
+Banshee,Shiver,11,8,TCT Select Flight East 2023,2023-07-29
+Drift,Shiver,9,8,TCT Select Flight East 2023,2023-07-29
+Zephyr,Shiver,11,9,TCT Select Flight East 2023,2023-07-29
+Zephyr,Drift,12,7,TCT Select Flight East 2023,2023-07-29
+Banshee,Notorious C.L.E.,15,9,TCT Select Flight East 2023,2023-07-29
+Dish,Autonomous,14,5,TCT Select Flight East 2023,2023-07-29
+Banshee,Dish,8,12,TCT Select Flight East 2023,2023-07-29
+Autonomous,Notorious C.L.E.,12,9,TCT Select Flight East 2023,2023-07-29
+Siege,Starling Ultimate,12,14,TCT Select Flight East 2023,2023-07-29
+Siege,Indy Rogue,14,9,TCT Select Flight East 2023,2023-07-29
+Starling Ultimate,Rival,13,10,TCT Select Flight East 2023,2023-07-29
+Siege,Stellar,15,6,TCT Select Flight East 2023,2023-07-29
+Indy Rogue,Brooklyn Book Club,12,10,TCT Select Flight East 2023,2023-07-29
+Starling Ultimate,Heist,15,4,TCT Select Flight East 2023,2023-07-29
+Rival,Crush City,13,9,TCT Select Flight East 2023,2023-07-29
+Banshee,Stellar,5,12,TCT Select Flight East 2023,2023-07-29
+Indy Rogue,Drift,14,6,TCT Select Flight East 2023,2023-07-29
+Autonomous,Brooklyn Book Club,3,15,TCT Select Flight East 2023,2023-07-29
+Starling Ultimate,Shiver,15,3,TCT Select Flight East 2023,2023-07-29
+Dish,Heist,9,12,TCT Select Flight East 2023,2023-07-29
+Rival,Zephyr,13,6,TCT Select Flight East 2023,2023-07-29
+Notorious C.L.E.,Crush City,3,15,TCT Select Flight East 2023,2023-07-29
+Indy Rogue,Rival,14,10,TCT Select Flight East 2023,2023-07-29
+Brooklyn Book Club,Crush City,7,14,TCT Select Flight East 2023,2023-07-29
+Stellar,Brooklyn Book Club,7,12,TCT Select Flight East 2023,2023-07-29
+Heist,Crush City,8,14,TCT Select Flight East 2023,2023-07-29
+Stellar,Heist,10,12,TCT Select Flight East 2023,2023-07-29
+Zephyr,Dish,11,7,TCT Select Flight East 2023,2023-07-29
+Drift,Banshee,12,8,TCT Select Flight East 2023,2023-07-29
+Shiver,Autonomous,14,2,TCT Select Flight East 2023,2023-07-29
 Iris,Pine Baroness,13,5,Boston Invite 2023,2023-07-15
 Vintage,Rip Tide,8,7,Boston Invite 2023,2023-07-15
 Iris,Rip Tide,13,2,Boston Invite 2023,2023-07-15
@@ -263,61 +328,3 @@ FAB,Seven Devils,13,6,Summer Solstice 2023,2023-06-24
 FAB,Portland Rain Check,12,7,Summer Solstice 2023,2023-06-24
 Seven Devils,Seattle Soul,13,3,Summer Solstice 2023,2023-06-24
 Portland Rain Check,Seattle Soul,8,5,Summer Solstice 2023,2023-06-24
-Vengeance,Inferno,15,0,Texas 2 Finger 2023,2023-06-24
-Hayride,Inferno,15,1,Texas 2 Finger 2023,2023-06-24
-Hayride,Vengeance,7,8,Texas 2 Finger 2023,2023-06-24
-Crush City,TWISTED,13,3,Texas 2 Finger 2023,2023-06-24
-Firewheel,San Antonio Problems,7,11,Texas 2 Finger 2023,2023-06-24
-Crush City,San Antonio Problems,11,3,Texas 2 Finger 2023,2023-06-24
-Firewheel,TWISTED,7,12,Texas 2 Finger 2023,2023-06-24
-Crush City,Firewheel,13,2,Texas 2 Finger 2023,2023-06-24
-TWISTED,San Antonio Problems,5,8,Texas 2 Finger 2023,2023-06-24
-Vengeance,Crush City,10,6,Texas 2 Finger 2023,2023-06-24
-Hayride,TWISTED,11,2,Texas 2 Finger 2023,2023-06-24
-San Antonio Problems,Inferno,13,1,Texas 2 Finger 2023,2023-06-24
-Inferno,Firewheel,3,8,Texas 2 Finger 2023,2023-06-24
-TWISTED,Firewheel,7,5,Texas 2 Finger 2023,2023-06-24
-TWISTED,Inferno,11,2,Texas 2 Finger 2023,2023-06-24
-Vengeance,Crush City,10,5,Texas 2 Finger 2023,2023-06-24
-Vengeance,San Antonio Problems,12,5,Texas 2 Finger 2023,2023-06-24
-Hayride,Crush City,3,12,Texas 2 Finger 2023,2023-06-24
-San Antonio Problems,Hayride,8,9,Texas 2 Finger 2023,2023-06-24
-Indy Rogue,Y'all,15,2,SCINNY,2023-06-17
-KnoxFusion,Sureshot,15,6,SCINNY,2023-06-17
-Solstice,Bullseye,12,13,SCINNY,2023-06-17
-Indy Rogue,KnoxFusion,15,6,SCINNY,2023-06-17
-Y'all,Solstice,14,3,SCINNY,2023-06-17
-Sureshot,Bullseye,15,8,SCINNY,2023-06-17
-Indy Rogue,Solstice,15,2,SCINNY,2023-06-17
-KnoxFusion,Bullseye,15,6,SCINNY,2023-06-17
-Y'all,Sureshot,15,4,SCINNY,2023-06-17
-Indy Rogue,Bullseye,15,1,SCINNY,2023-06-17
-KnoxFusion,Y'all,15,6,SCINNY,2023-06-17
-Solstice,Sureshot,6,15,SCINNY,2023-06-17
-Indy Rogue,Sureshot,15,3,SCINNY,2023-06-17
-KnoxFusion,Solstice,15,2,SCINNY,2023-06-17
-Y'all,Bullseye,15,3,SCINNY,2023-06-17
-Indy Rogue,KnoxFusion,15,4,SCINNY,2023-06-17
-Indy Rogue,Sureshot,15,1,SCINNY,2023-06-17
-KnoxFusion,Y'all,14,8,SCINNY,2023-06-17
-Sureshot,Y'all,9,14,SCINNY,2023-06-17
-Bullseye,Solstice,8,11,SCINNY,2023-06-17
-FAB,Off Their Rockers,15,2,Bay Area Ultimate Classic 2023,2023-06-10
-FAB,Tempo,15,1,Bay Area Ultimate Classic 2023,2023-06-10
-Void Cat Rewind,Off Their Rockers,15,2,Bay Area Ultimate Classic 2023,2023-06-10
-FAB,Void Cat Rewind,10,8,Bay Area Ultimate Classic 2023,2023-06-10
-Off Their Rockers,Tempo,9,8,Bay Area Ultimate Classic 2023,2023-06-10
-Void Cat Rewind,Tempo,15,2,Bay Area Ultimate Classic 2023,2023-06-10
-LOL,Ultraviolet,15,0,Bay Area Ultimate Classic 2023,2023-06-10
-LOL,Just Add Water,15,2,Bay Area Ultimate Classic 2023,2023-06-10
-Just Add Water,Ultraviolet,8,11,Bay Area Ultimate Classic 2023,2023-06-10
-FAB,Just Add Water,15,1,Bay Area Ultimate Classic 2023,2023-06-10
-Void Cat Rewind,Just Add Water,15,5,Bay Area Ultimate Classic 2023,2023-06-10
-Off Their Rockers,Ultraviolet,12,9,Bay Area Ultimate Classic 2023,2023-06-10
-Tempo,Ultraviolet,5,7,Bay Area Ultimate Classic 2023,2023-06-10
-Void Cat Rewind,LOL,5,15,Bay Area Ultimate Classic 2023,2023-06-10
-Tempo,Just Add Water,8,11,Bay Area Ultimate Classic 2023,2023-06-10
-Off Their Rockers,LOL,2,15,Bay Area Ultimate Classic 2023,2023-06-10
-Tempo,LOL,3,15,Bay Area Ultimate Classic 2023,2023-06-10
-Off Their Rockers,Just Add Water,8,7,Bay Area Ultimate Classic 2023,2023-06-10
-Void Cat Rewind,Ultraviolet,15,3,Bay Area Ultimate Classic 2023,2023-06-10
