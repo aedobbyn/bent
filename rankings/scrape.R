@@ -45,6 +45,8 @@ event_url_tbl <-
       month >= 6
   )
 
+# TODO filter out scores from non-US teams
+
 # Get a dataframe of all the scores on the page
 scrape_scores <- function(url) {
   ### Pool Play ###
@@ -175,7 +177,7 @@ for (i in 1:nrow(event_url_tbl)) {
   event_name <- event_url_tbl$event_name[i]
   start_date <- event_url_tbl$start_date[i]
   
-  message(glue::glue("{i} of {nrow(event_url_tbl) - 1}: {event_name} ({url})"))
+  message(glue::glue("{i} of {nrow(event_url_tbl)}: {event_name} ({url})"))
   
   this <- try_scrape_scores(url) 
   
