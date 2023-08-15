@@ -21,6 +21,16 @@ scores_raw <-
     col_types = "ccii"
   )
 
+us_teams <- readr::read_csv(here::here("rankings/us_teams.csv"))
+
+# Filter games to just US teams
+scores_us <- 
+  scores_raw %>% 
+  filter(
+    team_1 %in% us_teams$team &
+      team_2 %in% us_teams$team
+  )
+
 # Rating differential function
 diff_function <- function(r) {
   125 + 475 * ((sin(min(1, (1 - r)/0.5) * 0.4 * pi)) / sin(0.4 * pi))
@@ -39,7 +49,7 @@ score_weight_function <- function(w, l) {
 # For each game, add score weights, date weights, and get the abs value of the 
 # rating differential
 scores_weighted <- 
-  scores_raw %>% 
+  scores_us %>% 
   rowwise() %>% 
   mutate(
     team_1_won = score_1 > score_2,
