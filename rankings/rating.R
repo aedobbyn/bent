@@ -240,10 +240,8 @@ while (i < max_iterations & !between(mean_ratings_diff, .9999, 1.0001)) {
       # each team's new rating
       blowout =
         case_when(
-          # TODO: figure out if this should also be
-          # `rating_team - rating_opponent < -600` (aka when your team is way
-          # worse than the other team do we still count the blowout)
-          rating_team - rating_opponent > 600 & blowout_score ~ TRUE,
+          abs(rating_team - rating_opponent) > 600 & blowout_score ~
+            TRUE,
           TRUE ~ FALSE
         )
     )
