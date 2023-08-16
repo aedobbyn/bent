@@ -9,10 +9,11 @@ first_week <- lubridate::week("2023-06-01")
 last_week <- lubridate::week("2023-09-19")
 week_diff <- last_week - first_week
 date_weight_diff <- 0.5 / week_diff
+week_n <- length(first_week:last_week)
 date_weight_tbl <-
   tibble(
     week = first_week:last_week,
-    date_weight = seq(0.5, 1, date_weight_diff)
+    date_weight = scales::rescale(exp(1:week_n / week_n), c(.5, 1))
   )
 
 scores_raw <-
