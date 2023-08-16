@@ -218,7 +218,7 @@ while (i < max_iterations & !identical(
     # Attach each opponent's ratings from the last iteration
     inner_join(
       ratings_old %>%
-        rename(
+        select(
           rating_opponent = rating_team,
           opponent = team
         ),
@@ -226,7 +226,11 @@ while (i < max_iterations & !identical(
     ) %>%
     # Attach team's latest rating for blowout rule calc & n games
     inner_join(
-      ratings_old,
+      ratings_old %>%
+        select(
+          team,
+          rating_team
+        ),
       by = "team"
     ) %>%
     # Get the latest game rating given the new opponent team rating
