@@ -258,38 +258,22 @@ while (i < max_iterations & !between(mean_ratings_diff, .9999, 1.0001)) {
   # Get a dataframe of how many blowouts to remove per team, if not 0
   n_blowouts_to_remove <-
     scores_joined %>%
-    rowwise() %>%
-    distinct(team, n_games) %>%
     inner_join(n_blowouts, by = "team") %>%
-    mutate(
-      n_blowouts_to_remove =
-        case_when(
-          # Need to have at least 5 games that aren't blowouts
-          # Remove fewer than all the blowouts if we won't be left with 5 games
-          n_games > 5 & n_blowouts > 0 ~ min(n_games - 5, n_blowouts),
-          TRUE ~ 0
-        )
-    ) %>%
-    filter(n_blowouts_to_remove > 0) %>%
-    ungroup()
+    # Need to have at least 5 games that aren't blowouts
+    filter(
+      n_games - n_blowouts >= 5
+    )
 
   # Dataframe of blowout games to get rid of
   blowouts_to_remove <-
     if (nrow(n_blowouts_to_remove) > 0) {
       scores_joined %>%
-        inner_join(n_blowouts_to_remove, by = c("team", "n_games")) %>%
+        semi_join(n_blowouts_to_remove, by = c("team")) %>%
         filter(blowout) %>%
         select(
           team,
-          n_blowouts_to_remove,
-          game_number,
-          rating_game
-        ) %>%
-        # Worst games for our team to the top so that these get removed first
-        arrange(team, rating_game) %>%
-        group_by(team) %>%
-        slice(1:n_blowouts_to_remove) %>%
-        ungroup()
+          game_number
+        )
     } else {
       tibble(team = character(), game_number = integer())
     }
