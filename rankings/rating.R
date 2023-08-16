@@ -269,7 +269,6 @@ while (i < max_iterations & !between(mean_ratings_diff, .9999, 1.0001)) {
         semi_join(n_blowouts_to_remove, by = c("team")) %>%
         filter(blowout) %>%
         select(
-          team,
           game_number
         )
     } else {
@@ -285,7 +284,7 @@ while (i < max_iterations & !between(mean_ratings_diff, .9999, 1.0001)) {
   # Use the `game_number` to remove blowouts
   scores_filtered <-
     scores_joined %>%
-    anti_join(blowouts_to_remove, by = c("game_number", "team"))
+    anti_join(blowouts_to_remove, by = c("game_number"))
 
   # Re-calc the team average ratings
   ratings_new <-
