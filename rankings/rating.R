@@ -83,8 +83,8 @@ scores_weighted <-
         !team_1_won & score_2 > score_1 * 2 + 1 ~ TRUE,
         TRUE ~ FALSE
       )
-  ) %>% 
-  ungroup() %>% 
+  ) %>%
+  ungroup() %>%
   mutate(
     game_number = row_number()
   ) %>%
