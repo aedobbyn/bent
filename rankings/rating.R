@@ -184,12 +184,10 @@ scores <-
       select(team, n_games)
   )
 i <- 1
+mean_ratings_diff <- 0
 
 # Keep looping through and re-rating until the ratings stabilize
-while (i < max_iterations & !identical(
-  rankings_old %>% select(team, rank),
-  rankings_new %>% select(team, rank)
-)) {
+while (i < max_iterations & !between(mean_ratings_diff, .9999, 1.0001)) {
   # See how many differences in rankings this last iteration produced
   n_diffs <-
     anti_join(
@@ -324,6 +322,13 @@ while (i < max_iterations & !identical(
     )
 
   print(ratings_new)
+
+  mean_ratings_diff <-
+    mean(
+      arrange(ratings_new, team)$rating_team /
+        arrange(ratings_old, team)$rating_team,
+      na.rm = TRUE
+    )
 
   i <- i + 1
 }
