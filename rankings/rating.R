@@ -22,6 +22,15 @@ scores_raw <-
     col_types = "ccii"
   )
 
+score_projections <- 
+  googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1e9ZnURe13xdfcqiiB5pxn1WU9QW0nIFEVf4MOXm5bsk/edit#gid=0") %>% 
+  mutate(
+    date = lubridate::as_date(date)
+  )
+
+scores_raw %<>% 
+  bind_rows(score_projections)
+
 us_teams <- readr::read_csv(here::here("rankings/us_teams.csv"))
 
 # Filter games to just US teams
