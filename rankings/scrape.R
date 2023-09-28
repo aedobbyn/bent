@@ -3,47 +3,61 @@ library(foreach)
 library(magrittr)
 
 # List of all women's division club sanctioned events
-event_list_url <- "https://play.usaultimate.org/events/league/?ViewAll=false&IsLeagueType=false&IsClinic=false&FilterByCategory=AE&CompetitionLevelId=22&GenderDivisionId=2&EventTypeId=16"
+event_list_url_reg_szn <- "https://play.usaultimate.org/events/league/?ViewAll=false&IsLeagueType=false&IsClinic=false&FilterByCategory=AE&CompetitionLevelId=22&GenderDivisionId=2&EventTypeId=16"
 
-event_html <- 
-  event_list_url %>% 
-  rvest::read_html()
+event_list_url_post_szn <- "https://play.usaultimate.org/events/league/?ViewAll=false&IsLeagueType=false&IsClinic=false&FilterByCategory=AE&CompetitionLevelId=22&EventTypeId=8"
 
-# Grab the url hrefs
-event_urls <- 
+grab_event_url_tbl <- function(url) {
+  event_html <- 
+    url %>% 
+    rvest::read_html()
+  
+  # Grab the url hrefs
+  event_urls <- 
+    event_html %>% 
+    # Just past events
+    rvest::html_nodes(".alt-style-2 td") %>% 
+    rvest::html_elements("a") %>% 
+    rvest::html_attr("href") %>% 
+    str_c("/schedule/Women/Club-Women/") %>% 
+    c("https://play.usaultimate.org/events/2023-US-Open-Club-Championships---ICC/schedule/Women/Club-Women/")
+  
+  # Grab table text
   event_html %>% 
-  # Just past events
-  rvest::html_nodes(".alt-style-2 td") %>% 
-  rvest::html_elements("a") %>% 
-  rvest::html_attr("href") %>% 
-  str_c("/schedule/Women/Club-Women/") %>% 
-  c("https://play.usaultimate.org/events/2023-US-Open-Club-Championships---ICC/schedule/Women/Club-Women/")
-
-# Grab table text
-event_url_tbl <- 
-  event_html %>% 
-  rvest::html_table() %>% 
-  .[[2]] %>% 
-  janitor::clean_names() %>% 
-  select(event_name, dates) %>% 
-  add_row(
-    tibble(
-      event_name = "US Open",
-      dates = "Aug 04, 2023 - Aug 06, 2023"
+    rvest::html_table() %>% 
+    .[[2]] %>% 
+    janitor::clean_names() %>% 
+    select(event_name, dates) %>% 
+    add_row(
+      tibble(
+        event_name = "US Open",
+        dates = "Aug 04, 2023 - Aug 06, 2023"
+      )
+    ) %>% 
+    mutate(
+      start_date = dates %>% str_remove(" - .*") %>% lubridate::mdy(),
+      month = start_date %>% lubridate::month(),
+      year = start_date %>% lubridate::year(),
+      # Attach the urls
+      url = event_urls
+    ) %>% 
+    # We just want events that happened in June or after of this year
+    filter(
+      year == lubridate::year(lubridate::today()) &
+        month >= 6
     )
+}
+
+# Grab regular and post season url tbls and combine
+event_url_tbl_reg_szn <- grab_event_url_tbl(event_list_url_reg_szn)
+event_url_tbl_post_szn <- grab_event_url_tbl(event_list_url_post_szn)
+
+event_url_tbl <- 
+  bind_rows(
+    event_url_tbl_reg_szn,
+    event_url_tbl_post_szn
   ) %>% 
-  mutate(
-    start_date = dates %>% str_remove(" - .*") %>% lubridate::mdy(),
-    month = start_date %>% lubridate::month(),
-    year = start_date %>% lubridate::year(),
-    # Attach the urls
-    url = event_urls
-  ) %>% 
-  # We just want events that happened in June or after of this year
-  filter(
-    year == lubridate::year(lubridate::today()) &
-      month >= 6
-  )
+  distinct()
 
 # TODO filter out scores from non-US teams
 
@@ -194,6 +208,27 @@ for (i in 1:nrow(event_url_tbl)) {
   
   Sys.sleep(runif(1, 1, 2))
 }
+
+correct_bent_6ixers_score <- 
+  tibble(
+    team_1 = "BENT",
+    team_2 = "6ixers",
+    score_1 = "12",
+    score_2 = "10",
+    event = "2023 Northeast Women's Regional Championship",
+    date = lubridate::as_date("2023-09-23")
+  )
+
+out %<>% 
+  filter(
+    !(
+      event == "2023 Northeast Women's Regional Championship" &
+      team_1 == "BENT" & 
+      team_2 == "6ixers"
+    )
+  ) %>% 
+  bind_rows(correct_bent_6ixers_score) %>% 
+  arrange(date, event)
 
 # Write to csv
 readr::write_csv(out, glue::glue(here::here("rankings/scores.csv")))
