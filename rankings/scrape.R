@@ -100,7 +100,22 @@ scrape_scores <- function(url) {
         into = c("score_1", "score_2"),
         sep = "-"
       ) %>% 
-      mutate_all(str_squish)
+      mutate_all(str_squish) %>% 
+      # In a W-F situation, wins into 15 and forfeits into 0
+      mutate(
+        score_1 = 
+          case_when(
+            score_1 == "W" ~ "15",
+            score_1 == "F" ~ "0",
+            TRUE ~ score_1
+          ),
+        score_2 = 
+          case_when(
+            score_2 == "W" ~ "15",
+            score_2 == "F" ~ "0",
+            TRUE ~ score_2
+          )
+      ) 
   }
   
   # Filter out seeding tables, clean each pool play table and bind them into

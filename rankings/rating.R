@@ -20,7 +20,7 @@ scores_raw <-
   readr::read_csv(
     glue::glue(here::here("rankings/scores.csv")),
     col_types = "ccii"
-  ) %>% 
+  ) %>%
   tidyr::drop_na(score_1)
 
 us_teams <- readr::read_csv(here::here("rankings/us_teams.csv"))
