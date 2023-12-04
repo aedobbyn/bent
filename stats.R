@@ -35,7 +35,7 @@ long <-
   clean %>% 
   select(
     point_number, tournament, opponent, line, player_0:player_6,
-    event_type, action, passer, receiver, defender
+    event_type, action, passer, receiver, defender, elapsed_time_secs
   ) %>% 
   filter(!str_detect(action, "Pull")) %>% 
   tidyr::pivot_longer(
@@ -63,3 +63,14 @@ actions_per_player <-
 actions_per_type_per_player <- 
   actions %>% 
   count(player, action, sort = TRUE)
+
+seconds_played_per_player <- 
+  long %>% 
+  distinct(point_number, tournament, opponent, player, elapsed_time_secs) %>% 
+  group_by(player) %>% 
+  summarise(
+    sum_time = sum(elapsed_time_secs)
+  ) %>% 
+  arrange(desc(sum_time))
+  
+  
