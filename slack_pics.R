@@ -1,13 +1,19 @@
 library(tidyverse)
 library(magrittr)
 
+YEAR <- 
+  Sys.Date() %>%
+  substr(1, 4) %>%
+  as.integer() %>% 
+  subtract(1L)
+
 # Path to directory of  slack json messages
-dir <- here::here("slack", "bent_2022_slack", "teampics")
+dir <- here::here("slack", glue::glue("bent_{YEAR}_slack"), "teampics")
 # List all the json files in here
 fls <- fs::dir_ls(dir)
 
 # Path to where we'll save pics
-pics_dir <- here::here("slack", "pics")
+pics_dir <- here::here("slack", glue::glue("pics_{YEAR}"))
 # Create the pics dir
 fs::dir_create(pics_dir)
 
