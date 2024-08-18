@@ -224,25 +224,7 @@ for (i in 1:nrow(event_url_tbl)) {
   Sys.sleep(runif(1, 1, 2))
 }
 
-correct_bent_6ixers_score <- 
-  tibble(
-    team_1 = "BENT",
-    team_2 = "6ixers",
-    score_1 = "12",
-    score_2 = "10",
-    event = "2023 Northeast Women's Regional Championship",
-    date = lubridate::as_date("2023-09-23")
-  )
-
 out %<>% 
-  filter(
-    !(
-      event == "2023 Northeast Women's Regional Championship" &
-      team_1 == "BENT" & 
-      team_2 == "6ixers"
-    )
-  ) %>% 
-  bind_rows(correct_bent_6ixers_score) %>% 
   arrange(date, event)
 
 # Write to csv

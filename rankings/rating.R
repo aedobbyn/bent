@@ -5,8 +5,8 @@ max_iterations <- 10000
 
 # Assign each week a date weight. First week of the season gets 0.5 and last
 # week gets 1
-first_week <- lubridate::week("2023-06-01")
-last_week <- lubridate::week("2023-09-19")
+first_week <- lubridate::week("2024-06-15")
+last_week <- lubridate::week("2024-09-19")
 week_diff <- last_week - first_week
 date_weight_diff <- 0.5 / week_diff
 week_n <- length(first_week:last_week)

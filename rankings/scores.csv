@@ -1,571 +1,451 @@
 team_1,team_2,score_1,score_2,event,date
-Jackwagon,Molly Blue,5,15,Colorado Summer Solstice 2023,2023-06-24
-Trainwreck,Colorado Cutthroat: Youth Club U-20 Girls,10,2,Colorado Summer Solstice 2023,2023-06-24
-Jackwagon,Colorado Cutthroat: Youth Club U-20 Girls,6,7,Colorado Summer Solstice 2023,2023-06-24
-Trainwreck,Molly Blue,3,15,Colorado Summer Solstice 2023,2023-06-24
-Jackwagon,Trainwreck,4,11,Colorado Summer Solstice 2023,2023-06-24
-Molly Blue,Colorado Cutthroat: Youth Club U-20 Girls,12,6,Colorado Summer Solstice 2023,2023-06-24
-Shiver,Dissent,13,7,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Warhawks,13,8,Scuffletown Throwdown 2023,2023-06-24
-Virginia Rebellion,Wave,8,13,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Wave,9,10,Scuffletown Throwdown 2023,2023-06-24
-Agency,Dissent,13,4,Scuffletown Throwdown 2023,2023-06-24
-Virginia Rebellion,Warhawks,10,11,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Agency,5,13,Scuffletown Throwdown 2023,2023-06-24
-Virginia Rebellion,Dissent,13,2,Scuffletown Throwdown 2023,2023-06-24
-Wave,Shiver,11,10,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Shiver,11,8,Scuffletown Throwdown 2023,2023-06-24
-Wave,Dissent,13,4,Scuffletown Throwdown 2023,2023-06-24
-Agency,Warhawks,13,7,Scuffletown Throwdown 2023,2023-06-24
-Shiver,Warhawks,7,4,Scuffletown Throwdown 2023,2023-06-24
-Agency,Virginia Rebellion,12,8,Scuffletown Throwdown 2023,2023-06-24
-Dissent,Warhawks,7,12,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Virginia Rebellion,8,4,Scuffletown Throwdown 2023,2023-06-24
-Agency,Shiver,10,8,Scuffletown Throwdown 2023,2023-06-24
-Wave,Warhawks,12,11,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Dissent,12,3,Scuffletown Throwdown 2023,2023-06-24
-Agency,Wave,10,8,Scuffletown Throwdown 2023,2023-06-24
-Virginia Rebellion,Shiver,8,7,Scuffletown Throwdown 2023,2023-06-24
-Brooklyn Book Club,Shiver,7,4,Scuffletown Throwdown 2023,2023-06-24
-Ozone,Juice Box,13,5,Club Terminus 2023,2023-07-08
-Calypso,Magma,6,8,Club Terminus 2023,2023-07-08
-Ozone,Magma,13,1,Club Terminus 2023,2023-07-08
-Calypso,Juice Box,3,13,Club Terminus 2023,2023-07-08
-Ozone,Calypso,13,1,Club Terminus 2023,2023-07-08
-Magma,Juice Box,7,9,Club Terminus 2023,2023-07-08
-Fiasco,cATLanta,9,5,Club Terminus 2023,2023-07-08
-Huntsville Laika,Steel,13,4,Club Terminus 2023,2023-07-08
-Fiasco,Steel,9,5,Club Terminus 2023,2023-07-08
-Huntsville Laika,cATLanta,10,4,Club Terminus 2023,2023-07-08
-Steel,cATLanta,10,5,Club Terminus 2023,2023-07-08
-Fiasco,Huntsville Laika,5,12,Club Terminus 2023,2023-07-08
-Ozone,Huntsville Laika,13,5,Club Terminus 2023,2023-07-08
-Ozone,Magma,13,0,Club Terminus 2023,2023-07-08
-Juice Box,Huntsville Laika,8,9,Club Terminus 2023,2023-07-08
-Ozone,cATLanta,13,1,Club Terminus 2023,2023-07-08
-Fiasco,Magma,7,8,Club Terminus 2023,2023-07-08
-Juice Box,Steel,12,5,Club Terminus 2023,2023-07-08
-Huntsville Laika,Calypso,13,5,Club Terminus 2023,2023-07-08
-Magma,Juice Box,8,11,Club Terminus 2023,2023-07-08
-cATLanta,Steel,2,13,Club Terminus 2023,2023-07-08
-cATLanta,Fiasco,9,8,Club Terminus 2023,2023-07-08
-Steel,Calypso,10,6,Club Terminus 2023,2023-07-08
-Fiasco,Calypso,11,7,Club Terminus 2023,2023-07-08
-Indy Rogue,Wicked,12,10,Heavyweights 2023,2023-07-08
-Dish,Twisted Womxn,13,4,Heavyweights 2023,2023-07-08
-Autonomous,Freshwater Ultimate,7,6,Heavyweights 2023,2023-07-08
-Indy Rogue,Dish,13,5,Heavyweights 2023,2023-07-08
-Wicked,Autonomous,13,2,Heavyweights 2023,2023-07-08
-Twisted Womxn,Freshwater Ultimate,6,10,Heavyweights 2023,2023-07-08
-Indy Rogue,Autonomous,13,1,Heavyweights 2023,2023-07-08
-Dish,Freshwater Ultimate,13,6,Heavyweights 2023,2023-07-08
-Wicked,Twisted Womxn,13,1,Heavyweights 2023,2023-07-08
-Indy Rogue,Freshwater Ultimate,13,1,Heavyweights 2023,2023-07-08
-Dish,Wicked,7,11,Heavyweights 2023,2023-07-08
-Autonomous,Twisted Womxn,11,12,Heavyweights 2023,2023-07-08
-Indy Rogue,Twisted Womxn,13,1,Heavyweights 2023,2023-07-08
-Dish,Autonomous,13,4,Heavyweights 2023,2023-07-08
-Wicked,Freshwater Ultimate,13,7,Heavyweights 2023,2023-07-08
-Stellar,Medusa,11,8,Heavyweights 2023,2023-07-08
-Heist,Solstice,13,4,Heavyweights 2023,2023-07-08
-Sureshot,Stormborn,8,10,Heavyweights 2023,2023-07-08
-Stellar,Heist,4,13,Heavyweights 2023,2023-07-08
-Medusa,Sureshot,13,4,Heavyweights 2023,2023-07-08
-Solstice,Stormborn,2,13,Heavyweights 2023,2023-07-08
-Stellar,Sureshot,13,5,Heavyweights 2023,2023-07-08
-Heist,Stormborn,13,5,Heavyweights 2023,2023-07-08
-Medusa,Solstice,11,8,Heavyweights 2023,2023-07-08
-Stellar,Stormborn,13,8,Heavyweights 2023,2023-07-08
-Heist,Medusa,13,6,Heavyweights 2023,2023-07-08
-Sureshot,Solstice,11,7,Heavyweights 2023,2023-07-08
-Stellar,Solstice,13,1,Heavyweights 2023,2023-07-08
-Heist,Sureshot,13,2,Heavyweights 2023,2023-07-08
-Medusa,Stormborn,8,11,Heavyweights 2023,2023-07-08
-Indy Rogue,Heist,13,7,Heavyweights 2023,2023-07-08
-Indy Rogue,Stellar,13,7,Heavyweights 2023,2023-07-08
-Heist,Wicked,13,7,Heavyweights 2023,2023-07-08
-Stellar,Wicked,9,13,Heavyweights 2023,2023-07-08
-Dish,Stormborn,12,5,Heavyweights 2023,2023-07-08
-Dish,Medusa,8,5,Heavyweights 2023,2023-07-08
-Stormborn,Freshwater Ultimate,13,6,Heavyweights 2023,2023-07-08
-Medusa,Freshwater Ultimate,10,5,Heavyweights 2023,2023-07-08
-Autonomous,Twisted Womxn,11,6,Heavyweights 2023,2023-07-08
-Autonomous,Solstice,13,1,Heavyweights 2023,2023-07-08
-Sureshot,Twisted Womxn,8,10,Heavyweights 2023,2023-07-08
-Solstice,Sureshot,2,7,Heavyweights 2023,2023-07-08
-Molly Brown,Underground,15,3,TCT Pro-Elite Challenge West 2023,2023-07-08
-Seattle Riot,Nightlock,15,10,TCT Pro-Elite Challenge West 2023,2023-07-08
-Molly Brown,Seattle Riot,14,8,TCT Pro-Elite Challenge West 2023,2023-07-08
-Traffic,Nightlock,14,9,TCT Pro-Elite Challenge West 2023,2023-07-08
-Molly Brown,Traffic,9,14,TCT Pro-Elite Challenge West 2023,2023-07-08
-Seattle Riot,Underground,15,7,TCT Pro-Elite Challenge West 2023,2023-07-08
-Nightlock,Underground,11,7,TCT Pro-Elite Challenge West 2023,2023-07-08
-Traffic,Seattle Riot,14,7,TCT Pro-Elite Challenge West 2023,2023-07-08
-Molly Brown,Nightlock,15,11,TCT Pro-Elite Challenge West 2023,2023-07-08
-Traffic,Underground,15,2,TCT Pro-Elite Challenge West 2023,2023-07-08
-Fury,Portland Rain Check,15,1,TCT Pro-Elite Challenge West 2023,2023-07-08
-Schwa,Colorado Small Batch,14,7,TCT Pro-Elite Challenge West 2023,2023-07-08
-Fury,Schwa,15,7,TCT Pro-Elite Challenge West 2023,2023-07-08
-Flipside,Colorado Small Batch,15,4,TCT Pro-Elite Challenge West 2023,2023-07-08
-Fury,Flipside,15,10,TCT Pro-Elite Challenge West 2023,2023-07-08
-Schwa,Portland Rain Check,15,1,TCT Pro-Elite Challenge West 2023,2023-07-08
-Colorado Small Batch,Portland Rain Check,15,5,TCT Pro-Elite Challenge West 2023,2023-07-08
-Flipside,Schwa,13,9,TCT Pro-Elite Challenge West 2023,2023-07-08
-Fury,Colorado Small Batch,15,1,TCT Pro-Elite Challenge West 2023,2023-07-08
-Flipside,Portland Rain Check,15,0,TCT Pro-Elite Challenge West 2023,2023-07-08
-Traffic,Molly Brown,10,15,TCT Pro-Elite Challenge West 2023,2023-07-08
-Traffic,Flipside,13,11,TCT Pro-Elite Challenge West 2023,2023-07-08
-Molly Brown,Fury,14,13,TCT Pro-Elite Challenge West 2023,2023-07-08
-Flipside,Fury,15,9,TCT Pro-Elite Challenge West 2023,2023-07-08
-Seattle Riot,Nightlock,14,11,TCT Pro-Elite Challenge West 2023,2023-07-08
-Seattle Riot,Colorado Small Batch,15,7,TCT Pro-Elite Challenge West 2023,2023-07-08
-Nightlock,Schwa,12,11,TCT Pro-Elite Challenge West 2023,2023-07-08
-Colorado Small Batch,Underground,10,8,TCT Pro-Elite Challenge West 2023,2023-07-08
-Portland Rain Check,Nightlock,1,15,TCT Pro-Elite Challenge West 2023,2023-07-08
-Colorado Small Batch,Schwa,5,14,TCT Pro-Elite Challenge West 2023,2023-07-08
-Underground,Portland Rain Check,15,4,TCT Pro-Elite Challenge West 2023,2023-07-08
-Iris,Pine Baroness,13,5,Boston Invite 2023,2023-07-15
-Vintage,Rip Tide,8,7,Boston Invite 2023,2023-07-15
-Iris,Rip Tide,13,2,Boston Invite 2023,2023-07-15
-Vintage,Pine Baroness,10,5,Boston Invite 2023,2023-07-15
-Iris,Vintage,13,6,Boston Invite 2023,2023-07-15
-Pine Baroness,Rip Tide,7,6,Boston Invite 2023,2023-07-15
-Wave,Sage,2,13,Boston Invite 2023,2023-07-15
-Vice,PLOW,10,8,Boston Invite 2023,2023-07-15
-Wave,PLOW,10,5,Boston Invite 2023,2023-07-15
-Vice,Sage,4,13,Boston Invite 2023,2023-07-15
-Wave,Vice,11,8,Boston Invite 2023,2023-07-15
-Sage,PLOW,10,6,Boston Invite 2023,2023-07-15
-Venus,Frolic,13,5,Boston Invite 2023,2023-07-15
-Virginia Rebellion,Ignite,13,1,Boston Invite 2023,2023-07-15
-Venus,Ignite,13,2,Boston Invite 2023,2023-07-15
-Virginia Rebellion,Frolic,13,4,Boston Invite 2023,2023-07-15
-Venus,Virginia Rebellion,8,5,Boston Invite 2023,2023-07-15
-Frolic,Ignite,10,6,Boston Invite 2023,2023-07-15
-Tempest,Versa,13,4,Boston Invite 2023,2023-07-15
-Brooklyn Book Club,Versa,13,2,Boston Invite 2023,2023-07-15
-Tempest,Brooklyn Book Club,4,13,Boston Invite 2023,2023-07-15
-Iris,Venus,13,6,Boston Invite 2023,2023-07-15
-Sage,Brooklyn Book Club,12,4,Boston Invite 2023,2023-07-15
-Vintage,Vice,9,8,Boston Invite 2023,2023-07-15
-Wave,Frolic,9,6,Boston Invite 2023,2023-07-15
-Virginia Rebellion,Versa,12,2,Boston Invite 2023,2023-07-15
-Tempest,Pine Baroness,7,10,Boston Invite 2023,2023-07-15
-Iris,Wave,8,3,Boston Invite 2023,2023-07-15
-Phoenix,Flight,15,9,TCT Pro-Elite Challenge East 2023,2023-07-15
-Nemesis,KnoxFusion,15,4,TCT Pro-Elite Challenge East 2023,2023-07-15
-Phoenix,KnoxFusion,15,2,TCT Pro-Elite Challenge East 2023,2023-07-15
-Nemesis,Flight,13,7,TCT Pro-Elite Challenge East 2023,2023-07-15
-Phoenix,Nemesis,12,3,TCT Pro-Elite Challenge East 2023,2023-07-15
-Flight,KnoxFusion,14,5,TCT Pro-Elite Challenge East 2023,2023-07-15
-Scandal,Siege,15,4,TCT Pro-Elite Challenge East 2023,2023-07-15
-Pop,Agency,15,8,TCT Pro-Elite Challenge East 2023,2023-07-15
-Scandal,Agency,15,1,TCT Pro-Elite Challenge East 2023,2023-07-15
-Pop,Siege,10,15,TCT Pro-Elite Challenge East 2023,2023-07-15
-Scandal,Pop,15,1,TCT Pro-Elite Challenge East 2023,2023-07-15
-Siege,Agency,14,3,TCT Pro-Elite Challenge East 2023,2023-07-15
-Parcha,Rival,10,9,TCT Pro-Elite Challenge East 2023,2023-07-15
-Ozone,Hayride,15,8,TCT Pro-Elite Challenge East 2023,2023-07-15
-Parcha,Hayride,15,5,TCT Pro-Elite Challenge East 2023,2023-07-15
-Ozone,Rival,11,7,TCT Pro-Elite Challenge East 2023,2023-07-15
-Parcha,Ozone,11,10,TCT Pro-Elite Challenge East 2023,2023-07-15
-Rival,Hayride,15,4,TCT Pro-Elite Challenge East 2023,2023-07-15
-BENT,Tabby Rosa,14,10,TCT Pro-Elite Challenge East 2023,2023-07-15
-Grit,Vengeance,15,8,TCT Pro-Elite Challenge East 2023,2023-07-15
-BENT,Vengeance,15,8,TCT Pro-Elite Challenge East 2023,2023-07-15
-Grit,Tabby Rosa,11,9,TCT Pro-Elite Challenge East 2023,2023-07-15
-BENT,Grit,12,11,TCT Pro-Elite Challenge East 2023,2023-07-15
-Tabby Rosa,Vengeance,7,13,TCT Pro-Elite Challenge East 2023,2023-07-15
-Phoenix,Scandal,6,11,TCT Pro-Elite Challenge East 2023,2023-07-15
-Phoenix,BENT,11,9,TCT Pro-Elite Challenge East 2023,2023-07-15
-Parcha,Scandal,4,15,TCT Pro-Elite Challenge East 2023,2023-07-15
-Phoenix,Siege,15,6,TCT Pro-Elite Challenge East 2023,2023-07-15
-Ozone,BENT,7,13,TCT Pro-Elite Challenge East 2023,2023-07-15
-Parcha,Grit,12,11,TCT Pro-Elite Challenge East 2023,2023-07-15
-Nemesis,Scandal,6,15,TCT Pro-Elite Challenge East 2023,2023-07-15
-Pop,KnoxFusion,14,5,TCT Pro-Elite Challenge East 2023,2023-07-15
-Tabby Rosa,Rival,12,7,TCT Pro-Elite Challenge East 2023,2023-07-15
-Vengeance,Hayride,14,6,TCT Pro-Elite Challenge East 2023,2023-07-15
-Agency,Flight,8,12,TCT Pro-Elite Challenge East 2023,2023-07-15
-Void Cat Rewind,Venom,14,5,TCT Select Flight West 2023,2023-07-15
-LOL,Haboob,15,5,TCT Select Flight West 2023,2023-07-15
-LOL,Venom,15,0,TCT Select Flight West 2023,2023-07-15
-Void Cat Rewind,Haboob,9,7,TCT Select Flight West 2023,2023-07-15
-Venom,Haboob,12,9,TCT Select Flight West 2023,2023-07-15
-LOL,Void Cat Rewind,15,4,TCT Select Flight West 2023,2023-07-15
-FAB,Just Add Water,11,1,TCT Select Flight West 2023,2023-07-15
-Rampage,Jackwagon,11,6,TCT Select Flight West 2023,2023-07-15
-FAB,Rampage,10,5,TCT Select Flight West 2023,2023-07-15
-Wildfire,Jackwagon,11,3,TCT Select Flight West 2023,2023-07-15
-FAB,Wildfire,6,9,TCT Select Flight West 2023,2023-07-15
-Rampage,Just Add Water,11,0,TCT Select Flight West 2023,2023-07-15
-Jackwagon,Just Add Water,9,5,TCT Select Flight West 2023,2023-07-15
-Wildfire,Rampage,9,3,TCT Select Flight West 2023,2023-07-15
-FAB,Jackwagon,11,3,TCT Select Flight West 2023,2023-07-15
-Wildfire,Just Add Water,11,2,TCT Select Flight West 2023,2023-07-15
-Venom,Rampage,4,13,TCT Select Flight West 2023,2023-07-15
-Haboob,Jackwagon,6,10,TCT Select Flight West 2023,2023-07-15
-Venom,Jackwagon,9,6,TCT Select Flight West 2023,2023-07-15
-Haboob,Just Add Water,12,5,TCT Select Flight West 2023,2023-07-15
-LOL,Wildfire,7,6,TCT Select Flight West 2023,2023-07-15
-LOL,FAB,15,10,TCT Select Flight West 2023,2023-07-15
-Void Cat Rewind,Wildfire,7,15,TCT Select Flight West 2023,2023-07-15
-FAB,Void Cat Rewind,9,4,TCT Select Flight West 2023,2023-07-15
-Siege,Drift,15,2,TCT Select Flight East 2023,2023-07-29
-Heist,Notorious C.L.E.,15,1,TCT Select Flight East 2023,2023-07-29
-Siege,Heist,13,4,TCT Select Flight East 2023,2023-07-29
-Notorious C.L.E.,Drift,6,10,TCT Select Flight East 2023,2023-07-29
-Indy Rogue,Dish,15,4,TCT Select Flight East 2023,2023-07-29
-Indy Rogue,Crush City,9,11,TCT Select Flight East 2023,2023-07-29
-Crush City,Dish,11,5,TCT Select Flight East 2023,2023-07-29
-Starling Ultimate,Autonomous,15,0,TCT Select Flight East 2023,2023-07-29
-Stellar,Zephyr,7,5,TCT Select Flight East 2023,2023-07-29
-Starling Ultimate,Stellar,13,5,TCT Select Flight East 2023,2023-07-29
-Zephyr,Autonomous,14,2,TCT Select Flight East 2023,2023-07-29
-Rival,Shiver,10,5,TCT Select Flight East 2023,2023-07-29
-Banshee,Brooklyn Book Club,7,9,TCT Select Flight East 2023,2023-07-29
-Rival,Brooklyn Book Club,7,8,TCT Select Flight East 2023,2023-07-29
-Banshee,Shiver,11,8,TCT Select Flight East 2023,2023-07-29
-Drift,Shiver,9,8,TCT Select Flight East 2023,2023-07-29
-Zephyr,Shiver,11,9,TCT Select Flight East 2023,2023-07-29
-Zephyr,Drift,12,7,TCT Select Flight East 2023,2023-07-29
-Banshee,Notorious C.L.E.,15,9,TCT Select Flight East 2023,2023-07-29
-Dish,Autonomous,14,5,TCT Select Flight East 2023,2023-07-29
-Banshee,Dish,8,12,TCT Select Flight East 2023,2023-07-29
-Autonomous,Notorious C.L.E.,12,9,TCT Select Flight East 2023,2023-07-29
-Siege,Starling Ultimate,12,14,TCT Select Flight East 2023,2023-07-29
-Siege,Indy Rogue,14,9,TCT Select Flight East 2023,2023-07-29
-Starling Ultimate,Rival,13,10,TCT Select Flight East 2023,2023-07-29
-Siege,Stellar,15,6,TCT Select Flight East 2023,2023-07-29
-Indy Rogue,Brooklyn Book Club,12,10,TCT Select Flight East 2023,2023-07-29
-Starling Ultimate,Heist,15,4,TCT Select Flight East 2023,2023-07-29
-Rival,Crush City,13,9,TCT Select Flight East 2023,2023-07-29
-Banshee,Stellar,5,12,TCT Select Flight East 2023,2023-07-29
-Indy Rogue,Drift,14,6,TCT Select Flight East 2023,2023-07-29
-Autonomous,Brooklyn Book Club,3,15,TCT Select Flight East 2023,2023-07-29
-Starling Ultimate,Shiver,15,3,TCT Select Flight East 2023,2023-07-29
-Dish,Heist,9,12,TCT Select Flight East 2023,2023-07-29
-Rival,Zephyr,13,6,TCT Select Flight East 2023,2023-07-29
-Notorious C.L.E.,Crush City,3,15,TCT Select Flight East 2023,2023-07-29
-Indy Rogue,Rival,14,10,TCT Select Flight East 2023,2023-07-29
-Brooklyn Book Club,Crush City,7,14,TCT Select Flight East 2023,2023-07-29
-Stellar,Brooklyn Book Club,7,12,TCT Select Flight East 2023,2023-07-29
-Heist,Crush City,8,14,TCT Select Flight East 2023,2023-07-29
-Stellar,Heist,10,12,TCT Select Flight East 2023,2023-07-29
-Zephyr,Dish,11,7,TCT Select Flight East 2023,2023-07-29
-Drift,Banshee,12,8,TCT Select Flight East 2023,2023-07-29
-Shiver,Autonomous,14,2,TCT Select Flight East 2023,2023-07-29
-Molly Brown,Schwa,15,8,US Open,2023-08-04
-Molly Brown,Nightlock,15,6,US Open,2023-08-04
-Nightlock,Schwa,8,15,US Open,2023-08-04
-Traffic,Venado Azul,15,6,US Open,2023-08-04
-Traffic,Scandal,8,15,US Open,2023-08-04
-Scandal,Venado Azul,15,7,US Open,2023-08-04
-Flipside,6ixers,13,9,US Open,2023-08-04
-Flipside,Swampy Barg,15,12,US Open,2023-08-04
-Swampy Barg,6ixers,10,15,US Open,2023-08-04
-Brute Squad,MUD,13,15,US Open,2023-08-04
-Brute Squad,Fury,13,15,US Open,2023-08-04
-Fury,MUD,15,11,US Open,2023-08-04
-Molly Brown,Flipside,15,13,US Open,2023-08-04
-Scandal,Fury,14,13,US Open,2023-08-04
-Schwa,Venado Azul,15,5,US Open,2023-08-04
-Traffic,Nightlock,13,11,US Open,2023-08-04
-Schwa,Nightlock,15,6,US Open,2023-08-04
-Traffic,Venado Azul,15,3,US Open,2023-08-04
-Schwa,Traffic,14,11,US Open,2023-08-04
-Venado Azul,Nightlock,15,12,US Open,2023-08-04
-Fury,Scandal,13,15,US Open,2023-08-04
-Brute Squad,Fury,10,15,US Open,2023-08-04
-MUD,Scandal,11,15,US Open,2023-08-04
-Molly Brown,Brute Squad,11,15,US Open,2023-08-04
-6ixers,Fury,12,13,US Open,2023-08-04
-Flipside,MUD,11,12,US Open,2023-08-04
-Swampy Barg,Scandal,7,15,US Open,2023-08-04
-Traffic,Brute Squad,11,15,US Open,2023-08-04
-6ixers,Nightlock,15,11,US Open,2023-08-04
-MUD,Venado Azul,15,8,US Open,2023-08-04
-Schwa,Swampy Barg,14,15,US Open,2023-08-04
-Brute Squad,MUD,15,10,US Open,2023-08-04
-Molly Brown,Flipside,15,10,US Open,2023-08-04
-Molly Brown,6ixers,15,12,US Open,2023-08-04
-Flipside,Swampy Barg,13,10,US Open,2023-08-04
-6ixers,Swampy Barg,12,11,US Open,2023-08-04
-Wave,Vice,9,10,Philly Open 2023,2023-08-05
-Pine Baroness,Dissent,13,2,Philly Open 2023,2023-08-05
-Incline,Versa,10,7,Philly Open 2023,2023-08-05
-Agency,Pine Baroness,11,8,Philly Open 2023,2023-08-05
-Wave,Incline,12,7,Philly Open 2023,2023-08-05
-Vice,Versa,12,4,Philly Open 2023,2023-08-05
-Agency,Incline,13,3,Philly Open 2023,2023-08-05
-Wave,Pine Baroness,13,6,Philly Open 2023,2023-08-05
-Vice,Dissent,12,3,Philly Open 2023,2023-08-05
-Dissent,Incline,2,13,Philly Open 2023,2023-08-05
-Agency,Versa,13,3,Philly Open 2023,2023-08-05
-Vice,Pine Baroness,11,7,Philly Open 2023,2023-08-05
-Agency,Dissent,13,2,Philly Open 2023,2023-08-05
-Pine Baroness,Incline,8,10,Philly Open 2023,2023-08-05
-Wave,Versa,13,1,Philly Open 2023,2023-08-05
-Agency,Wave,8,9,Philly Open 2023,2023-08-05
-Dissent,Versa,7,9,Philly Open 2023,2023-08-05
-Vice,Incline,10,8,Philly Open 2023,2023-08-05
-Agency,Vice,10,7,Philly Open 2023,2023-08-05
-Wave,Dissent,13,2,Philly Open 2023,2023-08-05
-Pine Baroness,Versa,11,4,Philly Open 2023,2023-08-05
-Firewheel,Inferno,15,7,Bat City Bash 2023,2023-08-12
-Vengeance,Inferno,15,1,Bat City Bash 2023,2023-08-12
-Vengeance,Firewheel,15,1,Bat City Bash 2023,2023-08-12
-KnoxFusion,San Antonio Problems,12,9,HoDown Showdown 2023,2023-08-12
-Juice Box,Magma,15,6,HoDown Showdown 2023,2023-08-12
-Shiver,Calypso,14,6,HoDown Showdown 2023,2023-08-12
-KnoxFusion,Juice Box,5,15,HoDown Showdown 2023,2023-08-12
-San Antonio Problems,Shiver,12,8,HoDown Showdown 2023,2023-08-12
-Magma,Calypso,9,10,HoDown Showdown 2023,2023-08-12
-KnoxFusion,Shiver,6,12,HoDown Showdown 2023,2023-08-12
-Juice Box,Calypso,13,6,HoDown Showdown 2023,2023-08-12
-San Antonio Problems,Magma,10,8,HoDown Showdown 2023,2023-08-12
-KnoxFusion,Calypso,10,12,HoDown Showdown 2023,2023-08-12
-Juice Box,San Antonio Problems,14,8,HoDown Showdown 2023,2023-08-12
-Shiver,Magma,12,8,HoDown Showdown 2023,2023-08-12
-KnoxFusion,Magma,11,10,HoDown Showdown 2023,2023-08-12
-Juice Box,Shiver,7,10,HoDown Showdown 2023,2023-08-12
-San Antonio Problems,Calypso,15,6,HoDown Showdown 2023,2023-08-12
-Shiver,San Antonio Problems,11,9,HoDown Showdown 2023,2023-08-12
-Shiver,Calypso,13,6,HoDown Showdown 2023,2023-08-12
-Juice Box,San Antonio Problems,10,15,HoDown Showdown 2023,2023-08-12
-Calypso,Juice Box,8,9,HoDown Showdown 2023,2023-08-12
-KnoxFusion,Magma,3,7,HoDown Showdown 2023,2023-08-12
-Siege,Iris,11,10,Log Jam,2023-08-12
-Starling Ultimate,Iris,10,7,Log Jam,2023-08-12
-Starling Ultimate,Siege,10,9,Log Jam,2023-08-12
-Siege,Iris,8,13,Log Jam,2023-08-12
-Starling Ultimate,Iris,11,10,Log Jam,2023-08-12
-Starling Ultimate,Iris,6,11,Log Jam,2023-08-12
-Freshwater Ultimate,Minnesota Superior A,9,7,Cooler Classic 34,2023-08-19
-Heist,Stormborn,13,7,Cooler Classic 34,2023-08-19
-Dish,Minnesota Superior B,15,0,Cooler Classic 34,2023-08-19
-Heist,Minnesota Superior B,15,1,Cooler Classic 34,2023-08-19
-Medusa,Stormborn,5,7,Cooler Classic 34,2023-08-19
-Dish,Minnesota Superior A,15,2,Cooler Classic 34,2023-08-19
-Heist,Dish,13,5,Cooler Classic 34,2023-08-19
-Stormborn,Minnesota Superior A,9,10,Cooler Classic 34,2023-08-19
-Medusa,Freshwater Ultimate,14,2,Cooler Classic 34,2023-08-19
-Medusa,Minnesota Superior B,15,4,Cooler Classic 34,2023-08-19
-Stormborn,Freshwater Ultimate,7,8,Cooler Classic 34,2023-08-19
-Dish,Freshwater Ultimate,15,6,Cooler Classic 34,2023-08-19
-Stormborn,Minnesota Superior B,15,4,Cooler Classic 34,2023-08-19
-Medusa,Minnesota Superior A,11,6,Cooler Classic 34,2023-08-19
-Heist,Freshwater Ultimate,15,3,Cooler Classic 34,2023-08-19
-Dish,Stormborn,15,5,Cooler Classic 34,2023-08-19
-Freshwater Ultimate,Minnesota Superior B,14,6,Cooler Classic 34,2023-08-19
-Dish,Medusa,9,8,Cooler Classic 34,2023-08-19
-Heist,Minnesota Superior A,15,4,Cooler Classic 34,2023-08-19
-Heist,Medusa,10,5,Cooler Classic 34,2023-08-19
-Notorious C.L.E.,Sureshot,10,3,Motown Throwdown 2023,2023-08-19
-Incline,Notorious C.L.E.,4,11,Motown Throwdown 2023,2023-08-19
-Incline,Sureshot,10,4,Motown Throwdown 2023,2023-08-19
-Autonomous,Solstice,9,4,Motown Throwdown 2023,2023-08-19
-Y'all,Solstice,7,9,Motown Throwdown 2023,2023-08-19
-Y'all,Autonomous,1,12,Motown Throwdown 2023,2023-08-19
-Sureshot,Y'all,9,6,Motown Throwdown 2023,2023-08-19
-Sureshot,Solstice,8,7,Motown Throwdown 2023,2023-08-19
-Y'all,Autonomous,6,14,Motown Throwdown 2023,2023-08-19
-Notorious C.L.E.,Incline,8,6,Motown Throwdown 2023,2023-08-19
-Notorious C.L.E.,Solstice,12,1,Motown Throwdown 2023,2023-08-19
-Autonomous,Incline,5,10,Motown Throwdown 2023,2023-08-19
-Rampage,Seattle Soul,8,4,Ski Town Classic,2023-08-19
-Crush City,Seattle Soul,13,0,Ski Town Classic,2023-08-19
-Crush City,Rampage,13,8,Ski Town Classic,2023-08-19
-Seven Devils,Haboob,13,1,Ski Town Classic,2023-08-19
-Wildfire,Haboob,13,2,Ski Town Classic,2023-08-19
-Wildfire,Seven Devils,11,6,Ski Town Classic,2023-08-19
-Void Cat Rewind,Swell,10,4,Ski Town Classic,2023-08-19
-Trainwreck,Swell,13,3,Ski Town Classic,2023-08-19
-Trainwreck,Void Cat Rewind,7,9,Ski Town Classic,2023-08-19
-Fiasco,Just Add Water,12,0,Ski Town Classic,2023-08-19
-Dark Sky,Just Add Water,13,0,Ski Town Classic,2023-08-19
-Dark Sky,Fiasco,11,7,Ski Town Classic,2023-08-19
-Rampage,Swell,12,7,Ski Town Classic,2023-08-19
-Seven Devils,Just Add Water,13,2,Ski Town Classic,2023-08-19
-Trainwreck,Seattle Soul,13,5,Ski Town Classic,2023-08-19
-Fiasco,Haboob,8,5,Ski Town Classic,2023-08-19
-Crush City,Void Cat Rewind,13,7,Ski Town Classic,2023-08-19
-Wildfire,Dark Sky,12,9,Ski Town Classic,2023-08-19
-Swell,Seattle Soul,8,11,Ski Town Classic,2023-08-19
-Just Add Water,Haboob,8,11,Ski Town Classic,2023-08-19
-Swell,Haboob,12,4,Ski Town Classic,2023-08-19
-Just Add Water,Seattle Soul,8,9,Ski Town Classic,2023-08-19
-Swell,Just Add Water,12,5,Ski Town Classic,2023-08-19
-Seattle Soul,Haboob,9,8,Ski Town Classic,2023-08-19
-Dark Sky,Wildfire,9,10,Ski Town Classic,2023-08-19
-Crush City,Dark Sky,4,13,Ski Town Classic,2023-08-19
-Wildfire,Seven Devils,13,6,Ski Town Classic,2023-08-19
-Crush City,Fiasco,10,8,Ski Town Classic,2023-08-19
-Dark Sky,Rampage,13,4,Ski Town Classic,2023-08-19
-Wildfire,Trainwreck,13,8,Ski Town Classic,2023-08-19
-Void Cat Rewind,Seven Devils,6,11,Ski Town Classic,2023-08-19
-Crush City,Seven Devils,12,8,Ski Town Classic,2023-08-19
-Rampage,Void Cat Rewind,7,2,Ski Town Classic,2023-08-19
-Fiasco,Rampage,4,10,Ski Town Classic,2023-08-19
-Trainwreck,Void Cat Rewind,7,8,Ski Town Classic,2023-08-19
-Fiasco,Trainwreck,7,8,Ski Town Classic,2023-08-19
-BENT,Tabby Rosa,14,9,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Parcha,FAB,12,4,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-BENT,FAB,15,2,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Parcha,Tabby Rosa,15,8,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-BENT,Parcha,12,6,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Tabby Rosa,FAB,10,8,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Schwa,Flight,15,11,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Ozone,Stellar,15,6,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Schwa,Stellar,15,2,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Ozone,Flight,9,12,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Schwa,Ozone,15,5,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Flight,Stellar,14,6,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Seattle Riot,Pop,11,5,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nemesis,Colorado Small Batch,15,8,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Seattle Riot,Colorado Small Batch,15,5,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nemesis,Pop,15,7,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Seattle Riot,Nemesis,13,14,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Pop,Colorado Small Batch,14,13,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Grit,Indy Rogue,15,6,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nightlock,Underground,10,6,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Grit,Underground,11,9,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nightlock,Indy Rogue,15,4,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Grit,Nightlock,9,15,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Indy Rogue,Underground,4,15,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Seattle Riot,Schwa,6,15,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-BENT,Seattle Riot,13,14,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nemesis,Schwa,10,15,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-BENT,Flight,13,6,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Seattle Riot,Nightlock,15,10,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nemesis,Grit,14,11,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Parcha,Schwa,9,12,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-BENT,Nemesis,13,9,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Nightlock,Parcha,10,7,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Flight,Nightlock,7,12,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Grit,Parcha,6,11,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Flight,Grit,6,14,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Ozone,Tabby Rosa,9,8,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Ozone,Pop,13,7,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Underground,Tabby Rosa,6,9,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Ozone,FAB,14,4,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Indy Rogue,Pop,7,14,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Underground,Colorado Small Batch,9,8,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Stellar,Tabby Rosa,7,11,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Pop,Underground,11,12,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Indy Rogue,Colorado Small Batch,8,13,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-FAB,Indy Rogue,8,10,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Colorado Small Batch,Stellar,9,7,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-FAB,Stellar,10,7,TCT Elite-Select Challenge 2023 - Indy Invite,2023-08-19
-Hayride,Huntsville Laika,8,7,Ragna-Rock! 2023,2023-08-26
-Banshee,Wicked,8,9,Ragna-Rock! 2023,2023-08-26
-Hayride,Banshee,9,6,Ragna-Rock! 2023,2023-08-26
-TWISTED,Wicked,8,5,Ragna-Rock! 2023,2023-08-26
-Wicked,Huntsville Laika,2,8,Ragna-Rock! 2023,2023-08-26
-TWISTED,Banshee,5,4,Ragna-Rock! 2023,2023-08-26
-Hayride,Wicked,7,2,Ragna-Rock! 2023,2023-08-26
-TWISTED,Huntsville Laika,3,10,Ragna-Rock! 2023,2023-08-26
-Hayride,TWISTED,8,6,Ragna-Rock! 2023,2023-08-26
-Banshee,Huntsville Laika,5,10,Ragna-Rock! 2023,2023-08-26
-Hayride,TWISTED,9,5,Ragna-Rock! 2023,2023-08-26
-Wicked,Hayride,7,10,Ragna-Rock! 2023,2023-08-26
-Huntsville Laika,TWISTED,6,7,Ragna-Rock! 2023,2023-08-26
-Wicked,Banshee,11,5,Ragna-Rock! 2023,2023-08-26
-Huntsville Laika,Wicked,8,7,Ragna-Rock! 2023,2023-08-26
-Banshee,Huntsville Laika,2,11,Ragna-Rock! 2023,2023-08-26
-Brute Squad,Phoenix,9,15,TCT Pro Championships 2023,2023-09-02
-Traffic,Parcha,14,12,TCT Pro Championships 2023,2023-09-02
-Scandal,Traffic,15,11,TCT Pro Championships 2023,2023-09-02
-Phoenix,Parcha,14,10,TCT Pro Championships 2023,2023-09-02
-Scandal,Phoenix,11,12,TCT Pro Championships 2023,2023-09-02
-Brute Squad,Parcha,15,6,TCT Pro Championships 2023,2023-09-02
-Traffic,Phoenix,9,14,TCT Pro Championships 2023,2023-09-02
-Scandal,Brute Squad,15,7,TCT Pro Championships 2023,2023-09-02
-Scandal,Parcha,15,5,TCT Pro Championships 2023,2023-09-02
-Brute Squad,Traffic,15,8,TCT Pro Championships 2023,2023-09-02
-Molly Brown,Seattle Riot,15,14,TCT Pro Championships 2023,2023-09-02
-6ixers,Grit,15,10,TCT Pro Championships 2023,2023-09-02
-Fury,6ixers,15,4,TCT Pro Championships 2023,2023-09-02
-Seattle Riot,Grit,15,8,TCT Pro Championships 2023,2023-09-02
-Fury,Seattle Riot,15,6,TCT Pro Championships 2023,2023-09-02
-Molly Brown,Grit,14,9,TCT Pro Championships 2023,2023-09-02
-6ixers,Seattle Riot,15,12,TCT Pro Championships 2023,2023-09-02
-Fury,Molly Brown,15,12,TCT Pro Championships 2023,2023-09-02
-Fury,Grit,15,5,TCT Pro Championships 2023,2023-09-02
-Molly Brown,6ixers,13,11,TCT Pro Championships 2023,2023-09-02
-Phoenix,Scandal,15,13,TCT Pro Championships 2023,2023-09-02
-Phoenix,Molly Brown,15,12,TCT Pro Championships 2023,2023-09-02
-Scandal,Fury,15,14,TCT Pro Championships 2023,2023-09-02
-Brute Squad,Molly Brown,12,15,TCT Pro Championships 2023,2023-09-02
-Scandal,6ixers,15,6,TCT Pro Championships 2023,2023-09-02
-Molly Brown,Fury,15,12,TCT Pro Championships 2023,2023-09-02
-Brute Squad,6ixers,15,11,TCT Pro Championships 2023,2023-09-02
-Brute Squad,Parcha,15,9,TCT Pro Championships 2023,2023-09-02
-Traffic,6ixers,6,14,TCT Pro Championships 2023,2023-09-02
-Parcha,Seattle Riot,13,10,TCT Pro Championships 2023,2023-09-02
-Traffic,Grit,12,10,TCT Pro Championships 2023,2023-09-02
-Parcha,Traffic,8,13,TCT Pro Championships 2023,2023-09-02
-Seattle Riot,Grit,15,10,TCT Pro Championships 2023,2023-09-02
-Nemesis,Notorious C.L.E.,15,1,2023 Great Lakes Women's Regional Championship,2023-09-23
-Indy Rogue,Solstice,15,0,2023 Great Lakes Women's Regional Championship,2023-09-23
-Nemesis,Solstice,15,0,2023 Great Lakes Women's Regional Championship,2023-09-23
-Indy Rogue,Notorious C.L.E.,15,4,2023 Great Lakes Women's Regional Championship,2023-09-23
-Nemesis,Indy Rogue,15,5,2023 Great Lakes Women's Regional Championship,2023-09-23
-Notorious C.L.E.,Solstice,15,6,2023 Great Lakes Women's Regional Championship,2023-09-23
-Rival,Autonomous,15,3,2023 Great Lakes Women's Regional Championship,2023-09-23
-Dish,Y'all,15,8,2023 Great Lakes Women's Regional Championship,2023-09-23
-Rival,Y'all,15,3,2023 Great Lakes Women's Regional Championship,2023-09-23
-Dish,Autonomous,14,11,2023 Great Lakes Women's Regional Championship,2023-09-23
-Rival,Dish,15,8,2023 Great Lakes Women's Regional Championship,2023-09-23
-Autonomous,Y'all,8,12,2023 Great Lakes Women's Regional Championship,2023-09-23
-Nemesis,Rival,15,8,2023 Great Lakes Women's Regional Championship,2023-09-23
-Nemesis,Dish,15,2,2023 Great Lakes Women's Regional Championship,2023-09-23
-Indy Rogue,Rival,10,15,2023 Great Lakes Women's Regional Championship,2023-09-23
-Nemesis,Autonomous,15,1,2023 Great Lakes Women's Regional Championship,2023-09-23
-Dish,Notorious C.L.E.,15,6,2023 Great Lakes Women's Regional Championship,2023-09-23
-Indy Rogue,Y'all,15,5,2023 Great Lakes Women's Regional Championship,2023-09-23
-Rival,Solstice,15,1,2023 Great Lakes Women's Regional Championship,2023-09-23
-Dish,Indy Rogue,9,15,2023 Great Lakes Women's Regional Championship,2023-09-23
-Notorious C.L.E.,Y'all,15,6,2023 Great Lakes Women's Regional Championship,2023-09-23
-Autonomous,Notorious C.L.E.,10,13,2023 Great Lakes Women's Regional Championship,2023-09-23
-Y'all,Solstice,15,4,2023 Great Lakes Women's Regional Championship,2023-09-23
-Autonomous,Solstice,13,8,2023 Great Lakes Women's Regional Championship,2023-09-23
-Brute Squad,Ignite,13,0,2023 Northeast Women's Regional Championship,2023-09-23
-Vice,Ignite,13,5,2023 Northeast Women's Regional Championship,2023-09-23
-Brute Squad,Vice,13,1,2023 Northeast Women's Regional Championship,2023-09-23
-6ixers,Versa,13,0,2023 Northeast Women's Regional Championship,2023-09-23
-Brooklyn Book Club,PLOW,13,7,2023 Northeast Women's Regional Championship,2023-09-23
-6ixers,Brooklyn Book Club,13,4,2023 Northeast Women's Regional Championship,2023-09-23
-PLOW,Versa,13,5,2023 Northeast Women's Regional Championship,2023-09-23
-BENT,Salty,13,3,2023 Northeast Women's Regional Championship,2023-09-23
-Siege,Salty,13,4,2023 Northeast Women's Regional Championship,2023-09-23
-BENT,Siege,13,6,2023 Northeast Women's Regional Championship,2023-09-23
-Starling Ultimate,Frolic,13,4,2023 Northeast Women's Regional Championship,2023-09-23
-Iris,Frolic,13,5,2023 Northeast Women's Regional Championship,2023-09-23
-Starling Ultimate,Iris,10,13,2023 Northeast Women's Regional Championship,2023-09-23
-Brute Squad,BENT,15,13,2023 Northeast Women's Regional Championship,2023-09-23
-6ixers,Iris,15,8,2023 Northeast Women's Regional Championship,2023-09-23
-Starling Ultimate,PLOW,15,1,2023 Northeast Women's Regional Championship,2023-09-23
-Siege,Ignite,15,2,2023 Northeast Women's Regional Championship,2023-09-23
-Brooklyn Book Club,Frolic,14,9,2023 Northeast Women's Regional Championship,2023-09-23
-Vice,Salty,11,10,2023 Northeast Women's Regional Championship,2023-09-23
-PLOW,Ignite,W,F,2023 Northeast Women's Regional Championship,2023-09-23
-Versa,Ignite,W,F,2023 Northeast Women's Regional Championship,2023-09-23
-Versa,PLOW,7,8,2023 Northeast Women's Regional Championship,2023-09-23
-Brute Squad,BENT,14,11,2023 Northeast Women's Regional Championship,2023-09-23
-Brute Squad,Iris,15,11,2023 Northeast Women's Regional Championship,2023-09-23
-Brute Squad,Brooklyn Book Club,15,3,2023 Northeast Women's Regional Championship,2023-09-23
-Siege,Iris,9,15,2023 Northeast Women's Regional Championship,2023-09-23
-BENT,Starling Ultimate,15,7,2023 Northeast Women's Regional Championship,2023-09-23
-Vice,6ixers,1,15,2023 Northeast Women's Regional Championship,2023-09-23
-6ixers,Iris,15,11,2023 Northeast Women's Regional Championship,2023-09-23
-Siege,6ixers,9,15,2023 Northeast Women's Regional Championship,2023-09-23
-Starling Ultimate,Iris,12,13,2023 Northeast Women's Regional Championship,2023-09-23
-Brooklyn Book Club,Siege,9,15,2023 Northeast Women's Regional Championship,2023-09-23
-Starling Ultimate,Vice,15,7,2023 Northeast Women's Regional Championship,2023-09-23
-Siege,Starling Ultimate,12,14,2023 Northeast Women's Regional Championship,2023-09-23
-Brooklyn Book Club,Vice,11,7,2023 Northeast Women's Regional Championship,2023-09-23
-Salty,Frolic,15,6,2023 Northeast Women's Regional Championship,2023-09-23
-PLOW,Salty,8,15,2023 Northeast Women's Regional Championship,2023-09-23
-Ignite,Frolic,5,14,2023 Northeast Women's Regional Championship,2023-09-23
-BENT,6ixers,12,10,2023 Northeast Women's Regional Championship,2023-09-23
+FAB,Tempo,15,3,Bay Area Ultimate Classic 2024,2024-06-15
+Void Cat Rewind,Ultraviolet,15,1,Bay Area Ultimate Classic 2024,2024-06-15
+FAB,Ultraviolet,15,0,Bay Area Ultimate Classic 2024,2024-06-15
+Void Cat Rewind,Tempo,15,2,Bay Area Ultimate Classic 2024,2024-06-15
+FAB,Void Cat Rewind,11,6,Bay Area Ultimate Classic 2024,2024-06-15
+Tempo,Ultraviolet,9,4,Bay Area Ultimate Classic 2024,2024-06-15
+Swell,Colorado Cutthroat: Youth Club U-20 Girls,6,11,Colorado Summer Solstice 2024,2024-06-22
+COSMOS,Haboob,10,9,Colorado Summer Solstice 2024,2024-06-22
+Trainwreck,Just Add Water,15,0,Colorado Summer Solstice 2024,2024-06-22
+Trainwreck,COSMOS,12,5,Colorado Summer Solstice 2024,2024-06-22
+Just Add Water,Colorado Cutthroat: Youth Club U-20 Girls,4,15,Colorado Summer Solstice 2024,2024-06-22
+Venom,Haboob,11,5,Colorado Summer Solstice 2024,2024-06-22
+Swell,Just Add Water,10,5,Colorado Summer Solstice 2024,2024-06-22
+Trainwreck,Haboob,12,3,Colorado Summer Solstice 2024,2024-06-22
+Venom,COSMOS,10,5,Colorado Summer Solstice 2024,2024-06-22
+Trainwreck,Colorado Cutthroat: Youth Club U-20 Girls,11,7,Colorado Summer Solstice 2024,2024-06-22
+COSMOS,Just Add Water,13,5,Colorado Summer Solstice 2024,2024-06-22
+Venom,Swell,14,4,Colorado Summer Solstice 2024,2024-06-22
+Venom,Just Add Water,15,5,Colorado Summer Solstice 2024,2024-06-22
+COSMOS,Colorado Cutthroat: Youth Club U-20 Girls,3,14,Colorado Summer Solstice 2024,2024-06-22
+Swell,Haboob,8,6,Colorado Summer Solstice 2024,2024-06-22
+Haboob,Just Add Water,15,3,Colorado Summer Solstice 2024,2024-06-22
+Venom,Colorado Cutthroat: Youth Club U-20 Girls,12,5,Colorado Summer Solstice 2024,2024-06-22
+Trainwreck,Swell,14,5,Colorado Summer Solstice 2024,2024-06-22
+Swell,COSMOS,12,4,Colorado Summer Solstice 2024,2024-06-22
+Trainwreck,Venom,12,10,Colorado Summer Solstice 2024,2024-06-22
+Haboob,Colorado Cutthroat: Youth Club U-20 Girls,5,12,Colorado Summer Solstice 2024,2024-06-22
+Schwa,Oregon Downpour,13,5,Eugene Summer Solstice 2024,2024-06-22
+Drift,Seattle Soul,13,2,Eugene Summer Solstice 2024,2024-06-22
+Schwa,Seattle Soul,13,0,Eugene Summer Solstice 2024,2024-06-22
+Drift,Oregon Downpour,5,12,Eugene Summer Solstice 2024,2024-06-22
+Schwa,Drift,13,1,Eugene Summer Solstice 2024,2024-06-22
+Oregon Downpour,Seattle Soul,13,1,Eugene Summer Solstice 2024,2024-06-22
+Seattle END,PDXtra,12,10,Eugene Summer Solstice 2024,2024-06-22
+FAB,Portland Rain Check,13,2,Eugene Summer Solstice 2024,2024-06-22
+Seattle END,Portland Rain Check,13,1,Eugene Summer Solstice 2024,2024-06-22
+FAB,PDXtra,13,6,Eugene Summer Solstice 2024,2024-06-22
+Seattle END,FAB,10,8,Eugene Summer Solstice 2024,2024-06-22
+PDXtra,Portland Rain Check,9,3,Eugene Summer Solstice 2024,2024-06-22
+Schwa,Oregon Downpour,15,9,Eugene Summer Solstice 2024,2024-06-22
+Schwa,Drift,15,2,Eugene Summer Solstice 2024,2024-06-22
+Oregon Downpour,Seattle END,12,10,Eugene Summer Solstice 2024,2024-06-22
+Schwa,Portland Rain Check,15,2,Eugene Summer Solstice 2024,2024-06-22
+Drift,FAB,9,8,Eugene Summer Solstice 2024,2024-06-22
+Oregon Downpour,PDXtra,13,7,Eugene Summer Solstice 2024,2024-06-22
+Seattle Soul,Seattle END,4,15,Eugene Summer Solstice 2024,2024-06-22
+Drift,Seattle END,8,11,Eugene Summer Solstice 2024,2024-06-22
+FAB,PDXtra,W,0,Eugene Summer Solstice 2024,2024-06-22
+Portland Rain Check,FAB,5,10,Eugene Summer Solstice 2024,2024-06-22
+PDXtra,Seattle Soul,15,6,Eugene Summer Solstice 2024,2024-06-22
+Portland Rain Check,Seattle Soul,6,9,Eugene Summer Solstice 2024,2024-06-22
+Indy Rogue,Y'all,13,3,SCINNY 2024,2024-06-22
+Indy Rogue,Sureshot,12,9,SCINNY 2024,2024-06-22
+Sureshot,Y'all,9,7,SCINNY 2024,2024-06-22
+Toronto Incognito,Bullseye,13,3,SCINNY 2024,2024-06-22
+Lake Erie Walleye,Solstice,10,3,SCINNY 2024,2024-06-22
+Toronto Incognito,Lake Erie Walleye,13,1,SCINNY 2024,2024-06-22
+Solstice,Bullseye,12,7,SCINNY 2024,2024-06-22
+Indy Rogue,Toronto Incognito,8,7,SCINNY 2024,2024-06-22
+Sureshot,Lake Erie Walleye,5,8,SCINNY 2024,2024-06-22
+Y'all,Solstice,9,4,SCINNY 2024,2024-06-22
+Indy Rogue,Toronto Incognito,7,8,SCINNY 2024,2024-06-22
+Indy Rogue,Lake Erie Walleye,9,1,SCINNY 2024,2024-06-22
+Toronto Incognito,Y'all,13,1,SCINNY 2024,2024-06-22
+Solstice,Lake Erie Walleye,3,10,SCINNY 2024,2024-06-22
+Y'all,Sureshot,10,4,SCINNY 2024,2024-06-22
+Lake Erie Walleye,Y'all,7,9,SCINNY 2024,2024-06-22
+Solstice,Sureshot,1,9,SCINNY 2024,2024-06-22
+Pizza Rat,Dissent,13,3,Scuffletown Throwdown 2024,2024-06-22
+Agency,Pine Baroness,10,6,Scuffletown Throwdown 2024,2024-06-22
+Brooklyn Book Club,Shiver,9,7,Scuffletown Throwdown 2024,2024-06-22
+Wave,Virginia Rebellion,11,6,Scuffletown Throwdown 2024,2024-06-22
+Brooklyn Book Club,Pizza Rat,8,9,Scuffletown Throwdown 2024,2024-06-22
+Wave,Rogue,9,5,Scuffletown Throwdown 2024,2024-06-22
+Virginia Rebellion,Dissent,10,4,Scuffletown Throwdown 2024,2024-06-22
+Shiver,Pine Baroness,9,6,Scuffletown Throwdown 2024,2024-06-22
+Pine Baroness,Virginia Rebellion,9,10,Scuffletown Throwdown 2024,2024-06-22
+Dissent,Wave,3,13,Scuffletown Throwdown 2024,2024-06-22
+Rogue,Brooklyn Book Club,2,11,Scuffletown Throwdown 2024,2024-06-22
+Pizza Rat,Agency,7,12,Scuffletown Throwdown 2024,2024-06-22
+Brooklyn Book Club,Virginia Rebellion,12,5,Scuffletown Throwdown 2024,2024-06-22
+Shiver,Agency,11,5,Scuffletown Throwdown 2024,2024-06-22
+Pine Baroness,Pizza Rat,9,8,Scuffletown Throwdown 2024,2024-06-22
+Dissent,Rogue,6,12,Scuffletown Throwdown 2024,2024-06-22
+Dissent,Shiver,4,10,Scuffletown Throwdown 2024,2024-06-22
+Rogue,Virginia Rebellion,9,11,Scuffletown Throwdown 2024,2024-06-22
+Pizza Rat,Wave,8,9,Scuffletown Throwdown 2024,2024-06-22
+Agency,Brooklyn Book Club,6,5,Scuffletown Throwdown 2024,2024-06-22
+Pizza Rat,Shiver,4,5,Scuffletown Throwdown 2024,2024-06-22
+Agency,Virginia Rebellion,6,3,Scuffletown Throwdown 2024,2024-06-22
+Brooklyn Book Club,Wave,0,15,Scuffletown Throwdown 2024,2024-06-22
+Pine Baroness,Dissent,10,0,Scuffletown Throwdown 2024,2024-06-22
+Vengeance,TWISTED,13,1,Texas 2 Finger 2024,2024-06-29
+San Antonio Problems,Firewheel,10,5,Texas 2 Finger 2024,2024-06-29
+Crush City,Inferno,13,2,Texas 2 Finger 2024,2024-06-29
+Vengeance,San Antonio Problems,10,9,Texas 2 Finger 2024,2024-06-29
+Crush City,Firewheel,11,2,Texas 2 Finger 2024,2024-06-29
+FMP-PE,Inferno,13,0,Texas 2 Finger 2024,2024-06-29
+TWISTED,Firewheel,9,5,Texas 2 Finger 2024,2024-06-29
+Vengeance,Inferno,13,6,Texas 2 Finger 2024,2024-06-29
+FMP-PE,San Antonio Problems,12,5,Texas 2 Finger 2024,2024-06-29
+Vengeance,Firewheel,13,1,Texas 2 Finger 2024,2024-06-29
+Crush City,San Antonio Problems,7,6,Texas 2 Finger 2024,2024-06-29
+FMP-PE,TWISTED,13,1,Texas 2 Finger 2024,2024-06-29
+Crush City,FMP-PE,4,7,Texas 2 Finger 2024,2024-06-29
+San Antonio Problems,TWISTED,10,4,Texas 2 Finger 2024,2024-06-29
+Firewheel,Inferno,5,8,Texas 2 Finger 2024,2024-06-29
+Vengeance,FMP-PE,6,12,Texas 2 Finger 2024,2024-06-29
+Crush City,TWISTED,11,2,Texas 2 Finger 2024,2024-06-29
+San Antonio Problems,Inferno,11,1,Texas 2 Finger 2024,2024-06-29
+Vengeance,Crush City,11,4,Texas 2 Finger 2024,2024-06-29
+TWISTED,Inferno,11,6,Texas 2 Finger 2024,2024-06-29
+FMP-PE,Firewheel,13,0,Texas 2 Finger 2024,2024-06-29
+Fusion,Charm,13,3,Heavyweights 2024,2024-07-06
+Heist,Dish,13,1,Heavyweights 2024,2024-07-06
+Stellar,Freshwater Ultimate,13,3,Heavyweights 2024,2024-07-06
+Fusion,Stellar,10,7,Heavyweights 2024,2024-07-06
+Heist,Charm,13,0,Heavyweights 2024,2024-07-06
+Dish,Freshwater Ultimate,13,6,Heavyweights 2024,2024-07-06
+Fusion,Heist,12,8,Heavyweights 2024,2024-07-06
+Stellar,Dish,10,5,Heavyweights 2024,2024-07-06
+Charm,Freshwater Ultimate,7,6,Heavyweights 2024,2024-07-06
+Fusion,Dish,13,6,Heavyweights 2024,2024-07-06
+Heist,Freshwater Ultimate,13,0,Heavyweights 2024,2024-07-06
+Stellar,Charm,13,0,Heavyweights 2024,2024-07-06
+Fusion,Freshwater Ultimate,14,4,Heavyweights 2024,2024-07-06
+Heist,Stellar,10,8,Heavyweights 2024,2024-07-06
+Dish,Charm,13,4,Heavyweights 2024,2024-07-06
+Outrage,Medusa,13,2,Heavyweights 2024,2024-07-06
+Indy Rogue,Wicked,12,8,Heavyweights 2024,2024-07-06
+Hayride,Stormborn,13,5,Heavyweights 2024,2024-07-06
+Outrage,Hayride,13,8,Heavyweights 2024,2024-07-06
+Indy Rogue,Medusa,13,5,Heavyweights 2024,2024-07-06
+Wicked,Stormborn,12,6,Heavyweights 2024,2024-07-06
+Outrage,Indy Rogue,10,9,Heavyweights 2024,2024-07-06
+Hayride,Wicked,8,10,Heavyweights 2024,2024-07-06
+Medusa,Stormborn,10,8,Heavyweights 2024,2024-07-06
+Outrage,Wicked,9,10,Heavyweights 2024,2024-07-06
+Indy Rogue,Stormborn,13,4,Heavyweights 2024,2024-07-06
+Hayride,Medusa,13,4,Heavyweights 2024,2024-07-06
+Outrage,Stormborn,13,2,Heavyweights 2024,2024-07-06
+Indy Rogue,Hayride,11,5,Heavyweights 2024,2024-07-06
+Wicked,Medusa,13,3,Heavyweights 2024,2024-07-06
+Fusion,Indy Rogue,11,12,Heavyweights 2024,2024-07-06
+Fusion,Outrage,9,4,Heavyweights 2024,2024-07-06
+Indy Rogue,Heist,11,7,Heavyweights 2024,2024-07-06
+Outrage,Heist,12,10,Heavyweights 2024,2024-07-06
+Hayride,Wicked,5,9,Heavyweights 2024,2024-07-06
+Stellar,Hayride,9,13,Heavyweights 2024,2024-07-06
+Wicked,Dish,13,3,Heavyweights 2024,2024-07-06
+Stellar,Dish,8,9,Heavyweights 2024,2024-07-06
+Stormborn,Medusa,10,8,Heavyweights 2024,2024-07-06
+Charm,Stormborn,8,15,Heavyweights 2024,2024-07-06
+Medusa,Freshwater Ultimate,12,5,Heavyweights 2024,2024-07-06
+Charm,Freshwater Ultimate,4,15,Heavyweights 2024,2024-07-06
+Vice,NE Potato Chowder,13,5,Boston Invite 2024,2024-07-13
+Pizza Rat,Versa,10,8,Boston Invite 2024,2024-07-13
+Vice,Versa,11,5,Boston Invite 2024,2024-07-13
+Pizza Rat,NE Potato Chowder,9,13,Boston Invite 2024,2024-07-13
+Vice,Pizza Rat,12,3,Boston Invite 2024,2024-07-13
+NE Potato Chowder,Versa,11,7,Boston Invite 2024,2024-07-13
+Vice,Frolic,11,6,Boston Invite 2024,2024-07-13
+Versa,Pizza Rat,6,13,Boston Invite 2024,2024-07-13
+Vice,Pizza Rat,9,6,Boston Invite 2024,2024-07-13
+Versa,Frolic,6,9,Boston Invite 2024,2024-07-13
+Vice,Versa,11,0,Boston Invite 2024,2024-07-13
+Frolic,Pizza Rat,11,9,Boston Invite 2024,2024-07-13
+Tabby Rosa,Roseate Spoonbill,13,2,Filling the Void 2024,2024-07-13
+CHAOS,Magma,13,4,Filling the Void 2024,2024-07-13
+Tabby Rosa,CHAOS,13,5,Filling the Void 2024,2024-07-13
+Roseate Spoonbill,Magma,3,12,Filling the Void 2024,2024-07-13
+Tabby Rosa,Magma,12,2,Filling the Void 2024,2024-07-13
+CHAOS,Roseate Spoonbill,13,1,Filling the Void 2024,2024-07-13
+Juice Box,Virginia Rebellion,11,5,Filling the Void 2024,2024-07-13
+Fiasco,Calypso,8,10,Filling the Void 2024,2024-07-13
+Juice Box,Fiasco,12,4,Filling the Void 2024,2024-07-13
+Virginia Rebellion,Calypso,6,8,Filling the Void 2024,2024-07-13
+Juice Box,Calypso,10,7,Filling the Void 2024,2024-07-13
+Fiasco,Virginia Rebellion,7,8,Filling the Void 2024,2024-07-13
+Tabby Rosa,Juice Box,9,8,Filling the Void 2024,2024-07-13
+Tabby Rosa,Calypso,10,7,Filling the Void 2024,2024-07-13
+Juice Box,CHAOS,11,6,Filling the Void 2024,2024-07-13
+Tabby Rosa,Fiasco,13,7,Filling the Void 2024,2024-07-13
+Calypso,Magma,8,7,Filling the Void 2024,2024-07-13
+Juice Box,Roseate Spoonbill,13,3,Filling the Void 2024,2024-07-13
+CHAOS,Virginia Rebellion,10,7,Filling the Void 2024,2024-07-13
+Calypso,CHAOS,10,11,Filling the Void 2024,2024-07-13
+Magma,Virginia Rebellion,8,6,Filling the Void 2024,2024-07-13
+Fiasco,Magma,4,8,Filling the Void 2024,2024-07-13
+Roseate Spoonbill,Virginia Rebellion,4,10,Filling the Void 2024,2024-07-13
+Fiasco,Roseate Spoonbill,7,5,Filling the Void 2024,2024-07-13
+Venom,Haboob,8,1,Sonoran Nights,2024-07-13
+Haboob,Just Add Water,5,1,Sonoran Nights,2024-07-13
+Venom,Just Add Water,9,1,Sonoran Nights,2024-07-13
+Haboob,Venom,7,5,Sonoran Nights,2024-07-13
+Haboob,Just Add Water,6,3,Sonoran Nights,2024-07-13
+Brute Squad,Starling Ultimate,15,9,TCT Pro-Elite Challenge East 2024,2024-07-13
+Parcha,Pine Baroness,15,1,TCT Pro-Elite Challenge East 2024,2024-07-13
+Brute Squad,Pine Baroness,15,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+Parcha,Starling Ultimate,15,10,TCT Pro-Elite Challenge East 2024,2024-07-13
+Brute Squad,Parcha,15,4,TCT Pro-Elite Challenge East 2024,2024-07-13
+Starling Ultimate,Pine Baroness,14,9,TCT Pro-Elite Challenge East 2024,2024-07-13
+Scandal,Grit,15,6,TCT Pro-Elite Challenge East 2024,2024-07-13
+Iris,Brooklyn Book Club,15,7,TCT Pro-Elite Challenge East 2024,2024-07-13
+Scandal,Brooklyn Book Club,15,1,TCT Pro-Elite Challenge East 2024,2024-07-13
+Iris,Grit,14,9,TCT Pro-Elite Challenge East 2024,2024-07-13
+Scandal,Iris,12,11,TCT Pro-Elite Challenge East 2024,2024-07-13
+Grit,Brooklyn Book Club,14,10,TCT Pro-Elite Challenge East 2024,2024-07-13
+Phoenix,Siege,15,5,TCT Pro-Elite Challenge East 2024,2024-07-13
+6ixers,Agency,15,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+Phoenix,Agency,15,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+6ixers,Siege,15,6,TCT Pro-Elite Challenge East 2024,2024-07-13
+Phoenix,6ixers,12,13,TCT Pro-Elite Challenge East 2024,2024-07-13
+Siege,Agency,14,5,TCT Pro-Elite Challenge East 2024,2024-07-13
+BENT,Vengeance,15,4,TCT Pro-Elite Challenge East 2024,2024-07-13
+Nemesis,Flight,11,9,TCT Pro-Elite Challenge East 2024,2024-07-13
+BENT,Flight,15,5,TCT Pro-Elite Challenge East 2024,2024-07-13
+Nemesis,Vengeance,15,7,TCT Pro-Elite Challenge East 2024,2024-07-13
+BENT,Nemesis,13,9,TCT Pro-Elite Challenge East 2024,2024-07-13
+Vengeance,Flight,13,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Phoenix,Scandal,9,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Brute Squad,Phoenix,8,13,TCT Pro-Elite Challenge East 2024,2024-07-13
+6ixers,Scandal,8,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Brute Squad,Iris,15,7,TCT Pro-Elite Challenge East 2024,2024-07-13
+Phoenix,BENT,14,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+6ixers,Nemesis,12,4,TCT Pro-Elite Challenge East 2024,2024-07-13
+Parcha,Scandal,5,15,TCT Pro-Elite Challenge East 2024,2024-07-13
+6ixers,Brute Squad,5,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+BENT,Parcha,12,6,TCT Pro-Elite Challenge East 2024,2024-07-13
+Iris,BENT,11,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Nemesis,Parcha,9,14,TCT Pro-Elite Challenge East 2024,2024-07-13
+Iris,Nemesis,12,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+Grit,Starling Ultimate,11,7,TCT Pro-Elite Challenge East 2024,2024-07-13
+Grit,Siege,14,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+Vengeance,Starling Ultimate,11,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Grit,Pine Baroness,15,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+Flight,Siege,9,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Vengeance,Agency,15,6,TCT Pro-Elite Challenge East 2024,2024-07-13
+Brooklyn Book Club,Starling Ultimate,6,12,TCT Pro-Elite Challenge East 2024,2024-07-13
+Vengeance,Siege,11,9,TCT Pro-Elite Challenge East 2024,2024-07-13
+Flight,Agency,12,3,TCT Pro-Elite Challenge East 2024,2024-07-13
+Pine Baroness,Flight,7,15,TCT Pro-Elite Challenge East 2024,2024-07-13
+Agency,Brooklyn Book Club,9,8,TCT Pro-Elite Challenge East 2024,2024-07-13
+Pine Baroness,Brooklyn Book Club,8,10,TCT Pro-Elite Challenge East 2024,2024-07-13
+Molly Brown,Underground,15,1,TCT Pro-Elite Challenge West 2024,2024-07-13
+Molly Brown,Pop,15,8,TCT Pro-Elite Challenge West 2024,2024-07-13
+Pop,Underground,12,13,TCT Pro-Elite Challenge West 2024,2024-07-13
+Fury,Colorado Kelp,15,3,TCT Pro-Elite Challenge West 2024,2024-07-13
+Fury,Nightlock,15,4,TCT Pro-Elite Challenge West 2024,2024-07-13
+Nightlock,Colorado Kelp,14,10,TCT Pro-Elite Challenge West 2024,2024-07-13
+Flipside,Colorado Small Batch,15,6,TCT Pro-Elite Challenge West 2024,2024-07-13
+Flipside,Schwa,15,10,TCT Pro-Elite Challenge West 2024,2024-07-13
+Schwa,Colorado Small Batch,15,2,TCT Pro-Elite Challenge West 2024,2024-07-13
+Traffic,FAB,15,4,TCT Pro-Elite Challenge West 2024,2024-07-13
+Traffic,Seattle Riot,14,9,TCT Pro-Elite Challenge West 2024,2024-07-13
+Seattle Riot,FAB,15,2,TCT Pro-Elite Challenge West 2024,2024-07-13
+Molly Brown,Flipside,13,10,TCT Pro-Elite Challenge West 2024,2024-07-13
+Fury,Traffic,14,10,TCT Pro-Elite Challenge West 2024,2024-07-13
+Colorado Small Batch,Colorado Kelp,8,15,TCT Pro-Elite Challenge West 2024,2024-07-13
+FAB,Pop,4,14,TCT Pro-Elite Challenge West 2024,2024-07-13
+Colorado Small Batch,Pop,11,12,TCT Pro-Elite Challenge West 2024,2024-07-13
+FAB,Colorado Kelp,9,13,TCT Pro-Elite Challenge West 2024,2024-07-13
+Colorado Small Batch,FAB,11,7,TCT Pro-Elite Challenge West 2024,2024-07-13
+Colorado Kelp,Pop,8,14,TCT Pro-Elite Challenge West 2024,2024-07-13
+Molly Brown,Fury,14,12,TCT Pro-Elite Challenge West 2024,2024-07-13
+Molly Brown,Schwa,14,9,TCT Pro-Elite Challenge West 2024,2024-07-13
+Flipside,Fury,12,15,TCT Pro-Elite Challenge West 2024,2024-07-13
+Molly Brown,Nightlock,15,9,TCT Pro-Elite Challenge West 2024,2024-07-13
+Schwa,Traffic,15,11,TCT Pro-Elite Challenge West 2024,2024-07-13
+Flipside,Seattle Riot,13,12,TCT Pro-Elite Challenge West 2024,2024-07-13
+Underground,Fury,4,15,TCT Pro-Elite Challenge West 2024,2024-07-13
+Nightlock,FAB,12,7,TCT Pro-Elite Challenge West 2024,2024-07-13
+Schwa,Pop,15,4,TCT Pro-Elite Challenge West 2024,2024-07-13
+Seattle Riot,Colorado Kelp,14,6,TCT Pro-Elite Challenge West 2024,2024-07-13
+Underground,Colorado Small Batch,13,12,TCT Pro-Elite Challenge West 2024,2024-07-13
+Schwa,Flipside,15,14,TCT Pro-Elite Challenge West 2024,2024-07-13
+Traffic,Seattle Riot,14,8,TCT Pro-Elite Challenge West 2024,2024-07-13
+Nightlock,Traffic,5,14,TCT Pro-Elite Challenge West 2024,2024-07-13
+Seattle Riot,Underground,15,9,TCT Pro-Elite Challenge West 2024,2024-07-13
+Nightlock,Underground,14,6,TCT Pro-Elite Challenge West 2024,2024-07-13
+Ozone,Crush City,11,10,TCT Select Flight Invite East 2024,2024-07-27
+Zephyr,Dish,15,6,TCT Select Flight Invite East 2024,2024-07-27
+Ozone,Dish,15,4,TCT Select Flight Invite East 2024,2024-07-27
+Zephyr,Crush City,5,10,TCT Select Flight Invite East 2024,2024-07-27
+Ozone,Zephyr,10,8,TCT Select Flight Invite East 2024,2024-07-27
+Crush City,Dish,14,8,TCT Select Flight Invite East 2024,2024-07-27
+Indy Rogue,Juice Box,12,13,TCT Select Flight Invite East 2024,2024-07-27
+Heist,Agency,14,11,TCT Select Flight Invite East 2024,2024-07-27
+Indy Rogue,Agency,15,8,TCT Select Flight Invite East 2024,2024-07-27
+Heist,Juice Box,14,7,TCT Select Flight Invite East 2024,2024-07-27
+Indy Rogue,Heist,11,15,TCT Select Flight Invite East 2024,2024-07-27
+Juice Box,Agency,8,9,TCT Select Flight Invite East 2024,2024-07-27
+Outrage,Stellar,13,11,TCT Select Flight Invite East 2024,2024-07-27
+Vengeance,Shiver,15,6,TCT Select Flight Invite East 2024,2024-07-27
+Outrage,Shiver,9,10,TCT Select Flight Invite East 2024,2024-07-27
+Vengeance,Stellar,15,9,TCT Select Flight Invite East 2024,2024-07-27
+Outrage,Vengeance,5,15,TCT Select Flight Invite East 2024,2024-07-27
+Stellar,Shiver,7,11,TCT Select Flight Invite East 2024,2024-07-27
+Wicked,San Antonio Problems,12,8,TCT Select Flight Invite East 2024,2024-07-27
+Lake Erie Walleye,Brooklyn Book Club,7,13,TCT Select Flight Invite East 2024,2024-07-27
+Wicked,Brooklyn Book Club,10,12,TCT Select Flight Invite East 2024,2024-07-27
+Lake Erie Walleye,San Antonio Problems,7,14,TCT Select Flight Invite East 2024,2024-07-27
+Wicked,Lake Erie Walleye,15,5,TCT Select Flight Invite East 2024,2024-07-27
+San Antonio Problems,Brooklyn Book Club,8,7,TCT Select Flight Invite East 2024,2024-07-27
+Wicked,Vengeance,5,15,TCT Select Flight Invite East 2024,2024-07-27
+Ozone,Wicked,11,15,TCT Select Flight Invite East 2024,2024-07-27
+Vengeance,Heist,11,10,TCT Select Flight Invite East 2024,2024-07-27
+Ozone,Indy Rogue,13,10,TCT Select Flight Invite East 2024,2024-07-27
+Shiver,Wicked,5,15,TCT Select Flight Invite East 2024,2024-07-27
+Vengeance,Brooklyn Book Club,14,10,TCT Select Flight Invite East 2024,2024-07-27
+Crush City,Heist,10,11,TCT Select Flight Invite East 2024,2024-07-27
+Ozone,Heist,6,9,TCT Select Flight Invite East 2024,2024-07-27
+Indy Rogue,Brooklyn Book Club,13,8,TCT Select Flight Invite East 2024,2024-07-27
+Indy Rogue,Shiver,15,9,TCT Select Flight Invite East 2024,2024-07-27
+Brooklyn Book Club,Crush City,11,8,TCT Select Flight Invite East 2024,2024-07-27
+Shiver,Crush City,7,9,TCT Select Flight Invite East 2024,2024-07-27
+Outrage,Zephyr,12,8,TCT Select Flight Invite East 2024,2024-07-27
+Juice Box,Outrage,7,12,TCT Select Flight Invite East 2024,2024-07-27
+San Antonio Problems,Zephyr,7,9,TCT Select Flight Invite East 2024,2024-07-27
+Juice Box,Dish,12,6,TCT Select Flight Invite East 2024,2024-07-27
+Lake Erie Walleye,Outrage,4,15,TCT Select Flight Invite East 2024,2024-07-27
+San Antonio Problems,Stellar,12,10,TCT Select Flight Invite East 2024,2024-07-27
+Agency,Zephyr,8,12,TCT Select Flight Invite East 2024,2024-07-27
+Juice Box,San Antonio Problems,6,10,TCT Select Flight Invite East 2024,2024-07-27
+Lake Erie Walleye,Agency,5,14,TCT Select Flight Invite East 2024,2024-07-27
+Dish,Lake Erie Walleye,8,9,TCT Select Flight Invite East 2024,2024-07-27
+Stellar,Agency,8,15,TCT Select Flight Invite East 2024,2024-07-27
+Dish,Stellar,4,11,TCT Select Flight Invite East 2024,2024-07-27
+Traffic,Hucklebears,13,6,TCT Select Flight Invite West 2024,2024-07-27
+Colorado Kelp,Seattle Soul,15,2,TCT Select Flight Invite West 2024,2024-07-27
+Traffic,Colorado Kelp,15,5,TCT Select Flight Invite West 2024,2024-07-27
+Seattle Soul,Hucklebears,6,14,TCT Select Flight Invite West 2024,2024-07-27
+Dark Sky,Void Cat Rewind,15,3,TCT Select Flight Invite West 2024,2024-07-27
+Dark Sky,Underground,13,10,TCT Select Flight Invite West 2024,2024-07-27
+Underground,Void Cat Rewind,13,6,TCT Select Flight Invite West 2024,2024-07-27
+LOL,Portland Rain Check,15,0,TCT Select Flight Invite West 2024,2024-07-27
+FAB,Drift,14,9,TCT Select Flight Invite West 2024,2024-07-27
+LOL,FAB,11,6,TCT Select Flight Invite West 2024,2024-07-27
+Drift,Portland Rain Check,15,1,TCT Select Flight Invite West 2024,2024-07-27
+Wildfire,Radiant,15,5,TCT Select Flight Invite West 2024,2024-07-27
+Seattle END,Rampage,15,11,TCT Select Flight Invite West 2024,2024-07-27
+Wildfire,Seattle END,15,9,TCT Select Flight Invite West 2024,2024-07-27
+Rampage,Radiant,11,7,TCT Select Flight Invite West 2024,2024-07-27
+Seattle END,Radiant,15,4,TCT Select Flight Invite West 2024,2024-07-27
+Seattle END,Hucklebears,8,10,TCT Select Flight Invite West 2024,2024-07-27
+Hucklebears,Radiant,11,6,TCT Select Flight Invite West 2024,2024-07-27
+Rampage,Seattle Soul,13,7,TCT Select Flight Invite West 2024,2024-07-27
+Void Cat Rewind,Portland Rain Check,15,1,TCT Select Flight Invite West 2024,2024-07-27
+Rampage,Void Cat Rewind,7,8,TCT Select Flight Invite West 2024,2024-07-27
+Portland Rain Check,Seattle Soul,9,12,TCT Select Flight Invite West 2024,2024-07-27
+Traffic,Dark Sky,7,9,TCT Select Flight Invite West 2024,2024-07-27
+Traffic,Wildfire,15,4,TCT Select Flight Invite West 2024,2024-07-27
+LOL,Dark Sky,8,14,TCT Select Flight Invite West 2024,2024-07-27
+Traffic,FAB,15,2,TCT Select Flight Invite West 2024,2024-07-27
+Underground,Wildfire,9,13,TCT Select Flight Invite West 2024,2024-07-27
+LOL,Colorado Kelp,13,6,TCT Select Flight Invite West 2024,2024-07-27
+Drift,Dark Sky,6,15,TCT Select Flight Invite West 2024,2024-07-27
+Rampage,FAB,2,15,TCT Select Flight Invite West 2024,2024-07-27
+Underground,Hucklebears,15,10,TCT Select Flight Invite West 2024,2024-07-27
+Portland Rain Check,Wildfire,2,15,TCT Select Flight Invite West 2024,2024-07-27
+LOL,Radiant,15,4,TCT Select Flight Invite West 2024,2024-07-27
+Void Cat Rewind,Colorado Kelp,8,15,TCT Select Flight Invite West 2024,2024-07-27
+Seattle END,Drift,9,10,TCT Select Flight Invite West 2024,2024-07-27
+Seattle Soul,Dark Sky,1,15,TCT Select Flight Invite West 2024,2024-07-27
+Wildfire,LOL,10,15,TCT Select Flight Invite West 2024,2024-07-27
+Underground,Colorado Kelp,11,10,TCT Select Flight Invite West 2024,2024-07-27
+FAB,Underground,8,10,TCT Select Flight Invite West 2024,2024-07-27
+Colorado Kelp,Drift,11,5,TCT Select Flight Invite West 2024,2024-07-27
+FAB,Drift,12,11,TCT Select Flight Invite West 2024,2024-07-27
+Hucklebears,Void Cat Rewind,9,10,TCT Select Flight Invite West 2024,2024-07-27
+Seattle END,Rampage,11,5,TCT Select Flight Invite West 2024,2024-07-27
+Radiant,Seattle Soul,10,5,TCT Select Flight Invite West 2024,2024-07-27
+Scandal,Nightlock,15,8,2024 U.S. Open Club Championships - ICC,2024-08-02
+Scandal,BENT,15,9,2024 U.S. Open Club Championships - ICC,2024-08-02
+BENT,Nightlock,15,10,2024 U.S. Open Club Championships - ICC,2024-08-02
+Molly Brown,Starling Ultimate,15,7,2024 U.S. Open Club Championships - ICC,2024-08-02
+Molly Brown,Flipside,13,12,2024 U.S. Open Club Championships - ICC,2024-08-02
+Flipside,Starling Ultimate,13,12,2024 U.S. Open Club Championships - ICC,2024-08-02
+Fury,Team Mexico,15,3,2024 U.S. Open Club Championships - ICC,2024-08-02
+Fury,Brute Squad,15,5,2024 U.S. Open Club Championships - ICC,2024-08-02
+Brute Squad,Team Mexico,15,4,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Canada Women,Schwa,13,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Canada Women,Phoenix,12,13,2024 U.S. Open Club Championships - ICC,2024-08-02
+Phoenix,Schwa,15,8,2024 U.S. Open Club Championships - ICC,2024-08-02
+Scandal,Fury,12,14,2024 U.S. Open Club Championships - ICC,2024-08-02
+Molly Brown,Phoenix,15,8,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Mexico,Starling Ultimate,10,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Schwa,Nightlock,13,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Mexico,Nightlock,6,14,2024 U.S. Open Club Championships - ICC,2024-08-02
+Schwa,Starling Ultimate,14,8,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Mexico,Schwa,4,15,2024 U.S. Open Club Championships - ICC,2024-08-02
+Starling Ultimate,Nightlock,11,12,2024 U.S. Open Club Championships - ICC,2024-08-02
+Fury,Scandal,15,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Fury,Brute Squad,15,10,2024 U.S. Open Club Championships - ICC,2024-08-02
+Scandal,Molly Brown,15,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Fury,Flipside,15,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Brute Squad,Phoenix,15,12,2024 U.S. Open Club Championships - ICC,2024-08-02
+Scandal,Team Canada Women,15,14,2024 U.S. Open Club Championships - ICC,2024-08-02
+BENT,Molly Brown,12,15,2024 U.S. Open Club Championships - ICC,2024-08-02
+Flipside,Schwa,15,8,2024 U.S. Open Club Championships - ICC,2024-08-02
+Brute Squad,Nightlock,15,5,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Canada Women,Starling Ultimate,14,6,2024 U.S. Open Club Championships - ICC,2024-08-02
+BENT,Team Mexico,15,6,2024 U.S. Open Club Championships - ICC,2024-08-02
+Brute Squad,Molly Brown,12,15,2024 U.S. Open Club Championships - ICC,2024-08-02
+Flipside,BENT,15,12,2024 U.S. Open Club Championships - ICC,2024-08-02
+Flipside,Phoenix,14,10,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Canada Women,BENT,10,12,2024 U.S. Open Club Championships - ICC,2024-08-02
+Team Canada Women,Phoenix,14,11,2024 U.S. Open Club Championships - ICC,2024-08-02
+Siege,Virginia Rebellion,13,6,Philly Open 2024,2024-08-03
+Pine Baroness,Virginia Rebellion,9,11,Philly Open 2024,2024-08-03
+Siege,Pine Baroness,10,9,Philly Open 2024,2024-08-03
+Calypso,Dissent,11,7,Philly Open 2024,2024-08-03
+Vice,Dissent,12,3,Philly Open 2024,2024-08-03
+Vice,Calypso,13,6,Philly Open 2024,2024-08-03
+Versa,Syrup!,12,3,Philly Open 2024,2024-08-03
+Zephyr,Syrup!,13,0,Philly Open 2024,2024-08-03
+Zephyr,Versa,13,1,Philly Open 2024,2024-08-03
+Wave,Incline,12,5,Philly Open 2024,2024-08-03
+Pizza Rat,Pickup Lines,13,2,Philly Open 2024,2024-08-03
+Wave,Pickup Lines,13,2,Philly Open 2024,2024-08-03
+Pizza Rat,Incline,9,6,Philly Open 2024,2024-08-03
+Wave,Pizza Rat,8,9,Philly Open 2024,2024-08-03
+Incline,Pickup Lines,13,3,Philly Open 2024,2024-08-03
+Siege,Calypso,13,5,Philly Open 2024,2024-08-03
+Vice,Versa,11,2,Philly Open 2024,2024-08-03
+Zephyr,Virginia Rebellion,8,6,Philly Open 2024,2024-08-03
+Pine Baroness,Dissent,11,2,Philly Open 2024,2024-08-03
+Syrup!,Pickup Lines,6,8,Philly Open 2024,2024-08-03
+Pine Baroness,Syrup!,15,0,Philly Open 2024,2024-08-03
+Dissent,Incline,5,10,Philly Open 2024,2024-08-03
+Pine Baroness,Pickup Lines,11,1,Philly Open 2024,2024-08-03
+Syrup!,Incline,1,11,Philly Open 2024,2024-08-03
+Pine Baroness,Incline,11,5,Philly Open 2024,2024-08-03
+Dissent,Pickup Lines,8,2,Philly Open 2024,2024-08-03
+Incline,Pickup Lines,13,3,Philly Open 2024,2024-08-03
+Siege,Pizza Rat,9,5,Philly Open 2024,2024-08-03
+Siege,Vice,10,6,Philly Open 2024,2024-08-03
+Zephyr,Pizza Rat,6,7,Philly Open 2024,2024-08-03
+Siege,Wave,13,4,Philly Open 2024,2024-08-03
+Vice,Virginia Rebellion,10,5,Philly Open 2024,2024-08-03
+Zephyr,Versa,8,6,Philly Open 2024,2024-08-03
+Calypso,Pizza Rat,5,7,Philly Open 2024,2024-08-03
+Vice,Zephyr,5,6,Philly Open 2024,2024-08-03
+Virginia Rebellion,Calypso,7,8,Philly Open 2024,2024-08-03
+Wave,Virginia Rebellion,7,9,Philly Open 2024,2024-08-03
+Versa,Calypso,5,8,Philly Open 2024,2024-08-03
+Wave,Versa,11,4,Philly Open 2024,2024-08-03
+Tempo,Ultraviolet,6,7,SLOBowl,2024-08-04
+Just Add Water,Ultraviolet,5,10,SLOBowl,2024-08-04
+Just Add Water,Tempo,2,10,SLOBowl,2024-08-04
