@@ -9,3 +9,4 @@ not_getting_vaxed.R
 slack/
 *.csv
 !rankings/*
+*key.R
