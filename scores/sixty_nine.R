@@ -11,9 +11,6 @@ pul_teams <-
     team_number = str_extract(url, "[0-9]+")
   )
 
-# BENT
-team_number <- "5003235896066048"
-
 build_team_url <-
   function(team_number) {
     base_url <- "http://www.ultianalytics.com"
@@ -21,6 +18,7 @@ build_team_url <-
     glue::glue("{team_url}/stats/export")
   }
 
+# Grab raw data
 get_raw <-
   function(url) {
     httr::GET(url) %>%
@@ -30,8 +28,8 @@ get_raw <-
       ) %>%
       janitor::clean_names() %>%
       distinct(
-        tournament = tournamemnt,
         # lol
+        tournament = tournamemnt,
         opponent,
         date_time,
         our_score_end_of_point,
@@ -40,22 +38,33 @@ get_raw <-
       distinct()
   }
 
+# Label each point as nice or not
 label <-
-  function(tbl) {
+  function(
+      tbl,
+      # Should we allow 9-6 or just 6-9
+      only_six_to_nine = TRUE) {
     tbl %>%
-      janitor::clean_names() %>%
       mutate(
         date = date_time %>% lubridate::ymd_hm() %>% lubridate::as_date(),
         our_score_end_of_point = as.integer(our_score_end_of_point),
         their_score_end_of_point = as.integer(their_score_end_of_point)
       ) %>%
       mutate(
-        nice = (our_score_end_of_point == 6 & their_score_end_of_point == 9) |
-          (our_score_end_of_point == 9 & their_score_end_of_point == 6)
+        nice =
+          case_when(
+            only_six_to_nine ~
+              our_score_end_of_point == 6 & their_score_end_of_point == 9,
+            !only_six_to_nine ~
+              (our_score_end_of_point == 6 & their_score_end_of_point == 9) |
+                (our_score_end_of_point == 9 & their_score_end_of_point == 6)
+          )
       ) %>%
       select(-date_time)
   }
 
+# If you came into a game at a random time what is the probability the score
+# would be 6-9
 get_percent_at_any_moment <-
   function(tbl) {
     counts <-
@@ -67,6 +76,7 @@ get_percent_at_any_moment <-
       counts %>%
       filter(nice) %>%
       pull(n)
+
     no <-
       counts %>%
       filter(!nice) %>%
@@ -75,6 +85,7 @@ get_percent_at_any_moment <-
     yes / (no + yes) * 100
   }
 
+# What is the probability the score was 6-9 at some point during the game
 get_percent_for_game <-
   function(tbl) {
     nice_games <-
@@ -105,7 +116,7 @@ get_percent_for_game <-
 
 dat <- tibble()
 
-# Grab data
+# Grab data in one big dataframe
 for (i in 1:nrow(pul_teams)) {
   message(
     glue::glue("{i}/{nrow(pul_teams)}: {pul_teams$team[i]}")
@@ -133,3 +144,4 @@ labeled <- label(dat)
 percent_any_moment <- get_percent_at_any_moment(labeled)
 
 percent_for_game <- get_percent_for_game(labeled)
+percent_for_game
