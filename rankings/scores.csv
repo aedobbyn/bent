@@ -1,96 +1,4 @@
 team_1,team_2,score_1,score_2,event,date
-FAB,Tempo,15,3,Bay Area Ultimate Classic 2024,2024-06-15
-Void Cat Rewind,Ultraviolet,15,1,Bay Area Ultimate Classic 2024,2024-06-15
-FAB,Ultraviolet,15,0,Bay Area Ultimate Classic 2024,2024-06-15
-Void Cat Rewind,Tempo,15,2,Bay Area Ultimate Classic 2024,2024-06-15
-FAB,Void Cat Rewind,11,6,Bay Area Ultimate Classic 2024,2024-06-15
-Tempo,Ultraviolet,9,4,Bay Area Ultimate Classic 2024,2024-06-15
-Swell,Colorado Cutthroat: Youth Club U-20 Girls,6,11,Colorado Summer Solstice 2024,2024-06-22
-COSMOS,Haboob,10,9,Colorado Summer Solstice 2024,2024-06-22
-Trainwreck,Just Add Water,15,0,Colorado Summer Solstice 2024,2024-06-22
-Trainwreck,COSMOS,12,5,Colorado Summer Solstice 2024,2024-06-22
-Just Add Water,Colorado Cutthroat: Youth Club U-20 Girls,4,15,Colorado Summer Solstice 2024,2024-06-22
-Venom,Haboob,11,5,Colorado Summer Solstice 2024,2024-06-22
-Swell,Just Add Water,10,5,Colorado Summer Solstice 2024,2024-06-22
-Trainwreck,Haboob,12,3,Colorado Summer Solstice 2024,2024-06-22
-Venom,COSMOS,10,5,Colorado Summer Solstice 2024,2024-06-22
-Trainwreck,Colorado Cutthroat: Youth Club U-20 Girls,11,7,Colorado Summer Solstice 2024,2024-06-22
-COSMOS,Just Add Water,13,5,Colorado Summer Solstice 2024,2024-06-22
-Venom,Swell,14,4,Colorado Summer Solstice 2024,2024-06-22
-Venom,Just Add Water,15,5,Colorado Summer Solstice 2024,2024-06-22
-COSMOS,Colorado Cutthroat: Youth Club U-20 Girls,3,14,Colorado Summer Solstice 2024,2024-06-22
-Swell,Haboob,8,6,Colorado Summer Solstice 2024,2024-06-22
-Haboob,Just Add Water,15,3,Colorado Summer Solstice 2024,2024-06-22
-Venom,Colorado Cutthroat: Youth Club U-20 Girls,12,5,Colorado Summer Solstice 2024,2024-06-22
-Trainwreck,Swell,14,5,Colorado Summer Solstice 2024,2024-06-22
-Swell,COSMOS,12,4,Colorado Summer Solstice 2024,2024-06-22
-Trainwreck,Venom,12,10,Colorado Summer Solstice 2024,2024-06-22
-Haboob,Colorado Cutthroat: Youth Club U-20 Girls,5,12,Colorado Summer Solstice 2024,2024-06-22
-Schwa,Oregon Downpour,13,5,Eugene Summer Solstice 2024,2024-06-22
-Drift,Seattle Soul,13,2,Eugene Summer Solstice 2024,2024-06-22
-Schwa,Seattle Soul,13,0,Eugene Summer Solstice 2024,2024-06-22
-Drift,Oregon Downpour,5,12,Eugene Summer Solstice 2024,2024-06-22
-Schwa,Drift,13,1,Eugene Summer Solstice 2024,2024-06-22
-Oregon Downpour,Seattle Soul,13,1,Eugene Summer Solstice 2024,2024-06-22
-Seattle END,PDXtra,12,10,Eugene Summer Solstice 2024,2024-06-22
-FAB,Portland Rain Check,13,2,Eugene Summer Solstice 2024,2024-06-22
-Seattle END,Portland Rain Check,13,1,Eugene Summer Solstice 2024,2024-06-22
-FAB,PDXtra,13,6,Eugene Summer Solstice 2024,2024-06-22
-Seattle END,FAB,10,8,Eugene Summer Solstice 2024,2024-06-22
-PDXtra,Portland Rain Check,9,3,Eugene Summer Solstice 2024,2024-06-22
-Schwa,Oregon Downpour,15,9,Eugene Summer Solstice 2024,2024-06-22
-Schwa,Drift,15,2,Eugene Summer Solstice 2024,2024-06-22
-Oregon Downpour,Seattle END,12,10,Eugene Summer Solstice 2024,2024-06-22
-Schwa,Portland Rain Check,15,2,Eugene Summer Solstice 2024,2024-06-22
-Drift,FAB,9,8,Eugene Summer Solstice 2024,2024-06-22
-Oregon Downpour,PDXtra,13,7,Eugene Summer Solstice 2024,2024-06-22
-Seattle Soul,Seattle END,4,15,Eugene Summer Solstice 2024,2024-06-22
-Drift,Seattle END,8,11,Eugene Summer Solstice 2024,2024-06-22
-FAB,PDXtra,W,0,Eugene Summer Solstice 2024,2024-06-22
-Portland Rain Check,FAB,5,10,Eugene Summer Solstice 2024,2024-06-22
-PDXtra,Seattle Soul,15,6,Eugene Summer Solstice 2024,2024-06-22
-Portland Rain Check,Seattle Soul,6,9,Eugene Summer Solstice 2024,2024-06-22
-Indy Rogue,Y'all,13,3,SCINNY 2024,2024-06-22
-Indy Rogue,Sureshot,12,9,SCINNY 2024,2024-06-22
-Sureshot,Y'all,9,7,SCINNY 2024,2024-06-22
-Toronto Incognito,Bullseye,13,3,SCINNY 2024,2024-06-22
-Lake Erie Walleye,Solstice,10,3,SCINNY 2024,2024-06-22
-Toronto Incognito,Lake Erie Walleye,13,1,SCINNY 2024,2024-06-22
-Solstice,Bullseye,12,7,SCINNY 2024,2024-06-22
-Indy Rogue,Toronto Incognito,8,7,SCINNY 2024,2024-06-22
-Sureshot,Lake Erie Walleye,5,8,SCINNY 2024,2024-06-22
-Y'all,Solstice,9,4,SCINNY 2024,2024-06-22
-Indy Rogue,Toronto Incognito,7,8,SCINNY 2024,2024-06-22
-Indy Rogue,Lake Erie Walleye,9,1,SCINNY 2024,2024-06-22
-Toronto Incognito,Y'all,13,1,SCINNY 2024,2024-06-22
-Solstice,Lake Erie Walleye,3,10,SCINNY 2024,2024-06-22
-Y'all,Sureshot,10,4,SCINNY 2024,2024-06-22
-Lake Erie Walleye,Y'all,7,9,SCINNY 2024,2024-06-22
-Solstice,Sureshot,1,9,SCINNY 2024,2024-06-22
-Pizza Rat,Dissent,13,3,Scuffletown Throwdown 2024,2024-06-22
-Agency,Pine Baroness,10,6,Scuffletown Throwdown 2024,2024-06-22
-Brooklyn Book Club,Shiver,9,7,Scuffletown Throwdown 2024,2024-06-22
-Wave,Virginia Rebellion,11,6,Scuffletown Throwdown 2024,2024-06-22
-Brooklyn Book Club,Pizza Rat,8,9,Scuffletown Throwdown 2024,2024-06-22
-Wave,Rogue,9,5,Scuffletown Throwdown 2024,2024-06-22
-Virginia Rebellion,Dissent,10,4,Scuffletown Throwdown 2024,2024-06-22
-Shiver,Pine Baroness,9,6,Scuffletown Throwdown 2024,2024-06-22
-Pine Baroness,Virginia Rebellion,9,10,Scuffletown Throwdown 2024,2024-06-22
-Dissent,Wave,3,13,Scuffletown Throwdown 2024,2024-06-22
-Rogue,Brooklyn Book Club,2,11,Scuffletown Throwdown 2024,2024-06-22
-Pizza Rat,Agency,7,12,Scuffletown Throwdown 2024,2024-06-22
-Brooklyn Book Club,Virginia Rebellion,12,5,Scuffletown Throwdown 2024,2024-06-22
-Shiver,Agency,11,5,Scuffletown Throwdown 2024,2024-06-22
-Pine Baroness,Pizza Rat,9,8,Scuffletown Throwdown 2024,2024-06-22
-Dissent,Rogue,6,12,Scuffletown Throwdown 2024,2024-06-22
-Dissent,Shiver,4,10,Scuffletown Throwdown 2024,2024-06-22
-Rogue,Virginia Rebellion,9,11,Scuffletown Throwdown 2024,2024-06-22
-Pizza Rat,Wave,8,9,Scuffletown Throwdown 2024,2024-06-22
-Agency,Brooklyn Book Club,6,5,Scuffletown Throwdown 2024,2024-06-22
-Pizza Rat,Shiver,4,5,Scuffletown Throwdown 2024,2024-06-22
-Agency,Virginia Rebellion,6,3,Scuffletown Throwdown 2024,2024-06-22
-Brooklyn Book Club,Wave,0,15,Scuffletown Throwdown 2024,2024-06-22
-Pine Baroness,Dissent,10,0,Scuffletown Throwdown 2024,2024-06-22
 Vengeance,TWISTED,13,1,Texas 2 Finger 2024,2024-06-29
 San Antonio Problems,Firewheel,10,5,Texas 2 Finger 2024,2024-06-29
 Crush City,Inferno,13,2,Texas 2 Finger 2024,2024-06-29
@@ -412,7 +320,7 @@ Pine Baroness,Virginia Rebellion,9,11,Philly Open 2024,2024-08-03
 Siege,Pine Baroness,10,9,Philly Open 2024,2024-08-03
 Calypso,Dissent,11,7,Philly Open 2024,2024-08-03
 Vice,Dissent,12,3,Philly Open 2024,2024-08-03
-Vice,Calypso,13,6,Philly Open 2024,2024-08-03
+Vice,Calypso,13,5,Philly Open 2024,2024-08-03
 Versa,Syrup!,12,3,Philly Open 2024,2024-08-03
 Zephyr,Syrup!,13,0,Philly Open 2024,2024-08-03
 Zephyr,Versa,13,1,Philly Open 2024,2024-08-03
@@ -434,6 +342,7 @@ Syrup!,Incline,1,11,Philly Open 2024,2024-08-03
 Pine Baroness,Incline,11,5,Philly Open 2024,2024-08-03
 Dissent,Pickup Lines,8,2,Philly Open 2024,2024-08-03
 Incline,Pickup Lines,13,3,Philly Open 2024,2024-08-03
+Dissent,Syrup!,7,4,Philly Open 2024,2024-08-03
 Siege,Pizza Rat,9,5,Philly Open 2024,2024-08-03
 Siege,Vice,10,6,Philly Open 2024,2024-08-03
 Zephyr,Pizza Rat,6,7,Philly Open 2024,2024-08-03
@@ -449,3 +358,230 @@ Wave,Versa,11,4,Philly Open 2024,2024-08-03
 Tempo,Ultraviolet,6,7,SLOBowl,2024-08-04
 Just Add Water,Ultraviolet,5,10,SLOBowl,2024-08-04
 Just Add Water,Tempo,2,10,SLOBowl,2024-08-04
+TWISTED,Sureshot,5,13,HoDown Showdown 2024,2024-08-10
+Ozone,Huntsville Laika,13,4,HoDown Showdown 2024,2024-08-10
+Ozone,Sureshot,13,4,HoDown Showdown 2024,2024-08-10
+Huntsville Laika,Magma,10,12,HoDown Showdown 2024,2024-08-10
+Ozone,TWISTED,13,2,HoDown Showdown 2024,2024-08-10
+Sureshot,Magma,7,9,HoDown Showdown 2024,2024-08-10
+Huntsville Laika,Sureshot,10,5,HoDown Showdown 2024,2024-08-10
+TWISTED,Magma,6,10,HoDown Showdown 2024,2024-08-10
+Ozone,Magma,13,1,HoDown Showdown 2024,2024-08-10
+Huntsville Laika,TWISTED,5,12,HoDown Showdown 2024,2024-08-10
+San Antonio Problems,Juice Box,13,11,HoDown Showdown 2024,2024-08-10
+Shiver,CHAOS,10,12,HoDown Showdown 2024,2024-08-10
+Shiver,Juice Box,8,12,HoDown Showdown 2024,2024-08-10
+San Antonio Problems,CHAOS,11,7,HoDown Showdown 2024,2024-08-10
+Juice Box,CHAOS,11,9,HoDown Showdown 2024,2024-08-10
+San Antonio Problems,Shiver,10,12,HoDown Showdown 2024,2024-08-10
+Magma,TWISTED,11,9,HoDown Showdown 2024,2024-08-10
+Huntsville Laika,Shiver,4,12,HoDown Showdown 2024,2024-08-10
+Shiver,Sureshot,13,4,HoDown Showdown 2024,2024-08-10
+Huntsville Laika,Magma,7,13,HoDown Showdown 2024,2024-08-10
+Juice Box,CHAOS,10,8,HoDown Showdown 2024,2024-08-10
+Ozone,Juice Box,10,11,HoDown Showdown 2024,2024-08-10
+CHAOS,San Antonio Problems,12,7,HoDown Showdown 2024,2024-08-10
+Ozone,Shiver,11,8,HoDown Showdown 2024,2024-08-10
+Juice Box,Sureshot,13,5,HoDown Showdown 2024,2024-08-10
+Magma,CHAOS,5,13,HoDown Showdown 2024,2024-08-10
+San Antonio Problems,TWISTED,13,6,HoDown Showdown 2024,2024-08-10
+Ozone,San Antonio Problems,12,7,HoDown Showdown 2024,2024-08-10
+Wicked,Stormborn,15,3,Cooler Classic 35,2024-08-17
+Stellar,Charm,15,3,Cooler Classic 35,2024-08-17
+Stormborn,Freshwater Ultimate,12,7,Cooler Classic 35,2024-08-17
+Wicked,Medusa,15,5,Cooler Classic 35,2024-08-17
+Stellar,Dish,12,9,Cooler Classic 35,2024-08-17
+Dish,Charm,14,4,Cooler Classic 35,2024-08-17
+Wicked,Stellar,13,6,Cooler Classic 35,2024-08-17
+Medusa,Freshwater Ultimate,14,4,Cooler Classic 35,2024-08-17
+Medusa,Charm,12,2,Cooler Classic 35,2024-08-17
+Wicked,Freshwater Ultimate,15,1,Cooler Classic 35,2024-08-17
+Dish,Stormborn,10,4,Cooler Classic 35,2024-08-17
+Wicked,Charm,15,0,Cooler Classic 35,2024-08-17
+Stellar,Freshwater Ultimate,15,4,Cooler Classic 35,2024-08-17
+Stormborn,Charm,15,6,Cooler Classic 35,2024-08-17
+Wicked,Dish,15,8,Cooler Classic 35,2024-08-17
+Stellar,Medusa,13,12,Cooler Classic 35,2024-08-17
+Dish,Medusa,10,5,Cooler Classic 35,2024-08-17
+Freshwater Ultimate,Charm,10,4,Cooler Classic 35,2024-08-17
+Stellar,Stormborn,15,8,Cooler Classic 35,2024-08-17
+Dish,Freshwater Ultimate,15,5,Cooler Classic 35,2024-08-17
+Medusa,Stormborn,9,13,Cooler Classic 35,2024-08-17
+Swell,Tempo,9,5,Ski Town Classic 2024,2024-08-17
+Wildfire,Tempo,13,0,Ski Town Classic 2024,2024-08-17
+Wildfire,Swell,13,1,Ski Town Classic 2024,2024-08-17
+Seattle Soul,Haboob,4,7,Ski Town Classic 2024,2024-08-17
+Crush City,Haboob,7,3,Ski Town Classic 2024,2024-08-17
+Crush City,Seattle Soul,13,3,Ski Town Classic 2024,2024-08-17
+Fiasco,Portland Rain Check,9,3,Ski Town Classic 2024,2024-08-17
+Void Cat Rewind,Portland Rain Check,12,2,Ski Town Classic 2024,2024-08-17
+Void Cat Rewind,Fiasco,13,8,Ski Town Classic 2024,2024-08-17
+Rampage,Just Add Water,13,4,Ski Town Classic 2024,2024-08-17
+Trainwreck,Just Add Water,10,3,Ski Town Classic 2024,2024-08-17
+Trainwreck,Rampage,10,8,Ski Town Classic 2024,2024-08-17
+Swell,Portland Rain Check,5,13,Ski Town Classic 2024,2024-08-17
+Haboob,Just Add Water,11,8,Ski Town Classic 2024,2024-08-17
+Fiasco,Tempo,13,2,Ski Town Classic 2024,2024-08-17
+Rampage,Seattle Soul,12,6,Ski Town Classic 2024,2024-08-17
+Wildfire,Void Cat Rewind,13,6,Ski Town Classic 2024,2024-08-17
+Crush City,Trainwreck,11,6,Ski Town Classic 2024,2024-08-17
+Swell,Tempo,9,1,Ski Town Classic 2024,2024-08-17
+Just Add Water,Seattle Soul,3,9,Ski Town Classic 2024,2024-08-17
+Swell,Seattle Soul,5,3,Ski Town Classic 2024,2024-08-17
+Just Add Water,Tempo,6,5,Ski Town Classic 2024,2024-08-17
+Swell,Just Add Water,10,7,Ski Town Classic 2024,2024-08-17
+Tempo,Seattle Soul,2,7,Ski Town Classic 2024,2024-08-17
+Wildfire,Crush City,9,7,Ski Town Classic 2024,2024-08-17
+Wildfire,Trainwreck,10,8,Ski Town Classic 2024,2024-08-17
+Crush City,Void Cat Rewind,8,4,Ski Town Classic 2024,2024-08-17
+Wildfire,Haboob,13,2,Ski Town Classic 2024,2024-08-17
+Trainwreck,Fiasco,11,8,Ski Town Classic 2024,2024-08-17
+Crush City,Portland Rain Check,9,4,Ski Town Classic 2024,2024-08-17
+Void Cat Rewind,Rampage,13,7,Ski Town Classic 2024,2024-08-17
+Trainwreck,Void Cat Rewind,9,7,Ski Town Classic 2024,2024-08-17
+Fiasco,Rampage,3,7,Ski Town Classic 2024,2024-08-17
+Haboob,Fiasco,2,10,Ski Town Classic 2024,2024-08-17
+Portland Rain Check,Rampage,5,7,Ski Town Classic 2024,2024-08-17
+Haboob,Portland Rain Check,5,10,Ski Town Classic 2024,2024-08-17
+6ixers,Pop,15,5,TCT Elite-Select Challenge 2024,2024-08-17
+Nightlock,Tabby Rosa,15,4,TCT Elite-Select Challenge 2024,2024-08-17
+6ixers,Tabby Rosa,15,2,TCT Elite-Select Challenge 2024,2024-08-17
+Nightlock,Pop,11,9,TCT Elite-Select Challenge 2024,2024-08-17
+6ixers,Nightlock,11,7,TCT Elite-Select Challenge 2024,2024-08-17
+Pop,Tabby Rosa,12,5,TCT Elite-Select Challenge 2024,2024-08-17
+Schwa,LOL,15,8,TCT Elite-Select Challenge 2024,2024-08-17
+Grit,Outrage,14,6,TCT Elite-Select Challenge 2024,2024-08-17
+Schwa,Outrage,15,1,TCT Elite-Select Challenge 2024,2024-08-17
+Grit,LOL,12,11,TCT Elite-Select Challenge 2024,2024-08-17
+Schwa,Grit,11,9,TCT Elite-Select Challenge 2024,2024-08-17
+LOL,Outrage,12,3,TCT Elite-Select Challenge 2024,2024-08-17
+Iris,Flight,11,8,TCT Elite-Select Challenge 2024,2024-08-17
+Seattle Riot,Colorado Small Batch,15,3,TCT Elite-Select Challenge 2024,2024-08-17
+Iris,Colorado Small Batch,13,3,TCT Elite-Select Challenge 2024,2024-08-17
+Seattle Riot,Flight,15,6,TCT Elite-Select Challenge 2024,2024-08-17
+Iris,Seattle Riot,5,15,TCT Elite-Select Challenge 2024,2024-08-17
+Flight,Colorado Small Batch,12,4,TCT Elite-Select Challenge 2024,2024-08-17
+Dark Sky,Nemesis,9,11,TCT Elite-Select Challenge 2024,2024-08-17
+Parcha,Heist,13,5,TCT Elite-Select Challenge 2024,2024-08-17
+Dark Sky,Heist,13,7,TCT Elite-Select Challenge 2024,2024-08-17
+Parcha,Nemesis,9,8,TCT Elite-Select Challenge 2024,2024-08-17
+Dark Sky,Parcha,8,10,TCT Elite-Select Challenge 2024,2024-08-17
+Nemesis,Heist,14,8,TCT Elite-Select Challenge 2024,2024-08-17
+6ixers,Seattle Riot,8,12,TCT Elite-Select Challenge 2024,2024-08-17
+6ixers,Parcha,11,7,TCT Elite-Select Challenge 2024,2024-08-17
+Seattle Riot,Nightlock,13,10,TCT Elite-Select Challenge 2024,2024-08-17
+6ixers,Grit,12,7,TCT Elite-Select Challenge 2024,2024-08-17
+Iris,Parcha,10,13,TCT Elite-Select Challenge 2024,2024-08-17
+Seattle Riot,Nemesis,15,7,TCT Elite-Select Challenge 2024,2024-08-17
+Nightlock,Schwa,13,12,TCT Elite-Select Challenge 2024,2024-08-17
+Parcha,Nightlock,11,10,TCT Elite-Select Challenge 2024,2024-08-17
+Grit,Schwa,8,11,TCT Elite-Select Challenge 2024,2024-08-17
+Grit,Iris,12,11,TCT Elite-Select Challenge 2024,2024-08-17
+Nemesis,Schwa,6,15,TCT Elite-Select Challenge 2024,2024-08-17
+Iris,Nemesis,10,9,TCT Elite-Select Challenge 2024,2024-08-17
+LOL,Pop,11,6,TCT Elite-Select Challenge 2024,2024-08-17
+LOL,Flight,13,8,TCT Elite-Select Challenge 2024,2024-08-17
+Dark Sky,Pop,11,13,TCT Elite-Select Challenge 2024,2024-08-17
+LOL,Tabby Rosa,15,3,TCT Elite-Select Challenge 2024,2024-08-17
+Heist,Flight,8,13,TCT Elite-Select Challenge 2024,2024-08-17
+Dark Sky,Colorado Small Batch,15,7,TCT Elite-Select Challenge 2024,2024-08-17
+Outrage,Pop,5,14,TCT Elite-Select Challenge 2024,2024-08-17
+Flight,Dark Sky,10,8,TCT Elite-Select Challenge 2024,2024-08-17
+Heist,Outrage,11,5,TCT Elite-Select Challenge 2024,2024-08-17
+Tabby Rosa,Heist,7,12,TCT Elite-Select Challenge 2024,2024-08-17
+Colorado Small Batch,Outrage,7,8,TCT Elite-Select Challenge 2024,2024-08-17
+Tabby Rosa,Colorado Small Batch,6,14,TCT Elite-Select Challenge 2024,2024-08-17
+Scandal,BENT,10,9,TCT Pro Championships 2024,2024-08-31
+Phoenix,Grit,11,10,TCT Pro Championships 2024,2024-08-31
+Scandal,Grit,11,7,TCT Pro Championships 2024,2024-08-31
+Phoenix,BENT,11,9,TCT Pro Championships 2024,2024-08-31
+Scandal,Phoenix,15,12,TCT Pro Championships 2024,2024-08-31
+BENT,Grit,15,11,TCT Pro Championships 2024,2024-08-31
+Molly Brown,Parcha,15,11,TCT Pro Championships 2024,2024-08-31
+Seattle Riot,Juice Box,15,5,TCT Pro Championships 2024,2024-08-31
+Molly Brown,Juice Box,14,7,TCT Pro Championships 2024,2024-08-31
+Seattle Riot,Parcha,11,6,TCT Pro Championships 2024,2024-08-31
+Molly Brown,Seattle Riot,10,9,TCT Pro Championships 2024,2024-08-31
+Parcha,Juice Box,15,6,TCT Pro Championships 2024,2024-08-31
+BENT,Phoenix,9,15,TCT Pro Championships 2024,2024-08-31
+Scandal,BENT,9,10,TCT Pro Championships 2024,2024-08-31
+Phoenix,Molly Brown,11,8,TCT Pro Championships 2024,2024-08-31
+Scandal,Juice Box,15,1,TCT Pro Championships 2024,2024-08-31
+BENT,Seattle Riot,13,12,TCT Pro Championships 2024,2024-08-31
+Phoenix,Parcha,15,9,TCT Pro Championships 2024,2024-08-31
+Grit,Molly Brown,12,15,TCT Pro Championships 2024,2024-08-31
+Molly Brown,Scandal,10,15,TCT Pro Championships 2024,2024-08-31
+Seattle Riot,Parcha,14,8,TCT Pro Championships 2024,2024-08-31
+Seattle Riot,Juice Box,14,2,TCT Pro Championships 2024,2024-08-31
+Parcha,Grit,11,10,TCT Pro Championships 2024,2024-08-31
+Grit,Juice Box,15,3,TCT Pro Championships 2024,2024-08-31
+Agency,Pickup Lines,15,1,2024 Capital Women's Sectional Championship,2024-09-07
+Agency,Dissent,15,0,2024 Capital Women's Sectional Championship,2024-09-07
+Dissent,Pickup Lines,10,3,2024 Capital Women's Sectional Championship,2024-09-07
+Wave,Second Fiddle,12,8,2024 Capital Women's Sectional Championship,2024-09-07
+Wave,Virginia Rebellion,13,7,2024 Capital Women's Sectional Championship,2024-09-07
+Virginia Rebellion,Second Fiddle,12,8,2024 Capital Women's Sectional Championship,2024-09-07
+Agency,Wave,10,6,2024 Capital Women's Sectional Championship,2024-09-07
+Wave,Virginia Rebellion,7,10,2024 Capital Women's Sectional Championship,2024-09-07
+Virginia Rebellion,Dissent,10,4,2024 Capital Women's Sectional Championship,2024-09-07
+Dissent,Second Fiddle,7,13,2024 Capital Women's Sectional Championship,2024-09-07
+Second Fiddle,Pickup Lines,12,1,2024 Capital Women's Sectional Championship,2024-09-07
+Frolic,Versa,13,4,2024 East New England Women's Sectional Championship,2024-09-07
+Siege,Vice,13,7,2024 East New England Women's Sectional Championship,2024-09-07
+Siege,Frolic,12,7,2024 East New England Women's Sectional Championship,2024-09-07
+Vice,Versa,13,4,2024 East New England Women's Sectional Championship,2024-09-07
+Vice,Frolic,9,13,2024 East New England Women's Sectional Championship,2024-09-07
+Siege,Versa,12,5,2024 East New England Women's Sectional Championship,2024-09-07
+Sureshot,Solstice,9,7,2024 East Plains Women's Sectional Championship,2024-09-07
+Y'all,Lake Erie Walleye,6,12,2024 East Plains Women's Sectional Championship,2024-09-07
+Outrage,Lake Erie Walleye,13,5,2024 East Plains Women's Sectional Championship,2024-09-07
+Y'all,Sureshot,12,9,2024 East Plains Women's Sectional Championship,2024-09-07
+Outrage,Solstice,15,1,2024 East Plains Women's Sectional Championship,2024-09-07
+Lake Erie Walleye,Sureshot,11,6,2024 East Plains Women's Sectional Championship,2024-09-07
+Outrage,Sureshot,15,2,2024 East Plains Women's Sectional Championship,2024-09-07
+Y'all,Solstice,14,9,2024 East Plains Women's Sectional Championship,2024-09-07
+Outrage,Y'all,15,2,2024 East Plains Women's Sectional Championship,2024-09-07
+Lake Erie Walleye,Solstice,14,8,2024 East Plains Women's Sectional Championship,2024-09-07
+Tabby Rosa,Fiasco,13,8,2024 Florida Women's Sectional Championship,2024-09-07
+Calypso,Roseate Spoonbill,14,9,2024 Florida Women's Sectional Championship,2024-09-07
+Tabby Rosa,Roseate Spoonbill,15,5,2024 Florida Women's Sectional Championship,2024-09-07
+Calypso,Fiasco,13,12,2024 Florida Women's Sectional Championship,2024-09-07
+Tabby Rosa,Calypso,13,6,2024 Florida Women's Sectional Championship,2024-09-07
+Fiasco,Roseate Spoonbill,13,4,2024 Florida Women's Sectional Championship,2024-09-07
+Incline,Splurge,11,12,2024 Founders Women's Sectional Championship,2024-09-07
+Zephyr,Pine Baroness,9,10,2024 Founders Women's Sectional Championship,2024-09-07
+Flight,Pine Baroness,13,4,2024 Founders Women's Sectional Championship,2024-09-07
+Zephyr,Incline,11,7,2024 Founders Women's Sectional Championship,2024-09-07
+Flight,Splurge,15,6,2024 Founders Women's Sectional Championship,2024-09-07
+Pine Baroness,Incline,15,7,2024 Founders Women's Sectional Championship,2024-09-07
+Flight,Incline,15,2,2024 Founders Women's Sectional Championship,2024-09-07
+Zephyr,Splurge,11,7,2024 Founders Women's Sectional Championship,2024-09-07
+Flight,Zephyr,15,2,2024 Founders Women's Sectional Championship,2024-09-07
+Pine Baroness,Splurge,12,6,2024 Founders Women's Sectional Championship,2024-09-07
+Flight,Pine Baroness,11,2,2024 Founders Women's Sectional Championship,2024-09-07
+Flight,Splurge,15,2,2024 Founders Women's Sectional Championship,2024-09-07
+Pine Baroness,Zephyr,12,11,2024 Founders Women's Sectional Championship,2024-09-07
+Starling Ultimate,Pizza Rat,14,6,2024 Metro New York Women's Sectional Championship,2024-09-07
+Brooklyn Book Club,Remember When,14,8,2024 Metro New York Women's Sectional Championship,2024-09-07
+Starling Ultimate,Remember When,13,5,2024 Metro New York Women's Sectional Championship,2024-09-07
+Brooklyn Book Club,Pizza Rat,9,8,2024 Metro New York Women's Sectional Championship,2024-09-07
+Starling Ultimate,Brooklyn Book Club,13,7,2024 Metro New York Women's Sectional Championship,2024-09-07
+Pizza Rat,Remember When,8,13,2024 Metro New York Women's Sectional Championship,2024-09-07
+LOL,Void Cat Rewind,15,6,2024 Nor Cal Women's Sectional Championship,2024-09-07
+FAB,Ultraviolet,15,0,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Tempo,Sac Lunch,13,8,2024 Nor Cal Women's Sectional Championship,2024-09-07
+LOL,FAB,15,8,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Void Cat Rewind,Tempo,15,2,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Ultraviolet,Sac Lunch,15,4,2024 Nor Cal Women's Sectional Championship,2024-09-07
+LOL,Tempo,15,1,2024 Nor Cal Women's Sectional Championship,2024-09-07
+FAB,Sac Lunch,15,0,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Void Cat Rewind,Ultraviolet,15,2,2024 Nor Cal Women's Sectional Championship,2024-09-07
+LOL,Sac Lunch,15,1,2024 Nor Cal Women's Sectional Championship,2024-09-07
+FAB,Void Cat Rewind,11,9,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Tempo,Ultraviolet,11,9,2024 Nor Cal Women's Sectional Championship,2024-09-07
+LOL,Ultraviolet,15,1,2024 Nor Cal Women's Sectional Championship,2024-09-07
+FAB,Tempo,15,1,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Void Cat Rewind,Sac Lunch,15,1,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Ultraviolet,Sac Lunch,14,5,2024 Nor Cal Women's Sectional Championship,2024-09-07
+Void Cat Rewind,Tempo,15,2,2024 Nor Cal Women's Sectional Championship,2024-09-07
+LOL,FAB,15,7,2024 Nor Cal Women's Sectional Championship,2024-09-07

@@ -1,100 +1,73 @@
 team,rating_team,rank
-Scandal,2722,1
-Fury,2445,2
-Brute Squad,2426,3
-Molly Brown,2403,4
-Phoenix,2313,5
-Flipside,2305,6
-Traffic,2190,7
-BENT,2177,8
-6ixers,2126,9
-Schwa,2096,10
-Grit,2001,11
-Seattle Riot,1989,12
-Nemesis,1975,13
-Iris,1884,14
-Starling Ultimate,1883,15
-Parcha,1845,16
-Siege,1782,17
-Nightlock,1755,18
-Vengeance,1741,19
-Flight,1667,20
-Tabby Rosa,1659,21
-Sage,1642,22
-Ozone,1580,23
-Pop,1522,24
-Crush City,1475,25
-Rival,1454,26
-Indy Rogue,1450,27
-Underground,1428,28
-Colorado Small Batch,1366,29
-Agency,1257,30
-Oregon Downpour,1238,31
-Molly Blue,1219,32
-Vintage,1186,33
-Wave,1180,34
-Brooklyn Book Club,1173,35
-Heist,1163,36
-Venus,1147,37
-Wildfire,1140,38
-Huntsville Laika,1136,39
-Hayride,1079,40
-Zephyr,1064,41
-Vice,1055,42
-remix,984,43
-LOL,965,44
-Wicked,942,45
-Seattle END,939,46
-Juice Box,910,47
-Stellar,891,48
-Shiver,882,49
-FAB,865,50
-Dish,854,51
-PLOW,849,52
-Rip Tide,843,53
-Drift,827,54
-Trainwreck,826,55
-Virginia Rebellion,823,56
-San Antonio Problems,817,57
-Banshee,760,58
-Warhawks,754,59
-Incline,745,60
-Pine Baroness,733,61
-Fiasco,659,62
-Rampage,654,63
-Steel,616,64
-Seven Devils,588,65
-Tempest,585,66
-Frolic,568,67
-Void Cat Rewind,559,68
-Magma,548,69
-KnoxFusion,513,70
-TWISTED,485,71
-cATLanta,484,72
-Portland Rain Check,446,73
-Colorado Cutthroat: Youth Club U-20 Girls,428,74
-Stormborn,428,75
-Calypso,401,76
-Medusa,395,77
-Autonomous,347,78
-Venom,304,79
-Ignite,287,80
-Jackwagon,262,81
-Versa,227,82
-Firewheel,221,83
-Twisted Womxn,219,84
-Freshwater Ultimate,195,85
-Notorious C.L.E.,194,86
-Y'all,191,87
-Off Their Rockers,172,88
-Haboob,168,89
-Dissent,148,90
-Ultraviolet,122,91
-Seattle Soul,78,92
-Minnesota Superior A,9,93
-Sureshot,-52,94
-Tempo,-68,95
-Just Add Water,-134,96
-Inferno,-300,97
-Solstice,-415,98
-Bullseye,-526,99
+Fury,2329,1
+Scandal,2102,2
+Traffic,2035,3
+Molly Brown,1965,4
+Flipside,1964,5
+Brute Squad,1955,6
+Phoenix,1945,7
+Seattle Riot,1883,8
+BENT,1818,9
+6ixers,1816,10
+Schwa,1763,11
+Iris,1563,12
+Parcha,1532,13
+Grit,1530,14
+LOL,1506,15
+Nightlock,1490,16
+Nemesis,1343,17
+Starling Ultimate,1332,18
+Flight,1212,19
+Pop,1202,20
+Vengeance,1166,21
+Wildfire,1139,22
+Siege,1115,23
+Underground,1094,24
+Indy Rogue,1073,25
+Colorado Small Batch,1033,26
+Heist,1020,27
+Ozone,959,28
+Wicked,915,29
+Brooklyn Book Club,868,30
+Vice,843,31
+FAB,840,32
+Juice Box,835,33
+Crush City,831,34
+Zephyr,763,35
+San Antonio Problems,740,36
+Tabby Rosa,707,37
+Agency,685,38
+Seattle END,674,39
+Pine Baroness,657,40
+Shiver,634,41
+Drift,627,42
+Trainwreck,614,43
+Hayride,604,44
+Void Cat Rewind,527,45
+Wave,526,46
+Magma,481,47
+Calypso,450,48
+Virginia Rebellion,436,49
+Stellar,433,50
+Frolic,416,51
+Rampage,304,52
+Dish,246,53
+TWISTED,209,54
+Fiasco,173,55
+Inferno,172,56
+Sureshot,160,57
+Versa,124,58
+Incline,103,59
+Huntsville Laika,101,60
+Stormborn,16,61
+Medusa,-43,62
+Portland Rain Check,-74,63
+Venom,-88,64
+Firewheel,-140,65
+Seattle Soul,-180,66
+Haboob,-214,67
+Dissent,-233,68
+Ultraviolet,-309,69
+Freshwater Ultimate,-540,70
+Tempo,-563,71
+Just Add Water,-765,72
